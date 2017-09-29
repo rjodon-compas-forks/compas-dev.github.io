@@ -1,0 +1,189 @@
+@import "bootstrap-scss/functions";
+@import "bootstrap-scss/variables";
+@import "bootstrap-scss/mixins";
+
+.rubric {
+	padding: $alert-padding-y $alert-padding-x;
+	border: $alert-border-width solid transparent;
+	@include border-radius($alert-border-radius);
+	@include alert-variant(
+		theme-color-level(light, -10),
+		theme-color-level(light, -9),
+		theme-color-level(light, 6)
+	);
+	font-weight: 600;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+/* ----------------------------------------------------------------- */
+
+.admonition {
+	padding: $alert-padding-y $alert-padding-x;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	border: $alert-border-width solid transparent;
+	@include border-radius($alert-border-radius);
+}
+
+.admonition p {
+	margin-bottom: 1rem;
+}
+
+.admonition-title {
+	font-weight: 600;
+	color: inherit;
+}
+
+.admonition.note {
+	@include alert-variant(
+		theme-color-level(secondary, -10),
+		theme-color-level(secondary, -9),
+		theme-color-level(secondary, 6)
+	);
+}
+
+.admonition.important {
+	@include alert-variant(
+		theme-color-level(warning, -10),
+		theme-color-level(warning, -9),
+		theme-color-level(warning, 6)
+	);
+}
+
+.admonition.warning {
+	@include alert-variant(
+		theme-color-level(danger, -10),
+		theme-color-level(danger, -9),
+		theme-color-level(danger, 6)
+	);
+}
+
+.admonition.seealso {
+	@include alert-variant(
+		theme-color-level(info, -10),
+		theme-color-level(info, -9),
+		theme-color-level(info, 6)
+	);
+}
+
+/* ----------------------------------------------------------------- */
+
+table {
+	font-size: 0.875rem
+}
+
+.longtable {
+	border: none;
+	width: 100%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.longtable td {
+	padding: 0.5rem;
+	border: 1px solid #eee;
+}
+
+.longtable .row-odd {
+	// background-color: #f8f8f8;
+}
+
+.longtable .row-even {
+	// background-color: #fefefe;
+}
+
+@media (min-width: 768px) {
+	.longtable tbody tr td:first-child {
+		white-space: nowrap;
+	}
+}
+
+.longtable code {
+	background: transparent;
+	padding: 0;
+}
+
+.longtable a {
+	text-decoration: none;
+}
+
+.function {}
+
+.class {}
+
+.function > dt,
+.class > dt {
+	font-weight: 600;
+	padding: 1rem 0.5rem;
+	border: $alert-border-width solid transparent;
+	@include border-radius($alert-border-radius);
+	border-color: theme-color-level(dark, -9);
+	color: theme-color-level(dark, 6);
+	background-color: theme-color-level(dark, -10);
+	margin-bottom: 2rem;
+}
+
+.function > dd,
+.class > dd {}
+
+.class .property {}
+
+.function .descclassname,
+.class .descclassname {
+	border-radius: 0;
+	padding-right: 0;
+}
+
+.function .descname,
+.class .descname {
+	padding-left: 0;
+	border-radius: 0;
+}
+
+.function > dt > .reference.internal,
+.class > dt > .reference.internal {
+	float: right;
+}
+
+.function dd p,
+.class dd p {
+}
+
+.function .field-list,
+.class .field-list {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.function .field-list tr,
+.class .field-list tr {
+	// margin-bottom: 0.5rem
+}
+
+.function .field-name,
+.class .field-name {
+	background-color: #eee;
+	// padding: 0.5rem 1rem;
+}
+
+.function .field-body,
+.class .field-body {
+	// padding: 0.5rem;
+	// padding-left: 2rem;
+}
+
+.function .field-body ul,
+.class .field-body ul {
+	// margin-bottom: 1rem;
+	// padding-left: 1rem;
+}
+
+.class .attribute {}
+
+/* ----------------------------------------------------------------- */
+
+.search-results {
+
+}

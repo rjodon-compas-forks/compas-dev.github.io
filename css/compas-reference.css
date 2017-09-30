@@ -17,7 +17,8 @@
 /* ----------------------------------------------------------------- */
 .badge-public {
   color: #fff;
-  background-color: #28a745; }
+  background-color: #28a745;
+  margin-left: 1rem; }
   .badge-public[href]:focus, .badge-public[href]:hover {
     color: #fff;
     text-decoration: none;
@@ -25,7 +26,8 @@
 
 .badge-private {
   color: #fff;
-  background-color: #dc3545; }
+  background-color: #dc3545;
+  margin-left: 1rem; }
   .badge-private[href]:focus, .badge-private[href]:hover {
     color: #fff;
     text-decoration: none;
@@ -33,7 +35,8 @@
 
 .badge-shared {
   color: #111;
-  background-color: #ffc107; }
+  background-color: #ffc107;
+  margin-left: 1rem; }
   .badge-shared[href]:focus, .badge-shared[href]:hover {
     color: #111;
     text-decoration: none;

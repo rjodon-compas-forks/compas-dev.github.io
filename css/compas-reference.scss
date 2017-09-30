@@ -21,14 +21,17 @@
 
 .badge-public {
 	@include badge-variant($green);
+	margin-left: 1rem;
 }
 
 .badge-private {
 	@include badge-variant($red);
+	margin-left: 1rem;
 }
 
 .badge-shared {
 	@include badge-variant($yellow);
+	margin-left: 1rem;
 }
 
 /* ----------------------------------------------------------------- */

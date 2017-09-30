@@ -15,6 +15,31 @@
     color: #424547; }
 
 /* ----------------------------------------------------------------- */
+.badge-public {
+  color: #fff;
+  background-color: #28a745; }
+  .badge-public[href]:focus, .badge-public[href]:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1e7e34; }
+
+.badge-private {
+  color: #fff;
+  background-color: #dc3545; }
+  .badge-private[href]:focus, .badge-private[href]:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #bd2130; }
+
+.badge-shared {
+  color: #111;
+  background-color: #ffc107; }
+  .badge-shared[href]:focus, .badge-shared[href]:hover {
+    color: #111;
+    text-decoration: none;
+    background-color: #d39e00; }
+
+/* ----------------------------------------------------------------- */
 .admonition {
   padding: 0.75rem 1.25rem;
   margin-top: 2rem;

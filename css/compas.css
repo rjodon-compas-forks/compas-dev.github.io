@@ -281,6 +281,14 @@ a:hover {
 	content: "";
 }
 
+.compas-content .section h3::before {
+	display: block;
+	padding-top: 6rem;
+	margin-top: -6rem;
+	visibility: hidden;
+	content: "";
+}
+
 .compas-content ul {
 	margin-bottom: 2rem;
 }

@@ -300,6 +300,10 @@ a:hover {
 	margin-bottom: 1rem;
 }
 
+.compas-content .metadata ul {
+	padding-left: 0;
+}
+
 .compas-content .alert {
 	margin-bottom: 2rem;
 }

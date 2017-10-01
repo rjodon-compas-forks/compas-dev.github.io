@@ -18,7 +18,7 @@
 .badge-public {
   color: #fff;
   background-color: #28a745;
-  margin-left: 1rem; }
+  margin-left: 0rem; }
   .badge-public[href]:focus, .badge-public[href]:hover {
     color: #fff;
     text-decoration: none;
@@ -27,7 +27,7 @@
 .badge-private {
   color: #fff;
   background-color: #dc3545;
-  margin-left: 1rem; }
+  margin-left: 0rem; }
   .badge-private[href]:focus, .badge-private[href]:hover {
     color: #fff;
     text-decoration: none;
@@ -36,7 +36,7 @@
 .badge-shared {
   color: #111;
   background-color: #ffc107;
-  margin-left: 1rem; }
+  margin-left: 0rem; }
   .badge-shared[href]:focus, .badge-shared[href]:hover {
     color: #111;
     text-decoration: none;

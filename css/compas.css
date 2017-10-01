@@ -289,7 +289,7 @@ a:hover {
 	content: "";
 }
 
-.compas-content ul {
+.compas-content .section > ul {
 	margin-bottom: 2rem;
 }
 
@@ -297,7 +297,7 @@ a:hover {
 	margin-bottom: 0.5rem;
 }
 .compas-content ul ul {
-	margin-bottom: 1rem;
+	/*margin-bottom: 0rem;*/
 }
 
 .compas-content .metadata {

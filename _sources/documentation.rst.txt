@@ -9,7 +9,7 @@ Documentation
 
   * `Introduction <https://compas-dev.github.io/introduction.html>`_
   * `Getting Started <https://compas-dev.github.io/gettingstarted.html>`_
-  * `Documentation <https://compas-dev.github.io/documentation.html>`_
+  * `Documentation <https://compas-dev.github.io/documentation.html#>`_
   * `Developers Guide <https://compas-dev.github.io/devguide.html>`_
   * `Attribution <https://compas-dev.github.io/attribution.html>`_
   * `License <https://compas-dev.github.io/license.html>`_

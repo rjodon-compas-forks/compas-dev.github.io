@@ -92,8 +92,8 @@ or `homebrew <http://brew.sh/>`_.
 Environment-specific instructions
 ---------------------------------
 
-Unix
-====
+Unix (OSX, Linux)
+=================
 
 Windows
 =======

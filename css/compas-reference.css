@@ -117,6 +117,7 @@ table {
 .longtable a {
   text-decoration: none; }
 
+.method > dt,
 .function > dt,
 .class > dt {
   font-weight: 600;
@@ -128,25 +129,30 @@ table {
   background-color: #d6d8d9;
   margin-bottom: 2rem; }
 
+.method .descclassname,
 .function .descclassname,
 .class .descclassname {
   border-radius: 0;
   padding-right: 0; }
 
+.method .descname,
 .function .descname,
 .class .descname {
   padding-left: 0;
   border-radius: 0; }
 
+.method > dt > .reference.internal,
 .function > dt > .reference.internal,
 .class > dt > .reference.internal {
   float: right; }
 
+.method .field-list,
 .function .field-list,
 .class .field-list {
   margin-top: 3rem;
   margin-bottom: 2rem; }
 
+.method .field-name,
 .function .field-name,
 .class .field-name {
   background-color: #eee; }

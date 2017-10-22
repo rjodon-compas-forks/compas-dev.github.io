@@ -130,6 +130,9 @@ table {
 
 .class {}
 
+.method {}
+
+.method > dt,
 .function > dt,
 .class > dt {
 	font-weight: 600;
@@ -142,55 +145,65 @@ table {
 	margin-bottom: 2rem;
 }
 
+.method > dd,
 .function > dd,
 .class > dd {}
 
 .class .property {}
 
+.method .descclassname,
 .function .descclassname,
 .class .descclassname {
 	border-radius: 0;
 	padding-right: 0;
 }
 
+.method .descname,
 .function .descname,
 .class .descname {
 	padding-left: 0;
 	border-radius: 0;
 }
 
+.method > dt > .reference.internal,
 .function > dt > .reference.internal,
 .class > dt > .reference.internal {
 	float: right;
 }
 
+.method dd p,
 .function dd p,
 .class dd p {
 }
 
+.method .field-list,
 .function .field-list,
 .class .field-list {
 	margin-top: 3rem;
 	margin-bottom: 2rem;
 }
 
+.method .field-list tr,
 .function .field-list tr,
 .class .field-list tr {
 	// margin-bottom: 0.5rem
 }
 
+.method .field-name,
 .function .field-name,
 .class .field-name {
 	background-color: #eee;
 	// padding: 0.5rem 1rem;
 }
 
+.method .field-body,
 .function .field-body,
 .class .field-body {
 	// padding: 0.5rem;
 	// padding-left: 2rem;
 }
 
+.method .field-body ul,
 .function .field-body ul,
 .class .field-body ul {
 	// margin-bottom: 1rem;

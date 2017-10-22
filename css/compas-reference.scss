@@ -133,6 +133,8 @@ table {
 
 .method {}
 
+.staticmethod > dt,
+.classmethod > dt,
 .method > dt,
 .function > dt,
 .class > dt {
@@ -146,12 +148,16 @@ table {
 	margin-bottom: 2rem;
 }
 
+.staticmethod > dd,
+.classmethod > dd,
 .method > dd,
 .function > dd,
 .class > dd {}
 
 .class .property {}
 
+.staticmethod .descclassname,
+.classmethod .descclassname,
 .method .descclassname,
 .function .descclassname,
 .class .descclassname {
@@ -159,6 +165,8 @@ table {
 	padding-right: 0;
 }
 
+.staticmethod .descname,
+.classmethod .descname,
 .method .descname,
 .function .descname,
 .class .descname {
@@ -166,17 +174,23 @@ table {
 	border-radius: 0;
 }
 
+.staticmethod > dt > .reference.internal,
+.classmethod > dt > .reference.internal,
 .method > dt > .reference.internal,
 .function > dt > .reference.internal,
 .class > dt > .reference.internal {
 	float: right;
 }
 
+.staticmethod dd p,
+.classmethod dd p,
 .method dd p,
 .function dd p,
 .class dd p {
 }
 
+.staticmethod .field-list,
+.classmethod .field-list,
 .method .field-list,
 .function .field-list,
 .class .field-list {
@@ -184,12 +198,16 @@ table {
 	margin-bottom: 2rem;
 }
 
+.staticmethod .field-list tr,
+.classmethod .field-list tr,
 .method .field-list tr,
 .function .field-list tr,
 .class .field-list tr {
 	// margin-bottom: 0.5rem
 }
 
+.staticmethod .field-name,
+.classmethod .field-name,
 .method .field-name,
 .function .field-name,
 .class .field-name {
@@ -197,6 +215,8 @@ table {
 	// padding: 0.5rem 1rem;
 }
 
+.staticmethod .field-body,
+.classmethod .field-body,
 .method .field-body,
 .function .field-body,
 .class .field-body {
@@ -204,6 +224,8 @@ table {
 	// padding-left: 2rem;
 }
 
+.staticmethod .field-body ul,
+.classmethod .field-body ul,
 .method .field-body ul,
 .function .field-body ul,
 .class .field-body ul {

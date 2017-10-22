@@ -120,6 +120,8 @@ table {
 .longtable a {
   text-decoration: none; }
 
+.staticmethod > dt,
+.classmethod > dt,
 .method > dt,
 .function > dt,
 .class > dt {
@@ -132,29 +134,39 @@ table {
   background-color: #d6d8d9;
   margin-bottom: 2rem; }
 
+.staticmethod .descclassname,
+.classmethod .descclassname,
 .method .descclassname,
 .function .descclassname,
 .class .descclassname {
   border-radius: 0;
   padding-right: 0; }
 
+.staticmethod .descname,
+.classmethod .descname,
 .method .descname,
 .function .descname,
 .class .descname {
   padding-left: 0;
   border-radius: 0; }
 
+.staticmethod > dt > .reference.internal,
+.classmethod > dt > .reference.internal,
 .method > dt > .reference.internal,
 .function > dt > .reference.internal,
 .class > dt > .reference.internal {
   float: right; }
 
+.staticmethod .field-list,
+.classmethod .field-list,
 .method .field-list,
 .function .field-list,
 .class .field-list {
   margin-top: 3rem;
   margin-bottom: 2rem; }
 
+.staticmethod .field-name,
+.classmethod .field-name,
 .method .field-name,
 .function .field-name,
 .class .field-name {

@@ -53,7 +53,8 @@
 	color: inherit;
 }
 
-.admonition.note {
+.admonition.note,
+.admonition.notes {
 	@include alert-variant(
 		theme-color-level(secondary, -10),
 		theme-color-level(secondary, -9),

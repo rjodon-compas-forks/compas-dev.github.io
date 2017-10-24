@@ -25,6 +25,12 @@ a:hover {
 	text-decoration: none;
 }
 
+blockquote {
+	font-style: italic;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 /*li .py-mod {
 	word-wrap: break-word;
 }*/

@@ -142,26 +142,22 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <h2>Environment-specific instructions</h2>
 <div class="section">
 <h3>Unix (OSX)</h3>
-<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited.
-To check run:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>cd (will return to home directory)
-ls -a (will list all files in home directory)
-</code></pre></div>
-
+<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited.</p>
+<p>To check type <code class="docutils literal">cd</code> to return to home directory and then <code class="docutils literal">ls -a</code> will list all files in your home directory.</p>
 <p>You will get a window similar to the one seen below.
 Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
-If a <code class="docutils literal">.bash_profile</code> exists this file needs to be edited, otherwise  the  <code class="docutils literal">.profile</code> file</p>
+Choose the <code class="docutils literal">.bash_profile</code>  if it exists, otherwise choose the <code class="docutils literal">.profile</code></p>
 <figure class="figure">
 <img alt="images/home_files.png" class="figure-img img-fluid" src="images/home_files.png"/>
 </figure>
-<p>To edit type <code class="docutils literal">sudo nano ~/.bash_profile</code> or <code class="docutils literal">sudo nano ~/.profile</code>
-<em>you may be prompted for the administrator password. This will not appear while you are typing.</em></p>
-<p>The <code class="docutils literal">profile</code> file will be opened. You can now add the following</p>
+<p>To edit: type <code class="docutils literal">sudo nano ~/.bash_profile</code> or <code class="docutils literal">sudo nano ~/.profile</code></p>
+<p><em>N.B. you may be prompted for the administrator password, characters will not appear while you are typing.</em></p>
+<p>The <code class="docutils literal">profile</code> file will be opened. Add the following:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>export PATH="/path/to/anaconda/bin:$PATH"
 export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
 </code></pre></div>
 
-<p>You will not be able to copy and paste into the window. Make sure to type all paths correctly.</p>
+<p><em>N.B. You will not be able to copy and paste into the window. Make sure to type all paths correctly.</em></p>
 <figure class="figure">
 <img alt="images/profile_file.png" class="figure-img img-fluid" src="images/profile_file.png"/>
 </figure>

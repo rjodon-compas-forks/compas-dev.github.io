@@ -27,19 +27,19 @@ Installation instructions
 
 * GitHub Desktop > File > Clone Repository
 
-* Clone: https://github.com/compas-dev/compas.git
+* Repository to clone: https://github.com/compas-dev/compas.git
 
-.. figure:: /_images/git_hub_clone.*
+.. figure:: /_images/git_hub_clone.jpg
      :figclass: figure
      :class: figure-img img-fluid
 
-  After pulling the repository, the folder structure will contain:
+After pulling the repository, the folder structure will contain:
 .. code-block:: none
 
     compas
-      *libs
-      *samples
-      *src
+      -libs
+      -samples
+      -src
 
 The ``src`` folder will contain the packages
 
@@ -51,13 +51,24 @@ The ``src`` folder will contain the packages
 * compas_rhino
 * compas_rhinomac
 
+**Step 3.** Configure your system
 
-**Step 3.** Verify your installation.
+To simplify importing modules in different contexts a few environment variables need to be set.
+Add the Python and/or Scientific Python distribution (in this case the installed version of Anaconda)
+to the system ``PATH`` and add the location of the pulled framework to your ``PYTHONPATH``
 
+Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under
+**Environment-specific instructions**
+
+**Step 4.** Verify your installation.
+
+After having set the system variables test your installation.
+Start an interactive Python session (in Terminal/ Comand Prompt)
 .. code-block:: none
 
     $ python
 
+try the following code
 .. code-block:: python
 
     >>> import compas
@@ -65,11 +76,9 @@ The ``src`` folder will contain the packages
     >>> mesh = Mesh.from_obj(compas.get('faces.obj'))
     >>> print(mesh)
 
-.. code-block:: none
+If on OSX your Terminal window will display as follows
 
-
-
-.. .. figure:: /_images/example-mesh-delaunay-from-points.*
+.. .. figure:: /_images/validate_install_mac.jpg
 ..     :figclass: figure
 ..     :class: figure-img img-fluid
 
@@ -115,7 +124,7 @@ or `homebrew <http://brew.sh/>`_.
 Environment-specific instructions
 ---------------------------------
 
-Unix (OSX, Linux)
+Unix (OSX)
 =================
 
 

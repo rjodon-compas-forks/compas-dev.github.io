@@ -54,18 +54,21 @@
 <p><strong>Step 2.</strong> Clone the code repository from Github using GitHub Desktop</p>
 <ul class="simple">
 <li>GitHub Desktop &gt; File &gt; Clone Repository</li>
-<li>Clone: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></li>
+<li>Repository to clone: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></li>
 </ul>
 <figure class="figure">
-<img alt="images/git_hub_clone.*:figclass:figure:class:figure-imgimg-fluid" class="figure-img img-fluid" src="images/git_hub_clone.*:figclass:figure:class:figure-imgimg-fluid"/>
-<figcaption class="figure-caption">After pulling the repository, the folder structure will contain:</figcaption>
+<img alt="images/git_hub_clone.jpg" class="figure-img img-fluid" src="images/git_hub_clone.jpg"/>
 </figure>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>compas
-  *libs
-  *samples
-  *src
-</code></pre></div>
-
+<p>After pulling the repository, the folder structure will contain:
+.. code-block:: none</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>compas</dt>
+<dd>-libs
+-samples
+-src</dd>
+</dl>
+</div></blockquote>
 <p>The <code class="docutils literal">src</code> folder will contain the packages</p>
 <ul class="simple">
 <li>compas</li>
@@ -76,19 +79,27 @@
 <li>compas_rhino</li>
 <li>compas_rhinomac</li>
 </ul>
-<p><strong>Step 3.</strong> Verify your installation.</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
-</code></pre></div>
-
+<p><strong>Step 3.</strong> Configure your system</p>
+<p>To simplify importing modules in different contexts a few environment variables need to be set.
+Add the Python and/or Scientific Python distribution (in this case the installed version of Anaconda)
+to the system <code class="docutils literal">PATH</code> and add the location of the pulled framework to your <code class="docutils literal">PYTHONPATH</code></p>
+<p>Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under
+<strong>Environment-specific instructions</strong></p>
+<p><strong>Step 4.</strong> Verify your installation.</p>
+<p>After having set the system variables test your installation.
+Start an interactive Python session (in Terminal/ Comand Prompt)
+.. code-block:: none</p>
+<blockquote>
+<div>$ python</div></blockquote>
+<p>try the following code
+.. code-block:: python</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="kn">import</span> <span class="n">Mesh</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="k">import</span> <span class="n">Mesh</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh</span><span class="o">.</span><span class="n">from_obj</span><span class="p">(</span><span class="n">compas</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'faces.obj'</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>
-</code></pre></div>
-
+<p>If on OSX your Terminal window will display as follows</p>
 </div>
 <div class="section">
 <h2>Dependencies</h2>
@@ -127,7 +138,7 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <div class="section">
 <h2>Environment-specific instructions</h2>
 <div class="section">
-<h3>Unix (OSX, Linux)</h3>
+<h3>Unix (OSX)</h3>
 </div>
 <div class="section">
 <h3>Windows</h3>
@@ -170,7 +181,7 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <li class="nav-item"><a class="nav-link reference internal" href="#installation-instructions">Installation instructions</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#environment-specific-instructions">Environment-specific instructions</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#unix-osx-linux">Unix (OSX, Linux)</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#unix-osx">Unix (OSX)</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#windows">Windows</a></li>
 </ul>
 </li>

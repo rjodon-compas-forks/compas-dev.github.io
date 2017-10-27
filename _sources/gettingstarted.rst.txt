@@ -7,26 +7,28 @@ Getting started
 Requirements
 ------------
 
-* Python (`Anaconda <https://www.anaconda.com/download/>`)
-* `Rhino3D <https://www.rhino3d.com/download>`
-* Code editor (e.g. Sublime Text)
-* GitHub Desktop
+* Python (`Anaconda <https://www.anaconda.com/download/>`_)
+* `Rhino3D <https://www.rhino3d.com/download>`_
+* Code editor (e.g. `Sublime Text <https://www.sublimetext.com>`_)
+* `GitHub Desktop <https://desktop.github.com>`_
 
 
 Installation instructions
 -------------------------
 
-**Step 1.** Create a folder structure for your compas installation.
+**Step 1.** Create a folder on your computer for your compas installation.
 
 .. code-block:: none
 
-    compas
-        - core
-        - me
-        - packages
+    compas-dev
 
 
-**Step 2.** Clone the code repository from Github, or simply download the archive and unzip in compas/core.
+**Step 2.** Clone the code repository from Github using GitHub Desktop
+
+* GitHub Desktop > File > Clone Repository
+.. figure:: /_images/git_hub_clone.*
+     :figclass: figure
+     :class: figure-img img-fluid
 
 .. code-block:: none
 
@@ -34,14 +36,7 @@ Installation instructions
     $ git clone https://github.com/compas-dev/compas.git
 
 
-**Step 3.** Run the install script.
-
-.. code-block:: none
-
-    $ python setup.py install
-
-
-**Step 4.** Verify your installation.
+**Step 3.** Verify your installation.
 
 .. code-block:: none
 
@@ -50,7 +45,17 @@ Installation instructions
 .. code-block:: python
 
     >>> import compas
-    >>> compas.verify()
+    >>> from compas.datastructures import Mesh
+    >>> mesh = Mesh.from_obj(compas.get('faces.obj'))
+    >>> print(mesh)
+
+.. code-block:: none
+
+
+
+.. .. figure:: /_images/example-mesh-delaunay-from-points.*
+..     :figclass: figure
+..     :class: figure-img img-fluid
 
 
 Dependencies
@@ -96,6 +101,8 @@ Environment-specific instructions
 
 Unix (OSX, Linux)
 =================
+
+
 
 Windows
 =======

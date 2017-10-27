@@ -39,33 +39,42 @@
 <div class="section">
 <h2>Requirements</h2>
 <ul class="simple">
-<li>Python (<cite>Anaconda &lt;https://www.anaconda.com/download/&gt;</cite>)</li>
-<li><cite>Rhino3D &lt;https://www.rhino3d.com/download&gt;</cite></li>
-<li>Code editor (e.g. Sublime Text)</li>
-<li>GitHub Desktop</li>
+<li>Python (<a class="reference external" href="https://www.anaconda.com/download/">Anaconda</a>)</li>
+<li><a class="reference external" href="https://www.rhino3d.com/download">Rhino3D</a></li>
+<li>Code editor (e.g. <a class="reference external" href="https://www.sublimetext.com">Sublime Text</a>)</li>
+<li><a class="reference external" href="https://desktop.github.com">GitHub Desktop</a></li>
 </ul>
 </div>
 <div class="section">
 <h2>Installation instructions</h2>
-<p><strong>Step 1.</strong> Create a folder structure for your compas installation.</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>compas
-    - core
-    - me
-    - packages
+<p><strong>Step 1.</strong> Create a folder on your computer for your compas installation.</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
 </code></pre></div>
-<p><strong>Step 2.</strong> Clone the code repository from Github, or simply download the archive and unzip in compas/core.</p>
+
+<p><strong>Step 2.</strong> Clone the code repository from Github using GitHub Desktop</p>
+<ul class="simple">
+<li>GitHub Desktop &gt; File &gt; Clone Repository</li>
+</ul>
+<figure class="figure">
+<img alt="images/git_hub_clone.*" class="figure-img img-fluid" src="images/git_hub_clone.*"/>
+</figure>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd path/to/compas/core
 $ git clone https://github.com/compas-dev/compas.git
 </code></pre></div>
-<p><strong>Step 3.</strong> Run the install script.</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python setup.py install
-</code></pre></div>
-<p><strong>Step 4.</strong> Verify your installation.</p>
+
+<p><strong>Step 3.</strong> Verify your installation.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
 </code></pre></div>
+
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">compas</span><span class="o">.</span><span class="n">verify</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="kn">import</span> <span class="n">Mesh</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh</span><span class="o">.</span><span class="n">from_obj</span><span class="p">(</span><span class="n">compas</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'faces.obj'</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
 </code></pre></div>
+
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>
+</code></pre></div>
+
 </div>
 <div class="section">
 <h2>Dependencies</h2>

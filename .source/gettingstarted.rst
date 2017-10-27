@@ -7,26 +7,28 @@ Getting started
 Requirements
 ------------
 
-* Python (`Anaconda <https://www.anaconda.com/download/>`)
-* `Rhino3D <https://www.rhino3d.com/download>`
-* Code editor (e.g. Sublime Text)
-* GitHub Desktop
+* Python (`Anaconda <https://www.anaconda.com/download/>`_)
+* `Rhino3D <https://www.rhino3d.com/download>`_
+* Code editor (e.g. `Sublime Text <https://www.sublimetext.com>`_)
+* `GitHub Desktop <https://desktop.github.com>`_
 
 
 Installation instructions
 -------------------------
 
-**Step 1.** Create a folder structure for your compas installation.
+**Step 1.** Create a folder on your computer for your compas installation.
 
 .. code-block:: none
 
     compas-dev
-        - acadia2017
-        - compas
-        - me
 
 
-**Step 2.** Clone the code repository from Github, or simply download the archive and unzip in compas/core.
+**Step 2.** Clone the code repository from Github using GitHub Desktop
+
+* GitHub Desktop > File > Clone Repository
+.. figure:: /_images/git_hub_clone.*
+     :figclass: figure
+     :class: figure-img img-fluid
 
 .. code-block:: none
 

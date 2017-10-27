@@ -50,13 +50,15 @@ After pulling the repository, the folder structure will contain:
 
 The ``src`` folder will contain the packages
 
-* compas
-* compas_blender
-* compas_dynamo
-* compas_grasshopper
-* compas_maya
-* compas_rhino
-* compas_rhinomac
+.. code-block:: none
+
+    - compas
+    - compas_blender
+    - compas_dynamo
+    - compas_grasshopper
+    - compas_maya
+    - compas_rhino
+    - compas_rhinomac
 
 **Step 3.** Configure your system
 
@@ -74,7 +76,7 @@ Start an interactive Python session (in Terminal/ Comand Prompt)
 
 .. code-block:: none
 
-    $ python
+    python
 
 try the following code
 
@@ -91,6 +93,11 @@ If on OSX your Terminal window will display as follows
     :figclass: figure
     :class: figure-img img-fluid
 
+In Comand Prompt it will display as follows
+
+.. figure:: /_images/validate_install_windows.*
+    :figclass: figure
+    :class: figure-img img-fluid
 
 Dependencies
 ------------
@@ -148,11 +155,19 @@ Choose the ``.bash_profile``  if it exists, otherwise choose the ``.profile``
      :figclass: figure
      :class: figure-img img-fluid
 
-To edit: type ``sudo nano ~/.bash_profile`` or ``sudo nano ~/.profile``
+To edit the ``profile``: type
+
+.. code-block:: none
+
+    sudo nano ~/.bash_profile
+    or
+    sudo nano ~/.profile
 
 *N.B. you may be prompted for the administrator password, characters will not appear while you are typing.*
 
-The ``profile`` file will be opened. Add the following:
+The ``profile`` file will be opened.
+
+Add the following:
 
 .. code-block:: none
 
@@ -165,7 +180,7 @@ The ``profile`` file will be opened. Add the following:
      :figclass: figure
      :class: figure-img img-fluid
 
-After adding the paths, exit the editor with `` ctrl+x`` , ``y`` and `` enter``
+After adding the paths, exit the editor with ``ctrl+x`` , ``y`` and ``enter``
 Now restart your Terminal or type :
 
 .. code-block:: none
@@ -177,3 +192,51 @@ Now restart your Terminal or type :
 
 Windows
 =======
+
+You will need to access the Advanced system settings panel
+
+.. code-block:: none
+
+    Control Panel > System and Security > System > Advanced system settings
+
+Click on the *Environment Variables* button. A window will open.
+
+In the system variables part, click on the ``PATH`` entry and then the *Edit* button
+
+.. figure:: /_images/system_path.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+Now add the paths pointing to the Anaconda installation on your computer
+
+.. code-block:: none
+
+    C:\Anaconda2
+    C:\Anaconda2\Scripts
+    C:\Anaconda2\Library\bin
+
+
+.. figure:: /_images/add_system.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+Click *OK* and follow the same steps to add the ``compas`` path to the ``PYTHONPATH``.
+
+.. code-block:: none
+
+    path/to/compas/src
+
+.. figure:: /_images/python_path_existing.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+If there is no ``PYTHONPATH`` entry create it but clicking *New*
+
+.. figure:: /_images/add_python_path.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+Rhino 3D configuration
+++++++++++++++++++++++++
+
+Rhino3D comes

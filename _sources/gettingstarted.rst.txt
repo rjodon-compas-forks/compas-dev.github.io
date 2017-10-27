@@ -26,14 +26,30 @@ Installation instructions
 **Step 2.** Clone the code repository from Github using GitHub Desktop
 
 * GitHub Desktop > File > Clone Repository
+
+* Clone: https://github.com/compas-dev/compas.git
+
 .. figure:: /_images/git_hub_clone.*
      :figclass: figure
      :class: figure-img img-fluid
 
+  After pulling the repository, the folder structure will contain:
 .. code-block:: none
 
-    $ cd path/to/compas/core
-    $ git clone https://github.com/compas-dev/compas.git
+    compas
+      *libs
+      *samples
+      *src
+
+The ``src`` folder will contain the packages
+
+* compas
+* compas_blender
+* compas_dynamo
+* compas_grasshopper
+* compas_maya
+* compas_rhino
+* compas_rhinomac
 
 
 **Step 3.** Verify your installation.

@@ -1,107 +1,82 @@
 
-
-
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <title>compas -- a computational framework for research in architecture and structures</title>
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    
-        <meta name="author" content="Tom Van Mele" />
-        <meta name="description" content="compas is a computational framework for research in architecture and structures." />
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="/css/github.css" />
-        <link rel="stylesheet" type="text/css" href="/css/compas.css" />
-        <link rel="stylesheet" type="text/css" href="/css/compas-reference.css" />
-
-        
-            <link rel="next" title="Documentation" href="documentation.html" />
-        
-        
-        
-            <link rel="prev" title="Introduction" href="introduction.html" />
-        
-
-        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-    </head>
-    <body data-spy="scroll" data-target="#compas-localnav">
-
-        <header class="navbar navbar-expand navbar-dark bg-dark compas-navbar">
-            <a class="navbar-brand" href="/">compas</a>
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/main/">Main library</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/packages/">Additional Packages</a>
-                    </li>
-                </ul>
-        </header>
-        
-        <div class="container-fluid compas-container">
-            <div class="row flex-xl-nowrap">
-
-                <main class="col-12 col-md-9 col-xl-8 compas-content" role="main">
-
-                    
-
-                        
-    <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
-        
-    </nav>
-
-
-                        
-
-                        <div class="section" id="getting-started">
+<head>
+<title>compas -- a computational framework for research in architecture and structures</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="Tom Van Mele" name="author"/>
+<meta content="compas is a computational framework for research in architecture and structures." name="description"/>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" rel="stylesheet"/>
+<link href="/css/github.css" rel="stylesheet" type="text/css"/>
+<link href="/css/compas.css" rel="stylesheet" type="text/css"/>
+<link href="/css/compas-reference.css" rel="stylesheet" type="text/css"/>
+<link href="documentation.html" rel="next" title="Documentation"/>
+<link href="introduction.html" rel="prev" title="Introduction"/>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+</head>
+<body data-spy="scroll" data-target="#compas-localnav">
+<header class="navbar navbar-expand navbar-dark bg-dark compas-navbar">
+<a class="navbar-brand" href="/">compas</a>
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/main/">Main library</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/packages/">Additional Packages</a>
+</li>
+</ul>
+</header>
+<div class="container-fluid compas-container">
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 compas-content" role="main">
+<nav class="breadcrumb">
+<a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
+</nav>
+<div class="section">
 <span id="gettingstarted"></span><h1>Getting started</h1>
-<div class="section" id="requirements">
+<div class="section">
 <h2>Requirements</h2>
 <ul class="simple">
 <li>Python</li>
 <li>...</li>
 </ul>
 </div>
-<div class="section" id="installation-instructions">
+<div class="section">
 <h2>Installation instructions</h2>
 <p><strong>Step 1.</strong> Create a folder structure for your compas installation.</p>
-<div class="highlight-none"><div class="highlight"><pre><code class="language-python border rounded"><span></span>compas
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>compas
     - core
     - me
     - packages
 </code></pre></div>
-</div>
+
 <p><strong>Step 2.</strong> Clone the code repository from Github, or simply download the archive and unzip in compas/core.</p>
-<div class="highlight-none"><div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd path/to/compas/core
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd path/to/compas/core
 $ git clone https://github.com/compas-dev/compas.git
 </code></pre></div>
-</div>
+
 <p><strong>Step 3.</strong> Run the install script.</p>
-<div class="highlight-none"><div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python setup.py install
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python setup.py install
 </code></pre></div>
-</div>
+
 <p><strong>Step 4.</strong> Verify your installation.</p>
-<div class="highlight-none"><div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
 </code></pre></div>
-</div>
-<div class="highlight-python"><div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
+
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">compas</span><span class="o">.</span><span class="n">verify</span><span class="p">()</span>
 </code></pre></div>
+
 </div>
-</div>
-<div class="section" id="dependencies">
+<div class="section">
 <h2>Dependencies</h2>
-<p>The <code class="docutils literal"><span class="pre">compas</span></code> framework has very few dependencies, and most of them are optional. If
-you are happy working in Rhino or Blender, and you are not interested in or don&#8217;t
+<p>The <code class="docutils literal">compas</code> framework has very few dependencies, and most of them are optional. If
+you are happy working in Rhino or Blender, and you are not interested in or don’t
 need any of the numerical stuff, then everything should work out of the box;
 provided you have Python installed, of course.</p>
-<p>The current version of <code class="docutils literal"><span class="pre">compas</span></code> has the following <strong>optional</strong> dependencies:</p>
+<p>The current version of <code class="docutils literal">compas</code> has the following <strong>optional</strong> dependencies:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.numpy.org/">Numpy</a> &amp;amp; <a class="reference external" href="https://www.scipy.org/">Scipy</a>: For all numerical calculations and algorithms.</li>
 <li><a class="reference external" href="http://matplotlib.org/">Matplotlib</a>: For two-dimensional visualisations.</li>
@@ -111,7 +86,7 @@ provided you have Python installed, of course.</p>
 <li><a class="reference external" href="https://github.com/hagberg/planarity">Planarity</a>: For planarity testing.</li>
 <li><a class="reference external" href="http://cython.org/">Cython</a>: For performance optimisation.</li>
 <li><a class="reference external" href="http://numba.pydata.org/">Numba</a>: For just-in-time compilation.</li>
-<li><a class="reference external" href="https://mathema.tician.de/software/pycuda/">PyCuda</a>: For parallel computation through Nvidia&#8217;s CUDA.</li>
+<li><a class="reference external" href="https://mathema.tician.de/software/pycuda/">PyCuda</a>: For parallel computation through Nvidia’s CUDA.</li>
 <li><a class="reference external" href="https://mathema.tician.de/software/pyopencl/">PyOpenCL</a>: For parallel computation though OpenCL.</li>
 <li><a class="reference external" href="http://www.cvxpy.org/">CVXPY</a>: For convex optimisation problems.</li>
 <li><a class="reference external" href="https://imageio.github.io/">Imageio</a>: For reading and writing of image data.</li>
@@ -123,58 +98,40 @@ optional dependencies (and of course Python), or a package manager to
 install them with. Make sure to get a version that ships with Python 2.x (see
 note above).</p>
 <p>On Windows, many installers for remaining and otherwise difficult-to-install packages
-can be found on Christof Gholke&#8217;s page
+can be found on Christof Gholke’s page
 <a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">Unofficial Windows Binaries for Python Extension Packages</a>.
-On mac, installing whatever doesn&#8217;t ship with a scientific distribution is
+On mac, installing whatever doesn’t ship with a scientific distribution is
 relatively easy with a package manager like <a class="reference external" href="https://www.macports.org/">macports</a>
 or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 </div>
-<div class="section" id="environment-specific-instructions">
+<div class="section">
 <h2>Environment-specific instructions</h2>
-<div class="section" id="unix-osx-linux">
+<div class="section">
 <h3>Unix (OSX, Linux)</h3>
 </div>
-<div class="section" id="windows">
+<div class="section">
 <h3>Windows</h3>
 </div>
 </div>
 </div>
-
-                        
-                        <nav class="compas-sideways">
-                            
-                                <a href="introduction.html" class="btn btn-primary compas-prev" role="button">Introduction</a>
-                            
-
-                            
-                                <a href="documentation.html" class="btn btn-primary compas-next" role="button">Documentation</a>
-                            
-                        </nav>
-
-                    
-
-                </main>
-
-                <div class="col-12 col-md-3 col-xl-2 compas-sidebar" role="navigation"> 
-                    <div class="navbar-light">
-
-                        <form id="" class="d-flex compas-searchbox" action="search.html" method="get">
-                            <input class="form-control" type="text" name="q" placeholder="Search docs" />
-                            <input type="hidden" name="check_keywords" value="yes" />
-                            <input type="hidden" name="area" value="default" />
-
-                            <button class="navbar-toggler d-md-none compas-navigation-toggler" type="button" data-toggle="collapse" data-target="#compas-navigation" aria-controls="compas-navigation" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </form>
-
-                        
-                        
-
-                            <div class="navbar-expand-md">
-                                <div id="compas-navigation" class="collapse navbar-collapse compas-navigation">
-
-                                <ul class="nav flex-column active">
+<nav class="compas-sideways">
+<a class="btn btn-primary compas-prev" href="introduction.html" role="button">Introduction</a>
+<a class="btn btn-primary compas-next" href="documentation.html" role="button">Documentation</a>
+</nav>
+</main>
+<div class="col-12 col-md-3 col-xl-2 compas-sidebar" role="navigation">
+<div class="navbar-light">
+<form action="search.html" class="d-flex compas-searchbox" id="" method="get">
+<input class="form-control" name="q" placeholder="Search docs" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<button aria-controls="compas-navigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-md-none compas-navigation-toggler" data-target="#compas-navigation" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+</form>
+<div class="navbar-expand-md">
+<div class="collapse navbar-collapse compas-navigation" id="compas-navigation">
+<ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="introduction.html">Introduction</a></li>
 <li class="nav-item active"><a class="nav-link active current reference internal" href="#">Getting started</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="documentation.html">Documentation</a></li>
@@ -182,21 +139,12 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <li class="nav-item"><a class="nav-link reference internal" href="attribution.html">Attribution</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="license.html">License</a></li>
 </ul>
-
-
-                                </div>
-                            </div>
-
-                        
-
-                    </div>
-                </div>
-                
-                <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
-
-                    
-
-                    <ul class="nav flex-column" id="compas-localnav">
+</div>
+</div>
+</div>
+</div>
+<div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
+<ul class="nav flex-column" id="compas-localnav">
 <li class="nav-item"><a class="nav-link reference internal" href="#">Getting started</a><ul class="nav">
 <li class="nav-item"><a class="nav-link reference internal" href="#requirements">Requirements</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#installation-instructions">Installation instructions</a></li>
@@ -209,16 +157,13 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 </ul>
 </li>
 </ul>
-
-
-                </div>
-            </div>
-        </div>
-
-        <footer class="compas-footer">
+</div>
+</div>
+</div>
+<footer class="compas-footer">
             
                 
-                    &#169; Copyright 2017, Block Research Group - ETH Zurich.
+                    © Copyright 2017, Block Research Group - ETH Zurich.
                 
             
 
@@ -230,10 +175,7 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
                 Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.1.
             
         </footer>
-
-        
-
-            <script type="text/javascript">
+<script type="text/javascript">
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT:    '',
     VERSION:     '0.1.0',
@@ -243,24 +185,17 @@ var DOCUMENTATION_OPTIONS = {
     SOURCELINK_SUFFIX: '.txt'
 };
             </script>
-
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-            
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.js"></script>
-
-            <script src="/static/underscore.js"></script>
-            <script src="/static/doctools.js"></script>
-            <script src="/static/searchtools.js"></script>
-
-            <script>
+<script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.js"></script>
+<script src="/static/underscore.js"></script>
+<script src="/static/doctools.js"></script>
+<script src="/static/searchtools.js"></script>
+<script>
                 hljs.initHighlightingOnLoad();
                 anchors.add();
             </script>
-
-        
-    </body>
+</body>
 </html>

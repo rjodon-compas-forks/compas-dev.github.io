@@ -40,6 +40,7 @@
 <h2>Requirements</h2>
 <ul class="simple">
 <li>Python (<a class="reference external" href="https://www.anaconda.com/download/">Anaconda</a>)</li>
+<li><a class="reference external" href="http://ironpython.codeplex.com/releases/view/169382">IronPython 2.7.5</a></li>
 <li><a class="reference external" href="https://www.rhino3d.com/download">Rhino3D</a></li>
 <li>Code editor (e.g. <a class="reference external" href="https://www.sublimetext.com">Sublime Text</a>)</li>
 <li><a class="reference external" href="https://desktop.github.com">GitHub Desktop</a></li>
@@ -52,14 +53,14 @@
 </code></pre></div>
 
 <p><strong>Step 2.</strong> Clone the code repository from Github using GitHub Desktop</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>GitHub Desktop &gt; File &gt; Clone Repository
-</code></pre></div>
-
 <ul class="simple">
 <li>Repository to clone: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></li>
 </ul>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>GitHub Desktop &gt; File &gt; Clone Repository
+</code></pre></div>
+
 <figure class="figure">
-<img alt="images/git_hub_clone.jpg" class="figure-img img-fluid" src="images/git_hub_clone.jpg"/>
+<img alt="images/git_hub_clone.png" class="figure-img img-fluid" src="images/git_hub_clone.png"/>
 </figure>
 <p>After pulling the repository, the folder structure will contain:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
@@ -100,7 +101,7 @@ Start an interactive Python session (in Terminal/ Comand Prompt)</p>
 
 <p>If on OSX your Terminal window will display as follows</p>
 <figure class="figure">
-<img alt="images/validate_install_mac.jpg" class="figure-img img-fluid" src="images/validate_install_mac.jpg"/>
+<img alt="images/validate_install_mac.png" class="figure-img img-fluid" src="images/validate_install_mac.png"/>
 </figure>
 <p>In Comand Prompt it will display as follows</p>
 <figure class="figure">
@@ -211,7 +212,53 @@ C:\Anaconda2\Library\bin
 </figure>
 <div class="section">
 <h4>Rhino 3D configuration</h4>
-<p>Rhino3D comes</p>
+<p>The path to <code class="docutils literal">compas</code> will need to be added to the <em>Module Search Paths</em></p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; PythonScript &gt; Edit
+</code></pre></div>
+
+<p>In the Rhino Python Editor:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; Options
+</code></pre></div>
+
+<p>Add the path to <code class="docutils literal">compas</code> and move it to the top of the list</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>/path/to/compas/src
+</code></pre></div>
+
+<figure class="figure">
+<img alt="images/add_compas_path_rhino.png" class="figure-img img-fluid" src="images/add_compas_path_rhino.png"/>
+</figure>
+<p>Restart Rhino</p>
+<p>Rhino3D uses IronPython to interpret your Python scripts.
+It ships with its own version of IronPython. In Rhino 5 this bundled IronPython is a beta version.
+You should install your own version of IronPython 2.7.5 and not the newest.</p>
+<p>Check your IronPython version in Rhino:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; PythonScript &gt; Edit
+</code></pre></div>
+
+<p>A Rhino Python Editor will open, type :</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span>
+</code></pre></div>
+
+<p>Your Rhino command line should display the version info</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">(</span><span class="n">major</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">minor</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">micro</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span> <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+<figure class="figure">
+<img alt="images/python_version.png" class="figure-img img-fluid" src="images/python_version.png"/>
+</figure>
+<p>If your <code class="docutils literal">releaselevel</code> is not ‘final’ then use your own IronPython version (2.7.5)</p>
+<p>In the Rhino Python Editor:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; Options
+</code></pre></div>
+
+<p>Add the following paths and move them above the existing IronPython paths</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>C:\IronPython27
+C:\IronPython27\Lib
+C:\IronPython27\DLLs
+</code></pre></div>
+
+<p>Restart Rhino</p>
 </div>
 </div>
 </div>
@@ -273,7 +320,7 @@ C:\Anaconda2\Library\bin
             
 
             
-                Last updated on Oct 27, 2017.
+                Last updated on Oct 28, 2017.
             
 
             

@@ -8,6 +8,7 @@ Requirements
 ------------
 
 * Python (`Anaconda <https://www.anaconda.com/download/>`_)
+* `IronPython 2.7.5 <http://ironpython.codeplex.com/releases/view/169382>`_
 * `Rhino3D <https://www.rhino3d.com/download>`_
 * Code editor (e.g. `Sublime Text <https://www.sublimetext.com>`_)
 * `GitHub Desktop <https://desktop.github.com>`_
@@ -25,14 +26,14 @@ Installation instructions
 
 **Step 2.** Clone the code repository from Github using GitHub Desktop
 
+* Repository to clone: https://github.com/compas-dev/compas.git
+
 .. code-block:: none
 
     GitHub Desktop > File > Clone Repository
 
 
-* Repository to clone: https://github.com/compas-dev/compas.git
-
-.. figure:: /_images/git_hub_clone.jpg
+.. figure:: /_images/git_hub_clone.*
      :figclass: figure
      :class: figure-img img-fluid
 
@@ -89,7 +90,7 @@ try the following code
 
 If on OSX your Terminal window will display as follows
 
-.. figure:: /_images/validate_install_mac.jpg
+.. figure:: /_images/validate_install_mac.*
     :figclass: figure
     :class: figure-img img-fluid
 
@@ -239,4 +240,71 @@ If there is no ``PYTHONPATH`` entry create it but clicking *New*
 Rhino 3D configuration
 ++++++++++++++++++++++++
 
-Rhino3D comes
+The path to ``compas`` will need to be added to the *Module Search Paths*
+
+.. code-block:: none
+
+    Tools > PythonScript > Edit
+
+In the Rhino Python Editor:
+
+.. code-block:: none
+
+    Tools > Options
+
+Add the path to ``compas`` and move it to the top of the list
+
+.. code-block:: none
+
+    /path/to/compas/src
+
+.. figure:: /_images/add_compas_path_rhino.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+Restart Rhino
+
+Rhino3D uses IronPython to interpret your Python scripts.
+It ships with its own version of IronPython. In Rhino 5 this bundled IronPython is a beta version.
+You should install your own version of IronPython 2.7.5 and not the newest.
+
+Check your IronPython version in Rhino:
+
+.. code-block:: none
+
+    Tools > PythonScript > Edit
+
+A Rhino Python Editor will open, type :
+
+.. code-block:: python
+
+    import sys
+    print sys.version_info
+
+Your Rhino command line should display the version info
+
+.. code-block:: python
+
+    sys.version_info(major=2, minor=7, micro=5, releaselevel='final', serial=0)
+
+.. figure:: /_images/python_version.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+If your ``releaselevel`` is not 'final' then use your own IronPython version (2.7.5)
+
+In the Rhino Python Editor:
+
+.. code-block:: none
+
+    Tools > Options
+
+Add the following paths and move them above the existing IronPython paths
+
+.. code-block:: none
+
+    C:\IronPython27
+    C:\IronPython27\Lib
+    C:\IronPython27\DLLs
+
+Restart Rhino

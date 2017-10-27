@@ -41,11 +41,11 @@ After pulling the repository, the folder structure will contain:
 
 .. code-block:: none
 
-    compas-def
+    compas-dev
     - compas
-        + libs
-        + samples
-        + src
+        - libs
+        - samples
+        - src
 
 
 The ``src`` folder will contain the packages
@@ -137,32 +137,29 @@ Unix (OSX)
 =================
 
 Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited.
-To check run:
 
-.. code-block:: none
-
-    cd (will return to home directory)
-    ls -a (will list all files in home directory)
+To check type ``cd`` to return to home directory and then ``ls -a`` will list all files in your home directory.
 
 You will get a window similar to the one seen below.
 Check if you have a ``.bash_profile`` or ``.profile``.
-If a ``.bash_profile`` exists this file needs to be edited, otherwise  the  ``.profile`` file
+Choose the ``.bash_profile``  if it exists, otherwise choose the ``.profile``
 
 .. figure:: /_images/home_files.*
      :figclass: figure
      :class: figure-img img-fluid
 
-To edit type ``sudo nano ~/.bash_profile`` or ``sudo nano ~/.profile``
-*you may be prompted for the administrator password. This will not appear while you are typing.*
+To edit: type ``sudo nano ~/.bash_profile`` or ``sudo nano ~/.profile``
 
-The ``profile`` file will be opened. You can now add the following
+*N.B. you may be prompted for the administrator password, characters will not appear while you are typing.*
+
+The ``profile`` file will be opened. Add the following:
 
 .. code-block:: none
 
     export PATH="/path/to/anaconda/bin:$PATH"
     export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
 
-You will not be able to copy and paste into the window. Make sure to type all paths correctly.
+*N.B. You will not be able to copy and paste into the window. Make sure to type all paths correctly.*
 
 .. figure:: /_images/profile_file.*
      :figclass: figure

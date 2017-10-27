@@ -14,13 +14,13 @@ Documentation
   * `Attribution <https://compas-dev.github.io/attribution.html>`_
   * `License <https://compas-dev.github.io/license.html>`_
 
-* `Main Library <https://compas-dev.github.io/compas/index.html>`_
+* `Main Library <https://compas-dev.github.io/main/index.html>`_
 
-  * `Overview <https://compas-dev.github.io/compas/overview.html>`_
-  * `Examples <https://compas-dev.github.io/compas/examples.html>`_
-  * `Tutorial <https://compas-dev.github.io/compas/tutorial.html>`_
-  * `Reference <https://compas-dev.github.io/compas/reference.html>`_
-  * `Notes <https://compas-dev.github.io/compas/notes.html>`_
+  * `Overview <https://compas-dev.github.io/main/overview.html>`_
+  * `Examples <https://compas-dev.github.io/main/examples.html>`_
+  * `Tutorial <https://compas-dev.github.io/main/tutorial.html>`_
+  * `Reference <https://compas-dev.github.io/main/reference.html>`_
+  * `Notes <https://compas-dev.github.io/main/notes.html>`_
 
 * `Additional Packages <https://compas-dev.github.io/packages/index.html>`_
 

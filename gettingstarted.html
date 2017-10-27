@@ -50,11 +50,9 @@
 <p><strong>Step 1.</strong> Create a folder on your computer for your compas installation.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
 </code></pre></div>
-
 <p><strong>Step 2.</strong> Clone the code repository from Github using GitHub Desktop</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>GitHub Desktop &gt; File &gt; Clone Repository
 </code></pre></div>
-
 <ul class="simple">
 <li>Repository to clone: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></li>
 </ul>
@@ -68,7 +66,6 @@
     + samples
     + src
 </code></pre></div>
-
 <p>The <code class="docutils literal">src</code> folder will contain the packages</p>
 <ul class="simple">
 <li>compas</li>
@@ -90,14 +87,12 @@ to the system <code class="docutils literal">PATH</code> and add the location of
 Start an interactive Python session (in Terminal/ Comand Prompt)</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
 </code></pre></div>
-
 <p>try the following code</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="kn">import</span> <span class="n">Mesh</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh</span><span class="o">.</span><span class="n">from_obj</span><span class="p">(</span><span class="n">compas</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'faces.obj'</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
 </code></pre></div>
-
 <p>If on OSX your Terminal window will display as follows</p>
 <figure class="figure">
 <img alt="images/validate_install_mac.jpg" class="figure-img img-fluid" src="images/validate_install_mac.jpg"/>
@@ -146,7 +141,6 @@ To check run:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>cd (will return to home directory)
 ls -a (will list all files in home directory)
 </code></pre></div>
-
 <p>You will get a window similar to the one seen below.
 Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
 If a <code class="docutils literal">.bash_profile</code> exists this file needs to be edited, otherwise  the  <code class="docutils literal">.profile</code> file</p>
@@ -159,7 +153,6 @@ If a <code class="docutils literal">.bash_profile</code> exists this file needs 
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>export PATH="/path/to/anaconda/bin:$PATH"
 export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
 </code></pre></div>
-
 <p>You will not be able to copy and paste into the window. Make sure to type all paths correctly.</p>
 <figure class="figure">
 <img alt="images/profile_file.png" class="figure-img img-fluid" src="images/profile_file.png"/>
@@ -170,7 +163,6 @@ Now restart your Terminal or type :</p>
 or
 source ~/.profile
 </code></pre></div>
-
 </div>
 <div class="section">
 <h3>Windows</h3>

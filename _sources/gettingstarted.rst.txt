@@ -148,13 +148,8 @@ Open Terminal to edit your system variables. First, find out which ``profile`` f
 
 To check type ``cd`` to return to home directory and then ``ls -a`` will list all files in your home directory.
 
-You will get a window similar to the one seen below.
 Check if you have a ``.bash_profile`` or ``.profile``.
 Choose the ``.bash_profile``  if it exists, otherwise choose the ``.profile``
-
-.. figure:: /_images/home_files.*
-     :figclass: figure
-     :class: figure-img img-fluid
 
 To edit the ``profile``: type
 
@@ -225,7 +220,7 @@ Click *OK* and follow the same steps to add the ``compas`` path to the ``PYTHONP
 
 .. code-block:: none
 
-    path/to/compas/src
+    path\to\compas\src
 
 .. figure:: /_images/python_path_existing.*
      :figclass: figure
@@ -256,7 +251,7 @@ Add the path to ``compas`` and move it to the top of the list
 
 .. code-block:: none
 
-    /path/to/compas/src
+    \path\to\compas\src
 
 .. figure:: /_images/add_compas_path_rhino.*
      :figclass: figure

@@ -7,8 +7,10 @@ Getting started
 Requirements
 ------------
 
-* Python
-* ...
+* Python (`Anaconda <https://www.anaconda.com/download/>`)
+* `Rhino3D <https://www.rhino3d.com/download>`
+* Code editor (e.g. Sublime Text)
+* GitHub Desktop
 
 
 Installation instructions
@@ -82,7 +84,7 @@ install them with. Make sure to get a version that ships with Python 2.x (see
 note above).
 
 On Windows, many installers for remaining and otherwise difficult-to-install packages
-can be found on Christof Gholke's page 
+can be found on Christof Gholke's page
 `Unofficial Windows Binaries for Python Extension Packages <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.
 On mac, installing whatever doesn't ship with a scientific distribution is
 relatively easy with a package manager like `macports <https://www.macports.org/>`_
@@ -97,4 +99,3 @@ Unix (OSX, Linux)
 
 Windows
 =======
-

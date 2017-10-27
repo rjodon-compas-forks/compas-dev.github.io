@@ -37,8 +37,9 @@ for path, dirs, files in os.walk('../'):
 
                 # change image referencing
                 for img in soup.select('img'):
-                    alt = img.attrs['alt']
-                    img.attrs['alt'] = alt.replace("_images", "images")
+                    if 'alt' in img.attrs:
+                        alt = img.attrs['alt']
+                        img.attrs['alt'] = alt.replace("_images", "images")
                     src = img.attrs['src']
                     img.attrs['src'] = src.replace("_images", "images")
 

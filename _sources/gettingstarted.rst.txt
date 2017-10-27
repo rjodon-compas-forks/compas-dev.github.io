@@ -25,7 +25,10 @@ Installation instructions
 
 **Step 2.** Clone the code repository from Github using GitHub Desktop
 
-* GitHub Desktop > File > Clone Repository
+.. code-block:: none
+
+    GitHub Desktop > File > Clone Repository
+
 
 * Repository to clone: https://github.com/compas-dev/compas.git
 
@@ -33,13 +36,17 @@ Installation instructions
      :figclass: figure
      :class: figure-img img-fluid
 
+
 After pulling the repository, the folder structure will contain:
+
 .. code-block:: none
 
-    compas
-      -libs
-      -samples
-      -src
+    compas-def
+    - compas
+        + libs
+        + samples
+        + src
+
 
 The ``src`` folder will contain the packages
 
@@ -64,11 +71,13 @@ Operating system specific instructions for Windows and Unix (OSX) can be found a
 
 After having set the system variables test your installation.
 Start an interactive Python session (in Terminal/ Comand Prompt)
+
 .. code-block:: none
 
     $ python
 
 try the following code
+
 .. code-block:: python
 
     >>> import compas

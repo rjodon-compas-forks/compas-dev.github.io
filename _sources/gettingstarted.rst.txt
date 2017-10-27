@@ -41,11 +41,11 @@ After pulling the repository, the folder structure will contain:
 
 .. code-block:: none
 
-    compas-def
+    compas-dev
     - compas
-        + libs
-        + samples
-        + src
+        - libs
+        - samples
+        - src
 
 
 The ``src`` folder will contain the packages

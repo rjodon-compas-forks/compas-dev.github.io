@@ -142,12 +142,36 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <h2>Environment-specific instructions</h2>
 <div class="section">
 <h3>Unix (OSX)</h3>
-<p>Open Terminal to edit your system variables. First you will have to find out which <code class="docutils literal">profile</code> file needs to be edited.
-To check, run `` cd~`` to return to your home directory, and then `` ls -a`` to list all files in your home directory</p>
-<p>You will get something a window as seen below:</p>
+<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited.
+To check run:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>cd (will return to home directory)
+ls -a (will list all files in home directory)
+</code></pre></div>
+
+<p>You will get a window similar to the one seen below.
+Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
+If a <code class="docutils literal">.bash_profile</code> exists this file needs to be edited, otherwise  the  <code class="docutils literal">.profile</code> file</p>
 <figure class="figure">
-<img alt="images/home_files.jpg" class="figure-img img-fluid" src="images/home_files.jpg"/>
+<img alt="images/home_files.png" class="figure-img img-fluid" src="images/home_files.png"/>
 </figure>
+<p>To edit type <code class="docutils literal">sudo nano ~/.bash_profile</code> or <code class="docutils literal">sudo nano ~/.profile</code>
+<em>you may be prompted for the administrator password. This will not appear while you are typing.</em></p>
+<p>The <code class="docutils literal">profile</code> file will be opened. You can now add the following</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>export PATH="/path/to/anaconda/bin:$PATH"
+export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
+</code></pre></div>
+
+<p>You will not be able to copy and paste into the window. Make sure to type all paths correctly.</p>
+<figure class="figure">
+<img alt="images/profile_file.png" class="figure-img img-fluid" src="images/profile_file.png"/>
+</figure>
+<p>After adding the paths, exit the editor with `` ctrl+x`` , <code class="docutils literal">y</code> and `` enter``
+Now restart your Terminal or type :</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>source ~/.bash_profile
+or
+source ~/.profile
+</code></pre></div>
+
 </div>
 <div class="section">
 <h3>Windows</h3>

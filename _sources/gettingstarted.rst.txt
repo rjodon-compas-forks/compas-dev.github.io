@@ -127,14 +127,46 @@ Environment-specific instructions
 Unix (OSX)
 =================
 
-Open Terminal to edit your system variables. First you will have to find out which ``profile`` file needs to be edited.
-To check, run `` cd~`` to return to your home directory, and then `` ls -a`` to list all files in your home directory
+Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited.
+To check run:
 
-You will get something a window as seen below:
+.. code-block:: none
 
-.. figure:: /_images/home_files.jpg
+    cd (will return to home directory)
+    ls -a (will list all files in home directory)
+
+You will get a window similar to the one seen below.
+Check if you have a ``.bash_profile`` or ``.profile``.
+If a ``.bash_profile`` exists this file needs to be edited, otherwise  the  ``.profile`` file
+
+.. figure:: /_images/home_files.*
      :figclass: figure
      :class: figure-img img-fluid
+
+To edit type ``sudo nano ~/.bash_profile`` or ``sudo nano ~/.profile``
+*you may be prompted for the administrator password. This will not appear while you are typing.*
+
+The ``profile`` file will be opened. You can now add the following
+
+.. code-block:: none
+
+    export PATH="/path/to/anaconda/bin:$PATH"
+    export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
+
+You will not be able to copy and paste into the window. Make sure to type all paths correctly.
+
+.. figure:: /_images/profile_file.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+After adding the paths, exit the editor with `` ctrl+x`` , ``y`` and `` enter``
+Now restart your Terminal or type :
+
+.. code-block:: none
+
+    source ~/.bash_profile
+    or
+    source ~/.profile
 
 
 Windows

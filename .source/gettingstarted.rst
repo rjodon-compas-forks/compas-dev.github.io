@@ -78,9 +78,9 @@ try the following code
 
 If on OSX your Terminal window will display as follows
 
-.. .. figure:: /_images/validate_install_mac.jpg
-..     :figclass: figure
-..     :class: figure-img img-fluid
+.. figure:: /_images/validate_install_mac.jpg
+    :figclass: figure
+    :class: figure-img img-fluid
 
 
 Dependencies
@@ -127,6 +127,14 @@ Environment-specific instructions
 Unix (OSX)
 =================
 
+Open Terminal to edit your system variables. First you will have to find out which ``profile`` file needs to be edited.
+To check, run `` cd~`` to return to your home directory, and then `` ls -a`` to list all files in your home directory
+
+You will get something a window as seen below:
+
+.. figure:: /_images/home_files.jpg
+     :figclass: figure
+     :class: figure-img img-fluid
 
 
 Windows

@@ -20,10 +20,10 @@ Installation instructions
 
 .. code-block:: none
 
-    compas
-        - core
+    compas-dev
+        - acadia2017
+        - compas
         - me
-        - packages
 
 
 **Step 2.** Clone the code repository from Github, or simply download the archive and unzip in compas/core.
@@ -34,14 +34,7 @@ Installation instructions
     $ git clone https://github.com/compas-dev/compas.git
 
 
-**Step 3.** Run the install script.
-
-.. code-block:: none
-
-    $ python setup.py install
-
-
-**Step 4.** Verify your installation.
+**Step 3.** Verify your installation.
 
 .. code-block:: none
 
@@ -50,7 +43,17 @@ Installation instructions
 .. code-block:: python
 
     >>> import compas
-    >>> compas.verify()
+    >>> from compas.datastructures import Mesh
+    >>> mesh = Mesh.from_obj(compas.get('faces.obj'))
+    >>> print(mesh)
+
+.. code-block:: none
+
+
+
+.. .. figure:: /_images/example-mesh-delaunay-from-points.*
+..     :figclass: figure
+..     :class: figure-img img-fluid
 
 
 Dependencies
@@ -96,6 +99,8 @@ Environment-specific instructions
 
 Unix (OSX, Linux)
 =================
+
+
 
 Windows
 =======

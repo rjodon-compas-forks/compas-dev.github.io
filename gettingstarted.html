@@ -39,15 +39,19 @@
 <div class="section">
 <h2>Requirements</h2>
 <ul class="simple">
-<li>Python (<a class="reference external" href="https://www.anaconda.com/download/">Anaconda</a>)</li>
+<li><a class="reference external" href="https://www.anaconda.com/download/">Anaconda</a></li>
 <li><a class="reference external" href="http://ironpython.codeplex.com/releases/view/169382">IronPython 2.7.5</a></li>
 <li><a class="reference external" href="https://www.rhino3d.com/download">Rhino3D</a></li>
-<li>Code editor (e.g. <a class="reference external" href="https://www.sublimetext.com">Sublime Text</a>)</li>
 <li><a class="reference external" href="https://desktop.github.com">GitHub Desktop</a></li>
 </ul>
+<p>You will also need a code editor or IDE.
+If you don’t have anything installed already,
+we recommend installing <a class="reference external" href="https://www.sublimetext.com">Sublime Text</a>.
+At the bottom of the page are <a class="reference internal" href="#installation-and-configuration-instructions-for-sublime-text">Installation and configuration instructions for Sublime Text</a>.</p>
 </div>
 <div class="section">
 <h2>Installation instructions</h2>
+<p><strong>Step 0.</strong> Install the above-listed requirements.</p>
 <p><strong>Step 1.</strong> Create a folder on your computer for your compas installation.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
 </code></pre></div>
@@ -81,17 +85,23 @@
 </code></pre></div>
 
 <p><strong>Step 3.</strong> Configure your system</p>
-<p>To simplify importing modules in different contexts a few environment variables need to be set.
-Add the Python and/or Scientific Python distribution (in this case the installed version of Anaconda)
-to the system <code class="docutils literal">PATH</code> and add the location of the pulled framework to your <code class="docutils literal">PYTHONPATH</code></p>
+<ul class="simple">
+<li>Verify that Python has been added to the system <code class="docutils literal">PATH</code>.</li>
+<li>Add the compas framework to the <code class="docutils literal">PYTHONPATH</code>.</li>
+</ul>
 <p>Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under <a class="reference internal" href="#environment-specific-instructions">Environment-specific instructions</a>.</p>
 <p><strong>Step 4.</strong> Verify your installation.</p>
 <p>After having set the system variables test your installation.
-Start an interactive Python session (in Terminal/ Comand Prompt)</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>python
+Start an interactive Python session (in Terminal or Command Prompt):</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
 </code></pre></div>
 
-<p>try the following code</p>
+<p>Then try the following code.</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">compas</span><span class="o">.</span><span class="n">verify</span><span class="p">()</span>
+</code></pre></div>
+
+<p>If all required packages are installed, try</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="kn">import</span> <span class="n">Mesh</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh</span><span class="o">.</span><span class="n">from_obj</span><span class="p">(</span><span class="n">compas</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'faces.obj'</span><span class="p">))</span>
@@ -115,7 +125,8 @@ need any of the numerical stuff, then everything should work out of the box;
 provided you have Python installed, of course.</p>
 <p>The current version of <code class="docutils literal">compas</code> has the following <strong>optional</strong> dependencies:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://www.numpy.org/">Numpy</a> &amp;amp; <a class="reference external" href="https://www.scipy.org/">Scipy</a>: For all numerical calculations and algorithms.</li>
+<li><a class="reference external" href="http://www.numpy.org/">Numpy</a>: For all numerical calculations and algorithms.</li>
+<li><a class="reference external" href="https://www.scipy.org/">Scipy</a>: For all numerical calculations and algorithms.</li>
 <li><a class="reference external" href="http://matplotlib.org/">Matplotlib</a>: For two-dimensional visualisations.</li>
 <li><a class="reference external" href="http://pyopengl.sourceforge.net/">PyOpenGL</a>: For three-dimensional visualisations.</li>
 <li><a class="reference external" href="https://wiki.qt.io/PySide">PySide</a>: For some of the standalone tools.</li>
@@ -132,8 +143,7 @@ provided you have Python installed, of course.</p>
 <p>Scientific Python distributions like <a class="reference external" href="https://www.continuum.io/">Anaconda</a> or
 <a class="reference external" href="https://www.enthought.com/products/epd/">Enthought EPD</a> provide most of the
 optional dependencies (and of course Python), or a package manager to
-install them with. Make sure to get a version that ships with Python 2.x (see
-note above).</p>
+install them with.</p>
 <p>On Windows, many installers for remaining and otherwise difficult-to-install packages
 can be found on Christof Gholke’s page
 <a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">Unofficial Windows Binaries for Python Extension Packages</a>.
@@ -145,50 +155,58 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <h2>Environment-specific instructions</h2>
 <div class="section">
 <h3>Unix (OSX)</h3>
-<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited.</p>
-<p>To check type <code class="docutils literal">cd</code> to return to home directory and then <code class="docutils literal">ls -a</code> will list all files in your home directory.</p>
-<p>Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
+<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd
+$ ls -a
+</code></pre></div>
+
+<p>This will list all files in your home directory.
+Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
 Choose the <code class="docutils literal">.bash_profile</code>  if it exists, otherwise choose the <code class="docutils literal">.profile</code></p>
-<p>To edit the <code class="docutils literal">profile</code>: type</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>sudo nano ~/.bash_profile
-or
-sudo nano ~/.profile
+<p>To edit your <code class="docutils literal">.bash_profile</code>, type:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ nano .bash_profile
 </code></pre></div>
 
-<p><em>N.B. you may be prompted for the administrator password, characters will not appear while you are typing.</em></p>
-<p>The <code class="docutils literal">profile</code> file will be opened.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may be prompted for the administrator password.
+Characters will not appear while you are typing.</p>
+</div>
 <p>Add the following:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>export PATH="/path/to/anaconda/bin:$PATH"
-export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">"/path/to/anaconda/bin:$PATH"</span>
+<span class="n">export</span> <span class="n">PYTHONPATH</span><span class="o">=</span><span class="s2">"/path/to/compas/src:$PYTHONPATH"</span>
 </code></pre></div>
 
-<p><em>N.B. You will not be able to copy and paste into the window. Make sure to type all paths correctly.</em></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You will not be able to copy and paste into the window.
+Make sure to type all paths correctly.</p>
+</div>
 <figure class="figure">
 <img alt="images/profile_file.png" class="figure-img img-fluid" src="images/profile_file.png"/>
 </figure>
-<p>After adding the paths, exit the editor with <code class="docutils literal">ctrl+x</code> , <code class="docutils literal">y</code> and <code class="docutils literal">enter</code>
-Now restart your Terminal or type :</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>source ~/.bash_profile
-or
-source ~/.profile
+<p>After adding the paths, exit the editor with <code class="docutils literal">ctrl + o</code>, <code class="docutils literal">enter</code>, <code class="docutils literal">ctrl + x</code>
+Now restart your Terminal or type:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ source .bash_profile
 </code></pre></div>
 
 </div>
 <div class="section">
 <h3>Windows</h3>
-<p>You will need to access the Advanced system settings panel</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>Control Panel &gt; System and Security &gt; System &gt; Advanced system settings
+<p>You will need to access the Advanced system settings panel:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="ow">and</span> <span class="n">Security</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span>
 </code></pre></div>
 
-<p>Click on the <em>Environment Variables</em> button. A window will open.</p>
-<p>In the system variables part, click on the <code class="docutils literal">PATH</code> entry and then the <em>Edit</em> button</p>
+<p>Click on the <em>Environment Variables</em> button.
+A window will open.
+In the system variables part, click on the <code class="docutils literal">PATH</code> entry and then the <em>Edit</em> button</p>
 <figure class="figure">
 <img alt="images/system_path.png" class="figure-img img-fluid" src="images/system_path.png"/>
 </figure>
-<p>Now add the paths pointing to the Anaconda installation on your computer</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>C:\Anaconda2
-C:\Anaconda2\Scripts
-C:\Anaconda2\Library\bin
+<p>If they are not already there, add the paths pointing to your Anaconda installation:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>\<span class="n">Scripts</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>\<span class="n">Library</span>\<span class="nb">bin</span>
 </code></pre></div>
 
 <figure class="figure">
@@ -257,6 +275,10 @@ C:\IronPython27\DLLs
 </div>
 </div>
 </div>
+<div class="section">
+<h2>Installation and configuration instructions for Sublime Text</h2>
+<p>...</p>
+</div>
 </div>
 <nav class="compas-sideways">
 <a class="btn btn-primary compas-prev" href="introduction.html" role="button">Introduction</a>
@@ -301,6 +323,7 @@ C:\IronPython27\DLLs
 </li>
 </ul>
 </li>
+<li class="nav-item"><a class="nav-link reference internal" href="#installation-and-configuration-instructions-for-sublime-text">Installation and configuration instructions for Sublime Text</a></li>
 </ul>
 </li>
 </ul>

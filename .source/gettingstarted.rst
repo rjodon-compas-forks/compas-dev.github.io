@@ -7,15 +7,22 @@ Getting started
 Requirements
 ------------
 
-* Python (`Anaconda <https://www.anaconda.com/download/>`_)
+* `Anaconda <https://www.anaconda.com/download/>`_
 * `IronPython 2.7.5 <http://ironpython.codeplex.com/releases/view/169382>`_
 * `Rhino3D <https://www.rhino3d.com/download>`_
-* Code editor (e.g. `Sublime Text <https://www.sublimetext.com>`_)
 * `GitHub Desktop <https://desktop.github.com>`_
+
+You will also need a code editor or IDE.
+If you don't have anything installed already,
+we recommend installing `Sublime Text <https://www.sublimetext.com>`_.
+At the bottom of the page are `Installation and configuration instructions for Sublime Text`_.
 
 
 Installation instructions
 -------------------------
+
+**Step 0.** Install the above-listed requirements.
+
 
 **Step 1.** Create a folder on your computer for your compas installation.
 
@@ -61,24 +68,32 @@ The ``src`` folder will contain the packages
     - compas_rhino
     - compas_rhinomac
 
+
 **Step 3.** Configure your system
 
-To simplify importing modules in different contexts a few environment variables need to be set.
-Add the Python and/or Scientific Python distribution (in this case the installed version of Anaconda)
-to the system ``PATH`` and add the location of the pulled framework to your ``PYTHONPATH``
+* Verify that Python has been added to the system ``PATH``.
+* Add the compas framework to the ``PYTHONPATH``.
 
 Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under `Environment-specific instructions`_.
+
 
 **Step 4.** Verify your installation.
 
 After having set the system variables test your installation.
-Start an interactive Python session (in Terminal/ Comand Prompt)
+Start an interactive Python session (in Terminal or Command Prompt)::
 
-.. code-block:: none
+    $ python
 
-    python
 
-try the following code
+Then try the following code.
+
+.. code-block:: python
+
+    >>> import compas
+    >>> compas.verify()
+
+
+If all required packages are installed, try
 
 .. code-block:: python
 
@@ -87,17 +102,20 @@ try the following code
     >>> mesh = Mesh.from_obj(compas.get('faces.obj'))
     >>> print(mesh)
 
+
 If on OSX your Terminal window will display as follows
 
 .. figure:: /_images/validate_mac.*
     :figclass: figure
     :class: figure-img img-fluid
 
+
 In Comand Prompt it will display as follows
 
 .. figure:: /_images/validate_windows_small.*
     :figclass: figure
     :class: figure-img img-fluid
+
 
 Dependencies
 ------------
@@ -109,7 +127,8 @@ provided you have Python installed, of course.
 
 The current version of ``compas`` has the following **optional** dependencies:
 
-* `Numpy <http://www.numpy.org/>`_ &amp; `Scipy <https://www.scipy.org/>`_: For all numerical calculations and algorithms.
+* `Numpy <http://www.numpy.org/>`_: For all numerical calculations and algorithms.
+* `Scipy <https://www.scipy.org/>`_: For all numerical calculations and algorithms.
 * `Matplotlib <http://matplotlib.org/>`_: For two-dimensional visualisations.
 * `PyOpenGL <http://pyopengl.sourceforge.net/>`_: For three-dimensional visualisations.
 * `PySide <https://wiki.qt.io/PySide>`_: For some of the standalone tools.
@@ -126,8 +145,7 @@ The current version of ``compas`` has the following **optional** dependencies:
 Scientific Python distributions like `Anaconda <https://www.continuum.io/>`_ or
 `Enthought EPD <https://www.enthought.com/products/epd/>`_ provide most of the
 optional dependencies (and of course Python), or a package manager to
-install them with. Make sure to get a version that ships with Python 2.x (see
-note above).
+install them with.
 
 On Windows, many installers for remaining and otherwise difficult-to-install packages
 can be found on Christof Gholke's page
@@ -141,79 +159,80 @@ Environment-specific instructions
 ---------------------------------
 
 Unix (OSX)
-=================
+==========
 
-Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited.
+Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited::
 
-To check type ``cd`` to return to home directory and then ``ls -a`` will list all files in your home directory.
+    $ cd
+    $ ls -a
 
+
+This will list all files in your home directory.
 Check if you have a ``.bash_profile`` or ``.profile``.
 Choose the ``.bash_profile``  if it exists, otherwise choose the ``.profile``
 
-To edit the ``profile``: type
+To edit your ``.bash_profile``, type::
 
-.. code-block:: none
+    $ nano .bash_profile
 
-    sudo nano ~/.bash_profile
-    or
-    sudo nano ~/.profile
 
-*N.B. you may be prompted for the administrator password, characters will not appear while you are typing.*
+.. note::
+    
+    You may be prompted for the administrator password.
+    Characters will not appear while you are typing.
 
-The ``profile`` file will be opened.
 
-Add the following:
-
-.. code-block:: none
+Add the following::
 
     export PATH="/path/to/anaconda/bin:$PATH"
     export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
 
-*N.B. You will not be able to copy and paste into the window. Make sure to type all paths correctly.*
+
+.. note::
+
+    You will not be able to copy and paste into the window.
+    Make sure to type all paths correctly.
+
 
 .. figure:: /_images/profile_file.*
      :figclass: figure
      :class: figure-img img-fluid
 
-After adding the paths, exit the editor with ``ctrl+x`` , ``y`` and ``enter``
-Now restart your Terminal or type :
 
-.. code-block:: none
+After adding the paths, exit the editor with ``ctrl + o``, ``enter``, ``ctrl + x``
+Now restart your Terminal or type::
 
-    source ~/.bash_profile
-    or
-    source ~/.profile
+    $ source .bash_profile
 
 
 Windows
 =======
 
-You will need to access the Advanced system settings panel
-
-.. code-block:: none
+You will need to access the Advanced system settings panel::
 
     Control Panel > System and Security > System > Advanced system settings
 
-Click on the *Environment Variables* button. A window will open.
 
+Click on the *Environment Variables* button.
+A window will open.
 In the system variables part, click on the ``PATH`` entry and then the *Edit* button
 
 .. figure:: /_images/system_path.*
      :figclass: figure
      :class: figure-img img-fluid
 
-Now add the paths pointing to the Anaconda installation on your computer
 
-.. code-block:: none
+If they are not already there, add the paths pointing to your Anaconda installation::
 
-    C:\Anaconda2
-    C:\Anaconda2\Scripts
-    C:\Anaconda2\Library\bin
+    C:\Anaconda
+    C:\Anaconda\Scripts
+    C:\Anaconda\Library\bin
 
 
 .. figure:: /_images/add_system.*
      :figclass: figure
      :class: figure-img img-fluid
+
 
 Click *OK* and follow the same steps to add the ``compas`` path to the ``PYTHONPATH``.
 
@@ -230,6 +249,7 @@ If there is no ``PYTHONPATH`` entry create it but clicking *New*
 .. figure:: /_images/add_python_path.*
      :figclass: figure
      :class: figure-img img-fluid
+
 
 Rhino 3D configuration
 ++++++++++++++++++++++++
@@ -302,3 +322,11 @@ Add the following paths and move them above the existing IronPython paths
     C:\IronPython27\DLLs
 
 Restart Rhino
+
+
+Installation and configuration instructions for Sublime Text
+------------------------------------------------------------
+
+...
+
+

@@ -208,51 +208,69 @@ Now restart your Terminal or type::
 Windows
 =======
 
-You will need to access the Advanced system settings panel::
+On Windows, you will have to change your *Environment Variables*::
 
-    Control Panel > System and Security > System > Advanced system settings
+    Control Panel > System > Advanced system settings > Environment Variables
 
 
-Click on the *Environment Variables* button.
-A window will open.
-In the system variables part, click on the ``PATH`` entry and then the *Edit* button
-
-.. figure:: /_images/system_path.*
+.. figure:: /_images/windows_controlpanel.*
      :figclass: figure
      :class: figure-img img-fluid
 
 
-If they are not already there, add the paths pointing to your Anaconda installation::
+.. figure:: /_images/windows_advancedsystemsettings.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+
+.. figure:: /_images/windows_environment.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+
+In the section *User variables*, edit ``PATH``.
+
+.. note::
+
+    Create a new ``PATH`` variable if one doesn't exist.
+
+
+.. figure:: /_images/windows_path.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+
+Add the paths to your Anaconda installation::
 
     C:\Anaconda
     C:\Anaconda\Scripts
     C:\Anaconda\Library\bin
 
 
-.. figure:: /_images/add_system.*
+.. figure:: /_images/windows_path-entries.*
      :figclass: figure
      :class: figure-img img-fluid
 
 
-Click *OK* and follow the same steps to add the ``compas`` path to the ``PYTHONPATH``.
+Then add ``compas`` to the ``PYTHONPATH``.
 
-.. code-block:: none
+.. note::
 
-    path\to\compas\src
+    Create a new ``PTYTHONPATH`` variable if one doesn't exist.
 
-.. figure:: /_images/python_path_existing.*
+
+.. figure:: /_images/windows_pythonpath.*
      :figclass: figure
      :class: figure-img img-fluid
 
-If there is no ``PYTHONPATH`` entry create it but clicking *New*
 
-.. figure:: /_images/add_python_path.*
+.. figure:: /_images/windows_pythonpath-entries.*
      :figclass: figure
      :class: figure-img img-fluid
 
 
 Rhino 3D configuration
-++++++++++++++++++++++++
+----------------------
 
 The path to ``compas`` will need to be added to the *Module Search Paths*
 
@@ -260,11 +278,13 @@ The path to ``compas`` will need to be added to the *Module Search Paths*
 
     Tools > PythonScript > Edit
 
+
 In the Rhino Python Editor:
 
 .. code-block:: none
 
     Tools > Options
+
 
 Add the path to ``compas`` and move it to the top of the list
 
@@ -276,11 +296,13 @@ Add the path to ``compas`` and move it to the top of the list
      :figclass: figure
      :class: figure-img img-fluid
 
+
 Restart Rhino
 
 Rhino3D uses IronPython to interpret your Python scripts.
 It ships with its own version of IronPython. In Rhino 5 this bundled IronPython is a beta version.
 You should install your own version of IronPython 2.7.5 and not the newest.
+
 
 Check your IronPython version in Rhino:
 
@@ -288,12 +310,14 @@ Check your IronPython version in Rhino:
 
     Tools > PythonScript > Edit
 
+
 A Rhino Python Editor will open, type :
 
 .. code-block:: python
 
     import sys
     print sys.version_info
+
 
 Your Rhino command line should display the version info
 
@@ -305,6 +329,7 @@ Your Rhino command line should display the version info
      :figclass: figure
      :class: figure-img img-fluid
 
+
 If your ``releaselevel`` is not 'final' then use your own IronPython version (2.7.5)
 
 In the Rhino Python Editor:
@@ -313,6 +338,7 @@ In the Rhino Python Editor:
 
     Tools > Options
 
+
 Add the following paths and move them above the existing IronPython paths
 
 .. code-block:: none
@@ -320,6 +346,7 @@ Add the following paths and move them above the existing IronPython paths
     C:\IronPython27
     C:\IronPython27\Lib
     C:\IronPython27\DLLs
+
 
 Restart Rhino
 

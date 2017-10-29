@@ -193,38 +193,51 @@ Now restart your Terminal or type:</p>
 </div>
 <div class="section">
 <h3>Windows</h3>
-<p>You will need to access the Advanced system settings panel:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="ow">and</span> <span class="n">Security</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span>
+<p>On Windows, you will have to change your <em>Environment Variables</em>:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span> <span class="o">&gt;</span> <span class="n">Environment</span> <span class="n">Variables</span>
 </code></pre></div>
 
-<p>Click on the <em>Environment Variables</em> button.
-A window will open.
-In the system variables part, click on the <code class="docutils literal">PATH</code> entry and then the <em>Edit</em> button</p>
 <figure class="figure">
-<img alt="images/system_path.png" class="figure-img img-fluid" src="images/system_path.png"/>
+<img alt="images/windows_controlpanel.png" class="figure-img img-fluid" src="images/windows_controlpanel.png"/>
 </figure>
-<p>If they are not already there, add the paths pointing to your Anaconda installation:</p>
+<figure class="figure">
+<img alt="images/windows_advancedsystemsettings.png" class="figure-img img-fluid" src="images/windows_advancedsystemsettings.png"/>
+</figure>
+<figure class="figure">
+<img alt="images/windows_environment.png" class="figure-img img-fluid" src="images/windows_environment.png"/>
+</figure>
+<p>In the section <em>User variables</em>, edit <code class="docutils literal">PATH</code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Create a new <code class="docutils literal">PATH</code> variable if one doesn’t exist.</p>
+</div>
+<figure class="figure">
+<img alt="images/windows_path.png" class="figure-img img-fluid" src="images/windows_path.png"/>
+</figure>
+<p>Add the paths to your Anaconda installation:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>
 <span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>\<span class="n">Scripts</span>
 <span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>\<span class="n">Library</span>\<span class="nb">bin</span>
 </code></pre></div>
 
 <figure class="figure">
-<img alt="images/add_system.png" class="figure-img img-fluid" src="images/add_system.png"/>
+<img alt="images/windows_path-entries.png" class="figure-img img-fluid" src="images/windows_path-entries.png"/>
 </figure>
-<p>Click <em>OK</em> and follow the same steps to add the <code class="docutils literal">compas</code> path to the <code class="docutils literal">PYTHONPATH</code>.</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>path\to\compas\src
-</code></pre></div>
-
+<p>Then add <code class="docutils literal">compas</code> to the <code class="docutils literal">PYTHONPATH</code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Create a new <code class="docutils literal">PTYTHONPATH</code> variable if one doesn’t exist.</p>
+</div>
 <figure class="figure">
-<img alt="images/python_path_existing.png" class="figure-img img-fluid" src="images/python_path_existing.png"/>
+<img alt="images/windows_pythonpath.png" class="figure-img img-fluid" src="images/windows_pythonpath.png"/>
 </figure>
-<p>If there is no <code class="docutils literal">PYTHONPATH</code> entry create it but clicking <em>New</em></p>
 <figure class="figure">
-<img alt="images/add_python_path.png" class="figure-img img-fluid" src="images/add_python_path.png"/>
+<img alt="images/windows_pythonpath-entries.png" class="figure-img img-fluid" src="images/windows_pythonpath-entries.png"/>
 </figure>
+</div>
+</div>
 <div class="section">
-<h4>Rhino 3D configuration</h4>
+<h2>Rhino 3D configuration</h2>
 <p>The path to <code class="docutils literal">compas</code> will need to be added to the <em>Module Search Paths</em></p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; PythonScript &gt; Edit
 </code></pre></div>
@@ -273,8 +286,6 @@ C:\IronPython27\DLLs
 
 <p>Restart Rhino</p>
 </div>
-</div>
-</div>
 <div class="section">
 <h2>Installation and configuration instructions for Sublime Text</h2>
 <p>...</p>
@@ -317,12 +328,10 @@ C:\IronPython27\DLLs
 <li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#environment-specific-instructions">Environment-specific instructions</a><ul class="nav">
 <li class="nav-item"><a class="nav-link reference internal" href="#unix-osx">Unix (OSX)</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#windows">Windows</a><ul class="nav">
+<li class="nav-item"><a class="nav-link reference internal" href="#windows">Windows</a></li>
+</ul>
+</li>
 <li class="nav-item"><a class="nav-link reference internal" href="#rhino-3d-configuration">Rhino 3D configuration</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="nav-item"><a class="nav-link reference internal" href="#installation-and-configuration-instructions-for-sublime-text">Installation and configuration instructions for Sublime Text</a></li>
 </ul>
 </li>

@@ -90,7 +90,7 @@ try the following code
 
 If on OSX your Terminal window will display as follows
 
-.. figure:: /_images/validate_install_mac.*
+.. figure:: /_images/validate_mac.*
     :figclass: figure
     :class: figure-img img-fluid
 

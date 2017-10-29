@@ -96,7 +96,7 @@ If on OSX your Terminal window will display as follows
 
 In Comand Prompt it will display as follows
 
-.. figure:: /_images/validate_windows.*
+.. figure:: /_images/validate_windows_small.*
     :figclass: figure
     :class: figure-img img-fluid
 

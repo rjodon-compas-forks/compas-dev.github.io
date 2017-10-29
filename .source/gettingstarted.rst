@@ -67,8 +67,7 @@ To simplify importing modules in different contexts a few environment variables 
 Add the Python and/or Scientific Python distribution (in this case the installed version of Anaconda)
 to the system ``PATH`` and add the location of the pulled framework to your ``PYTHONPATH``
 
-Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under
-**Environment-specific instructions**
+Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under `Environment-specific instructions`_.
 
 **Step 4.** Verify your installation.
 

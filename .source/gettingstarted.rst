@@ -33,7 +33,7 @@ Installation instructions
     GitHub Desktop > File > Clone Repository
 
 
-.. figure:: /_images/git_hub_clone.*
+.. figure:: /_images/clone_repo.*
      :figclass: figure
      :class: figure-img img-fluid
 

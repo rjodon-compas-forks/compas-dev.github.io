@@ -57,31 +57,33 @@ At the bottom of the page are <a class="reference internal" href="#installation-
 </code></pre></div>
 
 <p><strong>Step 2.</strong> Clone the code repository from Github using GitHub Desktop</p>
-<ul class="simple">
-<li>Repository to clone: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></li>
-</ul>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>GitHub Desktop &gt; File &gt; Clone Repository
 </code></pre></div>
 
+<ul class="simple">
+<li>Use the <em>Url</em> option.</li>
+<li>Repository Url: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></li>
+<li>Local Path: <code class="docutils literal">path/to/compas-dev/compas</code></li>
+</ul>
 <figure class="figure">
-<img alt="images/clone_repo.png" class="figure-img img-fluid" src="images/clone_repo.png"/>
+<img alt="images/github_clonerepo.png" class="figure-img img-fluid" src="images/github_clonerepo.png"/>
 </figure>
 <p>After pulling the repository, the folder structure will contain:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
-- compas
-    - libs
-    - samples
-    - src
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">compas</span><span class="o">-</span><span class="n">dev</span>
+    <span class="o">-</span> <span class="n">compas</span>
+        <span class="o">-</span> <span class="n">libs</span>
+        <span class="o">-</span> <span class="n">samples</span>
+        <span class="o">-</span> <span class="n">src</span>
 </code></pre></div>
 
-<p>The <code class="docutils literal">src</code> folder will contain the packages</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>- compas
-- compas_blender
-- compas_dynamo
-- compas_grasshopper
-- compas_maya
-- compas_rhino
-- compas_rhinomac
+<p>The <code class="docutils literal">src</code> folder should contain several Python packages:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="o">-</span> <span class="n">compas</span>
+<span class="o">-</span> <span class="n">compas_blender</span>
+<span class="o">-</span> <span class="n">compas_dynamo</span>
+<span class="o">-</span> <span class="n">compas_grasshopper</span>
+<span class="o">-</span> <span class="n">compas_maya</span>
+<span class="o">-</span> <span class="n">compas_rhino</span>
+<span class="o">-</span> <span class="n">compas_rhinomac</span>
 </code></pre></div>
 
 <p><strong>Step 3.</strong> Configure your system</p>
@@ -89,7 +91,8 @@ At the bottom of the page are <a class="reference internal" href="#installation-
 <li>Verify that Python has been added to the system <code class="docutils literal">PATH</code>.</li>
 <li>Add the compas framework to the <code class="docutils literal">PYTHONPATH</code>.</li>
 </ul>
-<p>Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under <a class="reference internal" href="#environment-specific-instructions">Environment-specific instructions</a>.</p>
+<p>Operating system specific instructions for Windows and Unix (OSX)
+can be found at the bottom of this page under <a class="reference internal" href="#environment-specific-instructions">Environment-specific instructions</a>.</p>
 <p><strong>Step 4.</strong> Verify your installation.</p>
 <p>After having set the system variables test your installation.
 Start an interactive Python session (in Terminal or Command Prompt):</p>
@@ -116,6 +119,161 @@ Start an interactive Python session (in Terminal or Command Prompt):</p>
 <figure class="figure">
 <img alt="images/validate_windows_small.png" class="figure-img img-fluid" src="images/validate_windows_small.png"/>
 </figure>
+</div>
+<div class="section">
+<h2>Environment-specific instructions</h2>
+<div class="section">
+<h3>Unix (Linux, OSX)</h3>
+<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd
+$ ls -a
+</code></pre></div>
+
+<p>This will list all files in your home directory.
+Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
+Choose the <code class="docutils literal">.bash_profile</code>  if it exists, otherwise choose the <code class="docutils literal">.profile</code></p>
+<p>To edit your <code class="docutils literal">.bash_profile</code>, type:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ nano .bash_profile
+</code></pre></div>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may be prompted for the administrator password.
+Characters will not appear while you are typing.</p>
+</div>
+<p>Add the following:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">"/path/to/anaconda/bin:$PATH"</span>
+<span class="n">export</span> <span class="n">PYTHONPATH</span><span class="o">=</span><span class="s2">"/path/to/compas/src:$PYTHONPATH"</span>
+</code></pre></div>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You will not be able to copy and paste into the window.
+Make sure to type all paths correctly.</p>
+</div>
+<figure class="figure">
+<img alt="images/mac_bashprofile.png" class="figure-img img-fluid" src="images/mac_bashprofile.png"/>
+</figure>
+<p>After adding the paths, exit the editor with <code class="docutils literal">ctrl + o</code>, <code class="docutils literal">enter</code>, <code class="docutils literal">ctrl + x</code>.
+Then restart your Terminal or type:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ source .bash_profile
+</code></pre></div>
+
+</div>
+<div class="section">
+<h3>Windows</h3>
+<p>On Windows, you will have to change your <em>Environment Variables</em>:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span> <span class="o">&gt;</span> <span class="n">Environment</span> <span class="n">Variables</span>
+</code></pre></div>
+
+<figure class="figure">
+<img alt="images/windows_controlpanel.png" class="figure-img img-fluid" src="images/windows_controlpanel.png"/>
+</figure>
+<figure class="figure">
+<img alt="images/windows_advancedsystemsettings.png" class="figure-img img-fluid" src="images/windows_advancedsystemsettings.png"/>
+</figure>
+<figure class="figure">
+<img alt="images/windows_environment.png" class="figure-img img-fluid" src="images/windows_environment.png"/>
+</figure>
+<p>In the section <em>User variables</em>, edit <code class="docutils literal">PATH</code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Create a new <code class="docutils literal">PATH</code> variable if one doesn’t exist.</p>
+</div>
+<figure class="figure">
+<img alt="images/windows_path.png" class="figure-img img-fluid" src="images/windows_path.png"/>
+</figure>
+<p>Add the paths to your Anaconda installation.</p>
+<figure class="figure">
+<img alt="images/windows_path-entries.png" class="figure-img img-fluid" src="images/windows_path-entries.png"/>
+</figure>
+<p>Then add <code class="docutils literal">compas</code> to the <code class="docutils literal">PYTHONPATH</code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Create a new <code class="docutils literal">PTYTHONPATH</code> variable if one doesn’t exist.</p>
+</div>
+<figure class="figure">
+<img alt="images/windows_pythonpath.png" class="figure-img img-fluid" src="images/windows_pythonpath.png"/>
+</figure>
+<figure class="figure">
+<img alt="images/windows_pythonpath-entries.png" class="figure-img img-fluid" src="images/windows_pythonpath-entries.png"/>
+</figure>
+</div>
+</div>
+<div class="section">
+<h2>Rhino configuration</h2>
+<div class="section">
+<h3>compas</h3>
+<p>Rhino has its own environment settings.
+Therefore, you will have to tell Rhino where to find <code class="docutils literal">compas</code> as well.
+To do so, open the Rhino Python Editor:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
+</code></pre></div>
+
+<figure class="figure">
+<img alt="images/rhino_scripteditor.png" class="figure-img img-fluid" src="images/rhino_scripteditor.png"/>
+</figure>
+<p>In the Rhino Python Editor, go:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
+</code></pre></div>
+
+<p>and add the path to <code class="docutils literal">compas</code>.</p>
+<figure class="figure">
+<img alt="images/rhino_paths.png" class="figure-img img-fluid" src="images/rhino_paths.png"/>
+</figure>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Restart Rhino!</p>
+</div>
+</div>
+<div class="section">
+<h3>IronPython</h3>
+<p>Rhino uses IronPython to interpret your Python scripts.
+It ships with its own version of IronPython.
+In Rhino 5 this bundled IronPython is a beta version.
+You should install your own version of IronPython such that everything works properly.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Install IronPython 2.7.5, and not the latest version of IronPython.
+Rhino doesn’t like it...</p>
+</div>
+<p>To check your IronPython version in Rhino, go to the PythonScript Editor:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
+</code></pre></div>
+
+<p>There, run the following snippet.</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span>
+</code></pre></div>
+
+<p>This will display something like:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">(</span><span class="n">major</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">minor</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">micro</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span> <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+<p>If the <code class="docutils literal">releaselevel</code> is not <code class="docutils literal">'final'</code>, install your own version of IronPython 2.7.5
+and let Rhino know where it is by adding it to the search paths as before:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
+</code></pre></div>
+
+<p>And add:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>\<span class="n">Lib</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>\<span class="n">DLLs</span>
+</code></pre></div>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Restart Rhino!</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Installation and configuration instructions for Sublime Text</h2>
+<ul class="simple">
+<li>install package control</li>
+<li>install Anaconda</li>
+<li>install Sidebar Enhancements</li>
+</ul>
 </div>
 <div class="section">
 <h2>Dependencies</h2>
@@ -150,145 +308,6 @@ can be found on Christof Gholke’s page
 On mac, installing whatever doesn’t ship with a scientific distribution is
 relatively easy with a package manager like <a class="reference external" href="https://www.macports.org/">macports</a>
 or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
-</div>
-<div class="section">
-<h2>Environment-specific instructions</h2>
-<div class="section">
-<h3>Unix (OSX)</h3>
-<p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd
-$ ls -a
-</code></pre></div>
-
-<p>This will list all files in your home directory.
-Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
-Choose the <code class="docutils literal">.bash_profile</code>  if it exists, otherwise choose the <code class="docutils literal">.profile</code></p>
-<p>To edit your <code class="docutils literal">.bash_profile</code>, type:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ nano .bash_profile
-</code></pre></div>
-
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You may be prompted for the administrator password.
-Characters will not appear while you are typing.</p>
-</div>
-<p>Add the following:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">"/path/to/anaconda/bin:$PATH"</span>
-<span class="n">export</span> <span class="n">PYTHONPATH</span><span class="o">=</span><span class="s2">"/path/to/compas/src:$PYTHONPATH"</span>
-</code></pre></div>
-
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You will not be able to copy and paste into the window.
-Make sure to type all paths correctly.</p>
-</div>
-<figure class="figure">
-<img alt="images/profile_file.png" class="figure-img img-fluid" src="images/profile_file.png"/>
-</figure>
-<p>After adding the paths, exit the editor with <code class="docutils literal">ctrl + o</code>, <code class="docutils literal">enter</code>, <code class="docutils literal">ctrl + x</code>
-Now restart your Terminal or type:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>$ source .bash_profile
-</code></pre></div>
-
-</div>
-<div class="section">
-<h3>Windows</h3>
-<p>On Windows, you will have to change your <em>Environment Variables</em>:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span> <span class="o">&gt;</span> <span class="n">Environment</span> <span class="n">Variables</span>
-</code></pre></div>
-
-<figure class="figure">
-<img alt="images/windows_controlpanel.png" class="figure-img img-fluid" src="images/windows_controlpanel.png"/>
-</figure>
-<figure class="figure">
-<img alt="images/windows_advancedsystemsettings.png" class="figure-img img-fluid" src="images/windows_advancedsystemsettings.png"/>
-</figure>
-<figure class="figure">
-<img alt="images/windows_environment.png" class="figure-img img-fluid" src="images/windows_environment.png"/>
-</figure>
-<p>In the section <em>User variables</em>, edit <code class="docutils literal">PATH</code>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Create a new <code class="docutils literal">PATH</code> variable if one doesn’t exist.</p>
-</div>
-<figure class="figure">
-<img alt="images/windows_path.png" class="figure-img img-fluid" src="images/windows_path.png"/>
-</figure>
-<p>Add the paths to your Anaconda installation:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>
-<span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>\<span class="n">Scripts</span>
-<span class="n">C</span><span class="p">:</span>\<span class="n">Anaconda</span>\<span class="n">Library</span>\<span class="nb">bin</span>
-</code></pre></div>
-
-<figure class="figure">
-<img alt="images/windows_path-entries.png" class="figure-img img-fluid" src="images/windows_path-entries.png"/>
-</figure>
-<p>Then add <code class="docutils literal">compas</code> to the <code class="docutils literal">PYTHONPATH</code>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Create a new <code class="docutils literal">PTYTHONPATH</code> variable if one doesn’t exist.</p>
-</div>
-<figure class="figure">
-<img alt="images/windows_pythonpath.png" class="figure-img img-fluid" src="images/windows_pythonpath.png"/>
-</figure>
-<figure class="figure">
-<img alt="images/windows_pythonpath-entries.png" class="figure-img img-fluid" src="images/windows_pythonpath-entries.png"/>
-</figure>
-</div>
-</div>
-<div class="section">
-<h2>Rhino 3D configuration</h2>
-<p>The path to <code class="docutils literal">compas</code> will need to be added to the <em>Module Search Paths</em></p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; PythonScript &gt; Edit
-</code></pre></div>
-
-<p>In the Rhino Python Editor:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; Options
-</code></pre></div>
-
-<p>Add the path to <code class="docutils literal">compas</code> and move it to the top of the list</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>\path\to\compas\src
-</code></pre></div>
-
-<figure class="figure">
-<img alt="images/add_compas_path_rhino.png" class="figure-img img-fluid" src="images/add_compas_path_rhino.png"/>
-</figure>
-<p>Restart Rhino</p>
-<p>Rhino3D uses IronPython to interpret your Python scripts.
-It ships with its own version of IronPython. In Rhino 5 this bundled IronPython is a beta version.
-You should install your own version of IronPython 2.7.5 and not the newest.</p>
-<p>Check your IronPython version in Rhino:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; PythonScript &gt; Edit
-</code></pre></div>
-
-<p>A Rhino Python Editor will open, type :</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span>
-</code></pre></div>
-
-<p>Your Rhino command line should display the version info</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">(</span><span class="n">major</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">minor</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">micro</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span> <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</code></pre></div>
-
-<figure class="figure">
-<img alt="images/python_version.png" class="figure-img img-fluid" src="images/python_version.png"/>
-</figure>
-<p>If your <code class="docutils literal">releaselevel</code> is not ‘final’ then use your own IronPython version (2.7.5)</p>
-<p>In the Rhino Python Editor:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>Tools &gt; Options
-</code></pre></div>
-
-<p>Add the following paths and move them above the existing IronPython paths</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>C:\IronPython27
-C:\IronPython27\Lib
-C:\IronPython27\DLLs
-</code></pre></div>
-
-<p>Restart Rhino</p>
-</div>
-<div class="section">
-<h2>Installation and configuration instructions for Sublime Text</h2>
-<p>...</p>
 </div>
 </div>
 <nav class="compas-sideways">
@@ -325,14 +344,18 @@ C:\IronPython27\DLLs
 <li class="nav-item"><a class="nav-link reference internal" href="#">Getting started</a><ul class="nav">
 <li class="nav-item"><a class="nav-link reference internal" href="#requirements">Requirements</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#installation-instructions">Installation instructions</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#environment-specific-instructions">Environment-specific instructions</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#unix-osx">Unix (OSX)</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#unix-linux-osx">Unix (Linux, OSX)</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#windows">Windows</a></li>
 </ul>
 </li>
-<li class="nav-item"><a class="nav-link reference internal" href="#rhino-3d-configuration">Rhino 3D configuration</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#rhino-configuration">Rhino configuration</a><ul class="nav">
+<li class="nav-item"><a class="nav-link reference internal" href="#compas">compas</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#ironpython">IronPython</a></li>
+</ul>
+</li>
 <li class="nav-item"><a class="nav-link reference internal" href="#installation-and-configuration-instructions-for-sublime-text">Installation and configuration instructions for Sublime Text</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
 </ul>
 </li>
 </ul>
@@ -347,7 +370,7 @@ C:\IronPython27\DLLs
             
 
             
-                Last updated on Oct 29, 2017.
+                Last updated on Oct 30, 2017.
             
 
             

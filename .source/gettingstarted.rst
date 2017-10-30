@@ -5,7 +5,7 @@ Getting started
 ********************************************************************************
 
 Requirements
-------------
+============
 
 * `Anaconda <https://www.anaconda.com/download/>`_
 * `IronPython 2.7.5 <http://ironpython.codeplex.com/releases/view/169382>`_
@@ -19,7 +19,7 @@ At the bottom of the page are `Installation and configuration instructions for S
 
 
 Installation instructions
--------------------------
+=========================
 
 **Step 0.** Install the above-listed requirements.
 
@@ -33,32 +33,31 @@ Installation instructions
 
 **Step 2.** Clone the code repository from Github using GitHub Desktop
 
-* Repository to clone: https://github.com/compas-dev/compas.git
-
 .. code-block:: none
 
     GitHub Desktop > File > Clone Repository
 
 
-.. figure:: /_images/clone_repo.*
+* Use the *Url* option.
+* Repository Url: https://github.com/compas-dev/compas.git
+* Local Path: ``path/to/compas-dev/compas``
+
+
+.. figure:: /_images/github_clonerepo.*
      :figclass: figure
      :class: figure-img img-fluid
 
 
-After pulling the repository, the folder structure will contain:
-
-.. code-block:: none
+After pulling the repository, the folder structure will contain::
 
     compas-dev
-    - compas
-        - libs
-        - samples
-        - src
+        - compas
+            - libs
+            - samples
+            - src
 
 
-The ``src`` folder will contain the packages
-
-.. code-block:: none
+The ``src`` folder should contain several Python packages::
 
     - compas
     - compas_blender
@@ -74,7 +73,8 @@ The ``src`` folder will contain the packages
 * Verify that Python has been added to the system ``PATH``.
 * Add the compas framework to the ``PYTHONPATH``.
 
-Operating system specific instructions for Windows and Unix (OSX) can be found at the bottom of this page under `Environment-specific instructions`_.
+Operating system specific instructions for Windows and Unix (OSX)
+can be found at the bottom of this page under `Environment-specific instructions`_.
 
 
 **Step 4.** Verify your installation.
@@ -117,49 +117,11 @@ In Comand Prompt it will display as follows
     :class: figure-img img-fluid
 
 
-Dependencies
-------------
-
-The ``compas`` framework has very few dependencies, and most of them are optional. If
-you are happy working in Rhino or Blender, and you are not interested in or don't
-need any of the numerical stuff, then everything should work out of the box;
-provided you have Python installed, of course.
-
-The current version of ``compas`` has the following **optional** dependencies:
-
-* `Numpy <http://www.numpy.org/>`_: For all numerical calculations and algorithms.
-* `Scipy <https://www.scipy.org/>`_: For all numerical calculations and algorithms.
-* `Matplotlib <http://matplotlib.org/>`_: For two-dimensional visualisations.
-* `PyOpenGL <http://pyopengl.sourceforge.net/>`_: For three-dimensional visualisations.
-* `PySide <https://wiki.qt.io/PySide>`_: For some of the standalone tools.
-* `NetworkX <https://networkx.github.io/>`_: For spring layouts of networks.
-* `Planarity <https://github.com/hagberg/planarity>`_: For planarity testing.
-* `Cython <http://cython.org/>`_: For performance optimisation.
-* `Numba <http://numba.pydata.org/>`_: For just-in-time compilation.
-* `PyCuda <https://mathema.tician.de/software/pycuda/>`_: For parallel computation through Nvidia's CUDA.
-* `PyOpenCL <https://mathema.tician.de/software/pyopencl/>`_: For parallel computation though OpenCL.
-* `CVXPY <http://www.cvxpy.org/>`_: For convex optimisation problems.
-* `Imageio <https://imageio.github.io/>`_: For reading and writing of image data.
-* `PIL <http://www.pythonware.com/products/pil>`_: For general image processing.
-
-Scientific Python distributions like `Anaconda <https://www.continuum.io/>`_ or
-`Enthought EPD <https://www.enthought.com/products/epd/>`_ provide most of the
-optional dependencies (and of course Python), or a package manager to
-install them with.
-
-On Windows, many installers for remaining and otherwise difficult-to-install packages
-can be found on Christof Gholke's page
-`Unofficial Windows Binaries for Python Extension Packages <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.
-On mac, installing whatever doesn't ship with a scientific distribution is
-relatively easy with a package manager like `macports <https://www.macports.org/>`_
-or `homebrew <http://brew.sh/>`_.
-
-
 Environment-specific instructions
----------------------------------
+=================================
 
-Unix (OSX)
-==========
+Unix (Linux, OSX)
+-----------------
 
 Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited::
 
@@ -194,19 +156,19 @@ Add the following::
     Make sure to type all paths correctly.
 
 
-.. figure:: /_images/profile_file.*
+.. figure:: /_images/mac_bashprofile.*
      :figclass: figure
      :class: figure-img img-fluid
 
 
-After adding the paths, exit the editor with ``ctrl + o``, ``enter``, ``ctrl + x``
-Now restart your Terminal or type::
+After adding the paths, exit the editor with ``ctrl + o``, ``enter``, ``ctrl + x``.
+Then restart your Terminal or type::
 
     $ source .bash_profile
 
 
 Windows
-=======
+-------
 
 On Windows, you will have to change your *Environment Variables*::
 
@@ -240,12 +202,7 @@ In the section *User variables*, edit ``PATH``.
      :class: figure-img img-fluid
 
 
-Add the paths to your Anaconda installation::
-
-    C:\Anaconda
-    C:\Anaconda\Scripts
-    C:\Anaconda\Library\bin
-
+Add the paths to your Anaconda installation.
 
 .. figure:: /_images/windows_path-entries.*
      :figclass: figure
@@ -269,49 +226,65 @@ Then add ``compas`` to the ``PYTHONPATH``.
      :class: figure-img img-fluid
 
 
-Rhino 3D configuration
-----------------------
+Rhino configuration
+===================
 
-The path to ``compas`` will need to be added to the *Module Search Paths*
+.. add note about virtual machines
+.. add notes about rhinomac
+.. configuration options for atom
 
-.. code-block:: none
+compas
+------
+
+Rhino has its own environment settings.
+Therefore, you will have to tell Rhino where to find ``compas`` as well.
+To do so, open the Rhino Python Editor::
 
     Tools > PythonScript > Edit
 
 
-In the Rhino Python Editor:
-
-.. code-block:: none
-
-    Tools > Options
-
-
-Add the path to ``compas`` and move it to the top of the list
-
-.. code-block:: none
-
-    \path\to\compas\src
-
-.. figure:: /_images/add_compas_path_rhino.*
+.. figure:: /_images/rhino_scripteditor.*
      :figclass: figure
      :class: figure-img img-fluid
 
 
-Restart Rhino
+In the Rhino Python Editor, go::
 
-Rhino3D uses IronPython to interpret your Python scripts.
-It ships with its own version of IronPython. In Rhino 5 this bundled IronPython is a beta version.
-You should install your own version of IronPython 2.7.5 and not the newest.
+    Tools > Options
 
 
-Check your IronPython version in Rhino:
+and add the path to ``compas``.
 
-.. code-block:: none
+.. figure:: /_images/rhino_paths.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+
+.. note::
+
+    Restart Rhino!
+
+
+IronPython
+----------
+
+Rhino uses IronPython to interpret your Python scripts.
+It ships with its own version of IronPython.
+In Rhino 5 this bundled IronPython is a beta version.
+You should install your own version of IronPython such that everything works properly.
+
+.. note::
+    
+    Install IronPython 2.7.5, and not the latest version of IronPython.
+    Rhino doesn't like it...
+
+
+To check your IronPython version in Rhino, go to the PythonScript Editor::
 
     Tools > PythonScript > Edit
 
 
-A Rhino Python Editor will open, type :
+There, run the following snippet.
 
 .. code-block:: python
 
@@ -319,41 +292,71 @@ A Rhino Python Editor will open, type :
     print sys.version_info
 
 
-Your Rhino command line should display the version info
-
-.. code-block:: python
+This will display something like::
 
     sys.version_info(major=2, minor=7, micro=5, releaselevel='final', serial=0)
 
-.. figure:: /_images/python_version.*
-     :figclass: figure
-     :class: figure-img img-fluid
 
-
-If your ``releaselevel`` is not 'final' then use your own IronPython version (2.7.5)
-
-In the Rhino Python Editor:
-
-.. code-block:: none
+If the ``releaselevel`` is not ``'final'``, install your own version of IronPython 2.7.5
+and let Rhino know where it is by adding it to the search paths as before::
 
     Tools > Options
 
 
-Add the following paths and move them above the existing IronPython paths
+And add::
 
-.. code-block:: none
-
-    C:\IronPython27
-    C:\IronPython27\Lib
-    C:\IronPython27\DLLs
+    C:\path\to\IronPython275
+    C:\path\to\IronPython275\Lib
+    C:\path\to\IronPython275\DLLs
 
 
-Restart Rhino
+.. note::
+
+    Restart Rhino!
 
 
 Installation and configuration instructions for Sublime Text
-------------------------------------------------------------
+============================================================
 
-...
+* install package control
+* install Anaconda
+* install Sidebar Enhancements
 
+
+Dependencies
+============
+
+The ``compas`` framework has very few dependencies, and most of them are optional. If
+you are happy working in Rhino or Blender, and you are not interested in or don't
+need any of the numerical stuff, then everything should work out of the box;
+provided you have Python installed, of course.
+
+The current version of ``compas`` has the following **optional** dependencies:
+
+* `Numpy <http://www.numpy.org/>`_: For all numerical calculations and algorithms.
+* `Scipy <https://www.scipy.org/>`_: For all numerical calculations and algorithms.
+* `Matplotlib <http://matplotlib.org/>`_: For two-dimensional visualisations.
+* `PyOpenGL <http://pyopengl.sourceforge.net/>`_: For three-dimensional visualisations.
+* `PySide <https://wiki.qt.io/PySide>`_: For some of the standalone tools.
+* `NetworkX <https://networkx.github.io/>`_: For spring layouts of networks.
+* `Planarity <https://github.com/hagberg/planarity>`_: For planarity testing.
+* `Cython <http://cython.org/>`_: For performance optimisation.
+* `Numba <http://numba.pydata.org/>`_: For just-in-time compilation.
+* `PyCuda <https://mathema.tician.de/software/pycuda/>`_: For parallel computation through Nvidia's CUDA.
+* `PyOpenCL <https://mathema.tician.de/software/pyopencl/>`_: For parallel computation though OpenCL.
+* `CVXPY <http://www.cvxpy.org/>`_: For convex optimisation problems.
+* `Imageio <https://imageio.github.io/>`_: For reading and writing of image data.
+* `PIL <http://www.pythonware.com/products/pil>`_: For general image processing.
+
+Scientific Python distributions like `Anaconda <https://www.continuum.io/>`_ or
+`Enthought EPD <https://www.enthought.com/products/epd/>`_ provide most of the
+optional dependencies (and of course Python), or a package manager to
+install them with.
+
+On Windows, many installers for remaining and otherwise difficult-to-install packages
+can be found on Christof Gholke's page
+`Unofficial Windows Binaries for Python Extension Packages <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.
+On mac, installing whatever doesn't ship with a scientific distribution is
+relatively easy with a package manager like `macports <https://www.macports.org/>`_
+or `homebrew <http://brew.sh/>`_.
 

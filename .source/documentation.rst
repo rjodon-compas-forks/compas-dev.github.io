@@ -19,8 +19,7 @@ Documentation
   * `Overview <https://compas-dev.github.io/main/overview.html>`_
   * `Examples <https://compas-dev.github.io/main/examples.html>`_
   * `Tutorial <https://compas-dev.github.io/main/tutorial.html>`_
-  * `Reference <https://compas-dev.github.io/main/reference.html>`_
-  * `Notes <https://compas-dev.github.io/main/notes.html>`_
+  * `API Reference <https://compas-dev.github.io/main/reference.html>`_
 
 * `Additional Packages <https://compas-dev.github.io/packages/index.html>`_
 

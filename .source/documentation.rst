@@ -32,6 +32,4 @@ Documentation
   * `compas_iiwa <https://compas-dev.github.io/packages/compas_iiwa.html>`_
   * `compas_knit <https://compas-dev.github.io/packages/compas_knit.html>`_
   * `compas_rbe <https://compas-dev.github.io/packages/compas_rbe.html>`_
-  * `compas_rfl <https://compas-dev.github.io/packages/compas_rfl.html>`_
-  * `compas_swc <https://compas-dev.github.io/packages/compas_swc.html>`_
   * `compas_tna <https://compas-dev.github.io/packages/compas_tna.html>`_

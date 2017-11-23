@@ -39,7 +39,7 @@ Features
 Overview
 --------
 
-<code>compas</code> is divided into a main library and a pool of user-contributed research packages.
+``compas`` is divided into a main library and a pool of user-contributed research packages.
 The main library is entirely open source and licensed under the MIT license.
 The user-contributed packages are released with access levels defined by the respective
 authors. They can be private, public, or shared with a specific group of users.

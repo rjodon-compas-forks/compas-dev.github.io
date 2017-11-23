@@ -18,7 +18,6 @@ Table of Contents
 
     introduction
     gettingstarted
-    documentation
     devguide
     attribution
     license

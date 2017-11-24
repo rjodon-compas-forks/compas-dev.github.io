@@ -61,6 +61,13 @@ according to the fllowing principles:
 Structure
 =========
 
+.. figure:: /_images/compas_overview.png
+    :figclass: figure
+    :class: figure-img img-fluid
+
+    ``compas`` is divided into a main library and a pool of user-contributed research packages.
+
+
 ``compas`` is divided into a main library and a pool of user-contributed research
 packages. The main library is entirely open source and subject to the MIT license.
 The user-contributed packages are released with access levels defined by the respective
@@ -79,13 +86,6 @@ The possibility of defining packages as private, public, or shared, and the poss
 to change this state at any given time, allows researchers to publish their work
 in a way that corresponds to the state of their research, to the sensitivities
 of collaborations, or to the requirements of their funding.
-
-
-.. figure:: /_images/compas_overview.png
-    :figclass: figure
-    :class: figure-img img-fluid
-
-    ``compas`` is divided into a main library and a pool of user-contributed research packages.
 
 
 Main library

@@ -36,17 +36,33 @@
 </nav>
 <div class="section">
 <span id="id1"></span><h1>Introduction</h1>
-<div class="section">
-<h2>Objectives</h2>
+<p><code class="docutils literal">compas</code> is a computational framework for collaboration and research in
+architecture, engineering and digital fabrication.
+The framework is developed by the Block Research Group (<a class="reference external" href="https://block.arch.ethz.ch">https://block.arch.ethz.ch</a>)
+of ETH Zurich (<a class="reference external" href="http://www.ethz.ch">http://www.ethz.ch</a>), with the support of the NCCR (National Centre
+for Competence in Research) on “Digital Fabrication” (<a class="reference external" href="http://www.dfab.ch/">http://www.dfab.ch/</a>).
+Currently, the main contributors are:</p>
 <ul class="simple">
-<li><p>provide a robust computational base for research in architecture, engineering and digital fabrication;</p></li>
-<li><p>facilitate collaboration within and among these fields;</p></li>
-<li><p>encourage …; and</p></li>
-<li><p>…</p></li>
+<li><p><a class="reference external" href="http://block.arch.ethz.ch/brg/people/tom-van-mele">Tom Van Mele</a></p></li>
+<li><p><a class="reference external" href="http://block.arch.ethz.ch/brg/people/andrew-liew">Andrew Liew</a></p></li>
+<li><p><a class="reference external" href="http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia">Tomas Mendéz</a></p></li>
+<li><p><a class="reference external" href="http://block.arch.ethz.ch/brg/people/matthias-rippmann">Matthias Rippmann</a></p></li>
 </ul>
-</div>
+<p>The objective of the framework is to provide a robust, flexible, easy-to-learn,
+and easy-to-use computational base for students, researchers, and professionals
+working in architecture, engineering, and digital fabrication,
+and (tangentially) related fields.</p>
+<p>At the Block Research Group (BRG), for several years, <code class="docutils literal">compas</code> has been the
+computational base not only for all PhD and postdoc-level research, but also for
+all BRG projects, such as the Armadillo Vault, and the NEST HiLo roof.</p>
 <div class="section">
 <h2>Features</h2>
+<p>More and more, architecture is (again) becoming a highly multi-disciplinary field,
+combining research from engineering, computer science, robotics, mathematics, …
+To accomodate the different habits, programming styles, scientific backgrounds,
+skill levels, and working environments preferences (operating systems, tool chains, …)
+of a wide variety of users from these differnet fields, <code class="docutils literal">compas</code> has been designed
+according to the fllowing principles:</p>
 <ul class="simple">
 <li><p>Open source</p></li>
 <li><p>Pure Python core</p></li>
@@ -54,42 +70,42 @@
 <li><p>Wrappers for external libraries</p></li>
 <li><p>Interop utilities for easy integration of C/C++</p></li>
 <li><p>Integration in CAD software</p></li>
-<li><p>…</p></li>
 </ul>
 </div>
 <div class="section">
-<h2>Overview</h2>
-<p><code class="docutils literal">compas</code> is divided into a main library and a pool of user-contributed research packages.
-The main library is entirely open source and licensed under the MIT license.
+<h2>Structure</h2>
+<p><code class="docutils literal">compas</code> is divided into a main library and a pool of user-contributed research
+packages. The main library is entirely open source and subject to the MIT license.
 The user-contributed packages are released with access levels defined by the respective
 authors. They can be private, public, or shared with a specific group of users.</p>
-<p>The reason for this setup is related to the objectives of <code class="docutils literal">compas</code>
-to facilitate transfer of knowledge generated through research in the fields of
-architecture, structures, and fabrication, and encourage and facilitate collaboration.</p>
+<p>The reason for this setup is related to the objectives of <code class="docutils literal">compas</code> to facilitate
+transfer of knowledge generated through research in the fields of architecture,
+engineering, (digital) fabrication, and related fields, and encourage and facilitate
+collaboration.</p>
 <p>By building specialised research packages on the main library, these packages are
-compatible with each other, allowing expertise and know-how to be shared with, and reviewed
-and extended by a large community of researchers and practicioners.</p>
+compatible with each other, allowing expertise and know-how to be shared with,
+and reviewed and extended by a large community of researchers and practicioners.</p>
 <p>The possibility of defining packages as private, public, or shared, and the possibility
 to change this state at any given time, allows researchers to publish their work
 in a way that corresponds to the state of their research, to the sensitivities
 of collaborations, or to the requirements of their funding.</p>
-<p>For example, at the Block Research Group (BRG), we currently work on the packages shown
-below, with variable levels of external access. These packages roughly correspond
-to the ongoing research projects at BRG.</p>
+<figure class="figure">
+<img alt="images/compas_overview.png" class="figure-img img-fluid" src="images/compas_overview.png"/>
+<figcaption class="figure-caption"><code class="docutils literal">compas</code> is divided into a main library and a pool of user-contributed research packages.</figcaption>
+</figure>
 </div>
 <div class="section">
 <h2>Main library</h2>
-<p>The main library consists of a core package (&lt;code&gt;compas&lt;/code&gt;) and several additional
-packages for integration of the core functionality in CAD software.
-The core package defines all &lt;em&gt;real&lt;/em&gt; functionality. The CAD packages simply provide
-a unified framework for processing, visualising, and interacting with datastructures
-and geometrical objects, and building user interfaces in different CAD software.</p>
-<p>Here, we only provide an overview of some of the main components.
-For the complete documentation of the functionality provided by the main library,
-see the API reference (…).</p>
+<p>The main library consists of a core package (<code class="docutils literal">compas</code>) and several additional
+packages for integration of the core functionality in CAD software. The core package
+defines all <em>real</em> functionality. The CAD packages simply provide a unified framework
+for processing, visualising, and interacting with datastructures and geometrical
+objects, and building user interfaces in different CAD software.</p>
+<p><a class="reference external" href="http://compas-dev.github.io">The documentation of the main library</a> provides many more resources for further exploration.</p>
 </div>
 <div class="section">
 <h2>Add-ons</h2>
+<p>Currently,</p>
 </div>
 </div>
 <nav class="compas-sideways">
@@ -123,9 +139,8 @@ see the API reference (…).</p>
 <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
 <ul class="nav flex-column" id="compas-localnav">
 <li class="nav-item"><a class="nav-link reference internal" href="#">Introduction</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#objectives">Objectives</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#features">Features</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#overview">Overview</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#structure">Structure</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#main-library">Main library</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#add-ons">Add-ons</a></li>
 </ul>
@@ -142,7 +157,7 @@ see the API reference (…).</p>
             
 
             
-                Last updated on Nov 23, 2017.
+                Last updated on Nov 24, 2017.
             
 
             

@@ -1,0 +1,100 @@
+.. _devguide:
+
+********************************************************************************
+Developers Guide
+********************************************************************************
+
+.. CODING GUIDE
+
+.. package structure
+
+.. module structure
+
+.. using the __init__ files
+
+.. using the __all__ variables
+
+.. second level imports
+
+.. code style
+
+.. naming conventions
+
+.. docstring conventions
+
+.. unit testing
+
+.. DOCUMENTATION GUIDE
+
+.. working with Sphinx
+
+.. building the docs
+
+.. where are the docs
+
+.. make.py and postprocess.py
+
+.. bootstrap theme
+
+.. DEVELOPMENT TOOLS
+
+.. Sublime Text
+
+.. compas-dev package
+
+.. Github desktop
+
+
+Development tools
+=================
+
+Most of us at the Block Research Group use Sublime Text 2/3 as a code editor.
+Using Package Control you can install a compas-dev package for Sublime Text that simplifies developing for ``compas`` quite considerably.
+
+Code style
+==========
+
+* PEP8: https://www.python.org/dev/peps/pep-0008/
+
+Documentation style
+===================
+
+* Docstring conventions: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/
+
+Building the documentation
+==========================
+
+The documentation of the compas framework is generated with Sphinx from the
+following sources, which are publicly available at https://github.com/compas-dev:
+
+* compas-dev.github.io/.source
+* compas/docs/.source
+* packages/.source
+
+According to the github conventions and web hosting setup, the generated html from these sources is available at the following web addresses:
+
+* compas-dev.github.io/.source => https://compas-dev.github.io
+* compas/docs/.source => https://compas-dev.github.io/compas
+* packages/.source => https://compas-dev.github.io/packages
+
+Each of the add-on packages contains its own documentation source.
+For example, the source files of the documentation of the ``compas_fea`` package are in ``compas_fea/docs/.source``.
+
+All source files are written in ReStructuredText (.rst) format.
+To build the html documentation of one of these sources, run the following command from the parent of the ``.source`` folder:
+
+.. code-block:: none
+
+    $ sphinx-build -E ./.source ./
+
+This will build the documentation in the parent folder.
+After building the docs with this command, run the ``postprocess.py`` script to
+finalise the process:
+
+.. code-block:: none
+    
+    $ python postprocess.py
+
+
+Add-on packages
+===============

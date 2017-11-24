@@ -19,7 +19,7 @@ The main contributors are:
 
 * `Tom Van Mele <http://block.arch.ethz.ch/brg/people/tom-van-mele>`_
 * `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_
-* `Tomas Mendéz <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_
+* `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_
 * `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_
 
 The objective of ``compas`` is to provide a robust, flexible, easy-to-learn,

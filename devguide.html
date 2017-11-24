@@ -12,8 +12,6 @@
 <link href="/css/github.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas-reference.css" rel="stylesheet" type="text/css"/>
-<link href="attribution.html" rel="next" title="Attribution"/>
-<link href="gettingstarted.html" rel="prev" title="Getting started"/>
 <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 </head>
 <body data-spy="scroll" data-target="#compas-localnav">
@@ -31,9 +29,12 @@
 <div class="container-fluid compas-container">
 <div class="row flex-xl-nowrap">
 <main class="col-12 col-md-9 col-xl-8 compas-content" role="main">
-<nav class="breadcrumb">
-<a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
-</nav>
+<!-- 
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
+        
+    </nav>
+ -->
 <div class="section">
 <span id="devguide"></span><h1>Developers Guide</h1>
 <div class="section">
@@ -87,8 +88,6 @@ finalise the process:</p>
 </div>
 </div>
 <nav class="compas-sideways">
-<a class="btn btn-primary compas-prev" href="gettingstarted.html" role="button">Getting started</a>
-<a class="btn btn-primary compas-next" href="attribution.html" role="button">Attribution</a>
 </nav>
 </main>
 <div class="col-12 col-md-3 col-xl-2 compas-sidebar" role="navigation">
@@ -101,17 +100,16 @@ finalise the process:</p>
 <span class="navbar-toggler-icon"></span>
 </button>
 </form>
-<div class="navbar-expand-md">
-<div class="collapse navbar-collapse compas-navigation" id="compas-navigation">
-<ul class="nav flex-column active">
-<li class="nav-item"><a class="nav-link reference internal" href="introduction.html">The compas framework</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="gettingstarted.html">Getting started</a></li>
-<li class="nav-item active"><a class="nav-link active current reference internal" href="#">Developers Guide</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="attribution.html">Attribution</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="license.html">License</a></li>
+<ul>
+<li><a class="reference internal" href="#">Developers Guide</a><ul>
+<li><a class="reference internal" href="#development-tools">Development tools</a></li>
+<li><a class="reference internal" href="#code-style">Code style</a></li>
+<li><a class="reference internal" href="#documentation-style">Documentation style</a></li>
+<li><a class="reference internal" href="#building-the-documentation">Building the documentation</a></li>
+<li><a class="reference internal" href="#add-on-packages">Add-on packages</a></li>
 </ul>
-</div>
-</div>
+</li>
+</ul>
 </div>
 </div>
 <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">

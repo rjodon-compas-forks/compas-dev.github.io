@@ -1,71 +1,66 @@
 .. _introduction:
 
 ********************************************************************************
-Introduction
+The compas framework
 ********************************************************************************
 
-``compas`` is a computational framework for collaboration and research in
-architecture, engineering and digital fabrication.
-The framework is developed by the Block Research Group (https://block.arch.ethz.ch)
-of ETH Zurich (http://www.ethz.ch), with the support of the NCCR (National Centre
+.. figure:: /_images/compas_overview.png
+    :figclass: figure
+    :class: figure-img img-fluid
+
+    Both the Armadillo Vault and the NEST HiLo roof were developed with ``compas``.
+
+The ``compas`` framework is an open-source, Python-based computational framework
+for collaboration and research in architecture, engineering and digital fabrication.
+It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH
+Zurich (http://www.ethz.ch), with the support of the NCCR (National Centre
 for Competence in Research) on "Digital Fabrication" (http://www.dfab.ch/).
-Currently, the main contributors are:
+The main contributors are:
 
 * `Tom Van Mele <http://block.arch.ethz.ch/brg/people/tom-van-mele>`_
 * `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_
 * `Tomas Mendéz <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_
 * `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_
 
-The objective of the framework is to provide a robust, flexible, easy-to-learn,
-and easy-to-use computational base for students, researchers, and professionals
-working in architecture, engineering, and digital fabrication,
-and (tangentially) related fields.
+The objective of ``compas`` is to provide a robust, flexible, easy-to-learn,
+and easy-to-use computational framework for students, researchers, and professionals
+working in architecture, engineering, and digital fabrication, and (tangentially)
+related fields.
 
 At the Block Research Group (BRG), for several years, ``compas`` has been the
 computational base not only for all PhD and postdoc-level research, but also for
 all BRG projects, such as the Armadillo Vault, and the NEST HiLo roof.
 
 
-Features
-========
+Multi-disciplinary collaboration
+================================
 
-More and more, architecture is (again) becoming a highly multi-disciplinary field,
-combining research from engineering, computer science, robotics, mathematics, ...
-To accomodate the different habits, programming styles, scientific backgrounds,
-skill levels, and working environments preferences (operating systems, tool chains, ...)
-of a wide variety of users from these differnet fields, ``compas`` has been designed
-according to the fllowing principles: 
+Architecture is a highly multi-disciplinary field, combining research from computer
+science, robotics, mathematics, automation, and several other scientific areas.
+The target audience of the ``compas`` framework is therefore very diverse.
 
-* Open source
-* Pure Python core
-* Plug-and-play additional functionality
-* Wrappers for external libraries
-* Interop utilities for easy integration of C/C++
-* Integration in CAD software
-
-.. steep learning curve (as in easy-to-learn)
-.. different programming styles
-.. different scientific backgrounds
-.. high-level and low-level entry points
-.. independent of CAD software
-.. platform independent
-.. standalone plotters and viewers
-.. integration with CAD software
-.. interfaces to exteranl software (FEA, DEM, NUM, ...)
-.. interoperability with C/C++
-.. wrappers for external (HPC) libraries
-.. plug-and-play functionality
-.. supports different environments, platforms, 
+To deal with the different scientific backgrounds, programming skills, computational
+inclinations, and best/accepted practices of its users and their respective fields,
+``compas`` is implemented primarily in Python and designed to be entirely independent
+of the functionality of CAD software. As a result, it can be used on many different
+platforms and in combination with many different types of external software and libraries,
+and at the same time take advantage of the many scientific and non-scientific libraries
+available in the Python ecosystem itself. Furthermore, and perhaps more importantly, it
+ensures that research based on ``compas`` is not tied to a specific CAD-based ecosystem,
+as is unfortunately so often the case in architecture and which really gets in the way
+of proper scientific collaboration.
 
 
-Structure
-=========
+Public, Private, Shared
+=======================
 
 .. figure:: /_images/compas_overview.png
     :figclass: figure
     :class: figure-img img-fluid
 
-    ``compas`` is divided into a main library and a pool of user-contributed research packages.
+    The framework is divided into a main library and a pool of user-contributed research packages.
+    The main library is entirely public (green), while accessibility to the additonal packages
+    is entirely controlled by their authors.
 
 
 ``compas`` is divided into a main library and a pool of user-contributed research
@@ -100,7 +95,16 @@ objects, and building user interfaces in different CAD software.
 `The documentation of the main library <http://compas-dev.github.io>`_ provides many more resources for further exploration.
 
 
-Add-ons
-=======
+Additional packages
+===================
 
-Currently, 
+
+
+Documentation
+=============
+
+
+Sublime Text Plug-in
+====================
+
+

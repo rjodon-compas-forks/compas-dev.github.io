@@ -4,12 +4,6 @@
 The compas framework
 ********************************************************************************
 
-.. figure:: /_images/compas_hilo.jpg
-    :figclass: figure
-    :class: figure-img img-fluid
-
-    The prototype of the thin-shell concrete roof of NEST HiLo was developed with **compas**.
-
 The **compas** framework is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and digital fabrication.
 It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH
@@ -21,14 +15,15 @@ The main contributors are:
 `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_, 
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
 
-.. The objective of **compas** is to provide a robust, flexible, easy-to-learn
-.. and easy-to-use computational framework for students, researchers and professionals
-.. working in architecture, engineering, and digital fabrication, and (tangentially)
-.. related fields.
-
 At the Block Research Group (BRG), **compas** has been the computational base
 since 2012, not only for all PhD and postdoc-level research, but also for all BRG
 projects, such as the Armadillo Vault and the NEST HiLo roof.
+
+.. figure:: /_images/compas_hilo.jpg
+    :figclass: figure mt-4
+    :class: figure-img img-fluid
+
+    The prototype of the thin-shell concrete roof of NEST HiLo was developed with **compas**.
 
 
 Multi-disciplinary collaboration
@@ -92,13 +87,7 @@ and geometrical objects, and for building user interfaces in different CAD softw
 
 `The documentation of the main library <https://compas-dev.github.io>`_ provides
 many more resources for further exploration. `The API reference <https://compas-dev.github.io/main/reference.html>`_
-contains detailed information about the functionality of the core package and the
-CAD packages:
-
-* :mod:`compas`
-* :mod:`compas_rhino`
-* :mod:`compas_blender`
-* :mod:`compas_maya`
+contains detailed information about the functionality of the core package and the CAD packages.
 
 
 Additional packages

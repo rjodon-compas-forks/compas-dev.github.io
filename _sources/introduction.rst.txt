@@ -21,13 +21,13 @@ The main contributors are:
 `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_, 
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
 
-The objective of **compas** is to provide a robust, flexible, easy-to-learn
-and easy-to-use computational framework for students, researchers and professionals
-working in architecture, engineering, and digital fabrication, and (tangentially)
-related fields.
+.. The objective of **compas** is to provide a robust, flexible, easy-to-learn
+.. and easy-to-use computational framework for students, researchers and professionals
+.. working in architecture, engineering, and digital fabrication, and (tangentially)
+.. related fields.
 
 At the Block Research Group (BRG), **compas** has been the computational base
-since 2012 not only for all PhD and postdoc-level research, but also for all BRG
+since 2012, not only for all PhD and postdoc-level research, but also for all BRG
 projects, such as the Armadillo Vault and the NEST HiLo roof.
 
 
@@ -57,7 +57,7 @@ Public, Private, Shared
     :class: figure-img img-fluid
 
     The framework is divided into a main library and a pool of user-contributed research packages.
-    The main library is entirely public (green), while accessibility to the additonal packages
+    The main library is entirely public, while accessibility to the additonal packages
     is entirely controlled by their authors.
 
 
@@ -84,19 +84,30 @@ of collaborations, or to the requirements of their funding.
 Main library
 ============
 
-The main library consists of a core package (``compas``) and several additional
-packages for integration of the core functionality in CAD software. The core package
-defines all *real* functionality. The CAD packages simply provide a unified framework
-for processing, visualising, and interacting with datastructures and geometrical
-objects, and for building user interfaces in different CAD software.
+The main library consists of a core package (:mod:`compas`) and several additional
+packages for integration of the core functionality in CAD software (:mod:`compas_rhino`, :mod:`compas_blender`, :mod:`compas_maya`).
+The core package defines all *real* functionality. The CAD packages simply provide
+a unified framework for processing, visualising, and interacting with datastructures
+and geometrical objects, and for building user interfaces in different CAD software.
 
-`The documentation of the main library <http://compas-dev.github.io>`_ provides many more resources for further exploration.
+`The documentation of the main library <https://compas-dev.github.io>`_ provides
+many more resources for further exploration. `The API reference <https://compas-dev.github.io/main/reference.html>`_
+contains detailed information about the functionality of the core package and the
+CAD packages:
+
+* :mod:`compas`
+* :mod:`compas_rhino`
+* :mod:`compas_blender`
+* :mod:`compas_maya`
 
 
 Additional packages
 ===================
 
-
+The additional packages supplement the main library with functionality related to
+specialised topics. These packages can be related to ongoing or completed research,
+or simply provide additional functionality, as a service to other users. For an overview
+of available packages, see https://compas-dev.github.io/packages/.
 
 
 Resources

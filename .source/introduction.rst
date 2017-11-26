@@ -19,6 +19,15 @@ The main contributors are:
 Multi-disciplinary collaboration
 ================================
 
+.. figure:: /_images/compas_hilo.jpg
+    :figclass: figure mt-4
+    :class: figure-img img-fluid
+
+    At the Block Research Group (BRG), **compas** has been the computational base
+    since 2012, not only for all PhD and postdoc-level research, but also for all BRG
+    projects, such as the Armadillo Vault and the NEST HiLo roof.
+
+
 Architecture is a highly multi-disciplinary field, combining research from computer
 science, robotics, mathematics, automation, and several other scientific areas.
 The target audience of the **compas** framework is therefore very diverse.
@@ -32,16 +41,6 @@ time take advantage of the various scientific and non-scientific libraries avail
 in the Python ecosystem itself. Furthermore, and perhaps more importantly, it ensures
 that research based on **compas** is not tied to a specific CAD-based ecosystem,
 as this can hinder effective collaboration between different users.
-
-At the Block Research Group (BRG), **compas** has been the computational base
-since 2012, not only for all PhD and postdoc-level research, but also for all BRG
-projects, such as the Armadillo Vault and the NEST HiLo roof.
-
-.. figure:: /_images/compas_hilo.jpg
-    :figclass: figure mt-4
-    :class: figure-img img-fluid
-
-    The prototype of the thin-shell concrete roof of NEST HiLo was developed with **compas**.
 
 
 Public, Private, Shared

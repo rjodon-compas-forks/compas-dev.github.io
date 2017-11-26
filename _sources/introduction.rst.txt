@@ -15,16 +15,6 @@ The main contributors are:
 `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_, 
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
 
-At the Block Research Group (BRG), **compas** has been the computational base
-since 2012, not only for all PhD and postdoc-level research, but also for all BRG
-projects, such as the Armadillo Vault and the NEST HiLo roof.
-
-.. figure:: /_images/compas_hilo.jpg
-    :figclass: figure mt-4
-    :class: figure-img img-fluid
-
-    The prototype of the thin-shell concrete roof of NEST HiLo was developed with **compas**.
-
 
 Multi-disciplinary collaboration
 ================================
@@ -42,6 +32,16 @@ time take advantage of the various scientific and non-scientific libraries avail
 in the Python ecosystem itself. Furthermore, and perhaps more importantly, it ensures
 that research based on **compas** is not tied to a specific CAD-based ecosystem,
 as this can hinder effective collaboration between different users.
+
+At the Block Research Group (BRG), **compas** has been the computational base
+since 2012, not only for all PhD and postdoc-level research, but also for all BRG
+projects, such as the Armadillo Vault and the NEST HiLo roof.
+
+.. figure:: /_images/compas_hilo.jpg
+    :figclass: figure mt-4
+    :class: figure-img img-fluid
+
+    The prototype of the thin-shell concrete roof of NEST HiLo was developed with **compas**.
 
 
 Public, Private, Shared

@@ -12,6 +12,9 @@ User Guide
 .. entry points / use cases
 .. naming conventions
 .. report issues/bugs
-.. setting up sublime
+.. working with sublime
 .. setting up a project
 .. known issues
+
+
+.. the principle of lease astonishment

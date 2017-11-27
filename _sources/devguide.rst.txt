@@ -6,42 +6,42 @@ Developers Guide
 
 *Under construction...*
 
-.. CODING GUIDE
 
-.. package structure
+Coding Guide
+============
 
-.. module structure
+* package structure
+* module structure
+* using the ``__init__`` files
+* using the ``__all__`` variables
+* second level imports
+* code style
+* naming conventions
+* docstring conventions
+* testing
 
-.. using the __init__ files
+.. Docstring conventions
+.. ---------------------
 
-.. using the __all__ variables
+.. * http://www.sphinx-doc.org/en/1.5.1/ext/napoleon.html
+.. * https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+.. * https://github.com/numpy/numpy/blob/master/doc/example.py
 
-.. second level imports
 
-.. code style
+Documentation Guide
+===================
 
-.. naming conventions
+* working with Sphinx
+* building the docs
+* where are the docs
+* ``make.py`` and ``postprocess.py``
+* bootstrap theme
 
-.. docstring conventions
 
-.. unit testing
+Development Tools
+=================
 
-.. DOCUMENTATION GUIDE
-
-.. working with Sphinx
-
-.. building the docs
-
-.. where are the docs
-
-.. make.py and postprocess.py
-
-.. bootstrap theme
-
-.. DEVELOPMENT TOOLS
-
-.. Sublime Text
-
-.. compas-dev package
-
-.. Github desktop
+* Sublime Text
+* compas-dev package
+* Github desktop
+* SourceTree

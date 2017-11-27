@@ -38,6 +38,7 @@ blockquote {
 .compas-navbar {
 	height: 4rem;
 	z-index: 1053;
+	background-color: #0092d2;
 }
 
 .compas-container {
@@ -48,6 +49,7 @@ blockquote {
 	width: 100%;
 	min-height: 8rem;
 	background-color: #eee;
+	background-color: #fff;
 	border-top: 1px solid #ccc;
 	padding: 2rem;
 	color: #888;
@@ -58,6 +60,7 @@ blockquote {
 	order: 0;
 	z-index: 1000;
 	background-color: #f8f9fa;
+	background-color: #fff;
 	padding-top: 0rem;
 	padding-bottom: 0rem;
 	padding-left: 0;
@@ -74,7 +77,7 @@ blockquote {
 
 .compas-toc {
 	order: 2;
-	border-left: 1px solid #eee;
+	border-left: 0px solid #eee;
 	padding-top: 1rem;
 	padding-left: 0;
 	padding-right: 0;

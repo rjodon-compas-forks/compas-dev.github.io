@@ -24,8 +24,8 @@ and professionals, **compas** features
 * interoperability with C/C++ code and libraries such as ShapeOp, libigl and Eigen;
 * methods and solvers for numerical computation built around NumPy and SciPy;
 * high peformance computing through GPU acceleration and JIT compilation;
-* plotters and viewers for two-diemnsional and basic three-dimensional visualization;
-* interfaces to common CAD software and ecosystems;
+* plotters and viewers for two-dimensional and basic three-dimensional visualization; and
+* interfaces to common CAD software and ecosystems.
 
 
 Multi-disciplinary collaboration

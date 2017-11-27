@@ -76,12 +76,13 @@ blockquote {
 
 .compas-toc {
 	order: 2;
-	border-left: 0px solid #eee;
+	border-left: 1px solid #eee;
 	padding-top: 1rem;
 	padding-left: 0;
 	padding-right: 0;
 	background-color: #fefefe;
 	background-color: #eee;
+	background-color: #fff;
 	font-size: 0.875rem;
 }
 

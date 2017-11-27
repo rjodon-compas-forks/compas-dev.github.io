@@ -38,8 +38,13 @@ blockquote {
 .compas-navbar {
 	height: 4rem;
 	z-index: 1053;
-/*	background-color: #0092d2;
-	background-color: #ccc;*/
+	background-color: #0092d2;
+	background-color: #ccc;
+	background-color: $fff !important;
+}
+
+.compas-navbar .nav-link {
+	color: #0092d2;
 }
 
 .compas-container {

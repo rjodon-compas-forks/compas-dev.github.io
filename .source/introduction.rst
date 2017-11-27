@@ -20,7 +20,7 @@ Multi-disciplinary collaboration
 ================================
 
 .. figure:: /_images/compas_hilo.jpg
-    :figclass: figure mt-4
+    :figclass: figure
     :class: figure-img img-fluid
 
     At the Block Research Group (BRG), **compas** has been the computational base

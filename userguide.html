@@ -12,6 +12,8 @@
 <link href="/css/github.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas-reference.css" rel="stylesheet" type="text/css"/>
+<link href="devguide.html" rel="next" title="Developers Guide"/>
+<link href="gettingstarted.html" rel="prev" title="Getting started"/>
 <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 </head>
 <body data-spy="scroll" data-target="#compas-localnav">
@@ -38,113 +40,14 @@
 <div class="section">
 <span id="userguide"></span><h1>User Guide</h1>
 <p><em>Under construction…</em></p>
-<div class="section">
-<h2>A simple script</h2>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span>
-</code></pre></div>
-
-</div>
-<div class="section">
-<h2>Dependencies</h2>
-<p><strong>compas</strong> has very few dependencies, and most of them are optional.</p>
-<table class="docutils table table-responsive table-bordered">
-<colgroup>
-<col style="width: 14%"/>
-<col style="width: 16%"/>
-<col style="width: 70%"/>
-</colgroup>
-<thead>
-<tr class=""><th class="head"><p>package</p></th>
-<th class="head"><p>dependencies</p></th>
-<th class="head"><p>exceptions</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class=""><td><p>compas.com</p></td>
-<td><p>None</p></td>
-<td><p><code class="xref py py-class docutils literal">MatlabEngine</code> (matlab), <code class="xref py py-class docutils literal">MatlabSession</code> (matlab), ssh.py (paramiko)</p></td>
-</tr>
-<tr class=""><td><p>compas.datastructures</p></td>
-<td><p>None</p></td>
-<td></td>
-</tr>
-<tr class=""><td><p>compas.files</p></td>
-<td><p>None</p></td>
-<td></td>
-</tr>
-<tr class=""><td><p>compas.geometry</p></td>
-<td><p>None</p></td>
-<td><p>xxx_numpy (NumPy, SciPy)</p></td>
-</tr>
-<tr class=""><td><p>compas.hpc</p></td>
-<td><p>Numba, PyCuda, PyOpenCL</p></td>
-<td></td>
-</tr>
-<tr class=""><td><p>compas.interop</p></td>
-<td><p>None</p></td>
-<td></td>
-</tr>
-<tr class=""><td><p>compas.numerical</p></td>
-<td><p>NumPy, SciPy</p></td>
-<td></td>
-</tr>
-<tr class=""><td><p>compas.plotters</p></td>
-<td><p>Matplotlib</p></td>
-<td></td>
-</tr>
-<tr class=""><td><p>compas.topology</p></td>
-<td><p>None</p></td>
-<td><p>xxx_numpy (NumPy, SciPy), <code class="xref py py-func docutils literal">network_is_planar()</code> (planarity), <code class="xref py py-func docutils literal">network_embed_in_plane()</code> (NetworkX)</p></td>
-</tr>
-<tr class=""><td><p>compas.utilities</p></td>
-<td><p>None</p></td>
-<td><p>animation.py (imageio)</p></td>
-</tr>
-<tr class=""><td><p>compas.viewers</p></td>
-<td><p>PyOpenGL, PySide</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Most dependencies are bundled with scientific Python distributions such as
-Anaconda or EPD. Refer to the <a class="reference external" href="https://compas-dev.github.io/gettingstarted.html">Getting started instructions</a>
-if you need help getting these installed.</p>
-</div>
-<div class="section">
-<h2>Importing stuff</h2>
-<p>All packages are structured such that functionality can be imported from the <em>second</em> level.</p>
-</div>
-<div class="section">
-<h2>Use cases</h2>
-<p>The functionality of <em>compas</em> is implemented independent of the functionality provided
-by CAD software. This</p>
-</div>
-<div class="section">
-<h2>Naming conventions</h2>
-</div>
-<div class="section">
-<h2>Reporting issues</h2>
-</div>
-<div class="section">
-<h2>Setting up a project</h2>
-</div>
-<div class="section">
-<h2>Setting up Sublime Text</h2>
-</div>
-<div class="section">
-<h2>Resources</h2>
-<ul class="simple">
-<li><p><a class="reference external" href="http://compas-dev.github.io">compas framework: portal site</a></p></li>
-<li><p><a class="reference external" href="http://compas-dev.github.io/main/">compas framework: main library docs</a></p></li>
-<li><p><a class="reference external" href="http://compas-dev.github.io/packages/">compas framework: overview additional packages</a></p></li>
-<li><p><a class="reference external" href="http://forum.compas-framework.org">compas framework: discussion forum</a></p></li>
-<li><p><a class="reference external" href="http://github.com/compas-dev/compas">compas framework: main library github repo</a></p></li>
-</ul>
-</div>
 </div>
 <!-- <nav class="compas-sideways">
                             
+                                <a href="gettingstarted.html" class="btn btn-primary compas-prev" role="button">Getting started</a>
+                            
 
+                            
+                                <a href="devguide.html" class="btn btn-primary compas-next" role="button">Developers Guide</a>
                             
                         </nav> -->
 </main>
@@ -160,9 +63,11 @@ by CAD software. This</p>
 </form>
 <div class="navbar-expand-md">
 <div class="collapse navbar-collapse compas-navigation" id="compas-navigation">
-<ul class="nav flex-column">
+<ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="introduction.html">Introduction</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="gettingstarted.html">Getting started</a></li>
+<li class="nav-item active"><a class="nav-link active current reference internal" href="#">User Guide</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="devguide.html">Developers Guide</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="attribution.html">Attribution</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="license.html">License</a></li>
 </ul>
@@ -172,18 +77,7 @@ by CAD software. This</p>
 </div>
 <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
 <ul class="nav flex-column" id="compas-localnav">
-<li class="nav-item"><a class="nav-link reference internal" href="#">User Guide</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#a-simple-script">A simple script</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#importing-stuff">Importing stuff</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#use-cases">Use cases</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#naming-conventions">Naming conventions</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#reporting-issues">Reporting issues</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#setting-up-a-project">Setting up a project</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#setting-up-sublime-text">Setting up Sublime Text</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#resources">Resources</a></li>
-</ul>
-</li>
+<li class="nav-item"><a class="nav-link reference internal" href="#">User Guide</a></li>
 </ul>
 </div>
 </div>

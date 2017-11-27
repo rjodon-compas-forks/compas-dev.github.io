@@ -12,14 +12,12 @@ for Competence in Research) on "Digital Fabrication" (http://www.dfab.ch).
 The main contributors are:
 `Tom Van Mele <http://block.arch.ethz.ch/brg/people/tom-van-mele>`_, 
 `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_, 
-`Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_, 
+`Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_ and
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
-To create a robust, flexible and easy-to-use code base for students, researchers
-and professionals, **compas** features
 
+**compas** features
 
-* a pure Python base with datastructures, algorithms, and methods geared towards
-  applications in architecture, engineering, and fabrication;
+* a pure Python base with datastructures, algorithms, and methods geared towards applications in architecture, engineering, and fabrication;
 * geometry processing independent of CAD tools;
 * interoperability with C/C++ code and libraries such as ShapeOp, libigl and Eigen;
 * methods and solvers for numerical computation built around NumPy and SciPy;
@@ -28,13 +26,13 @@ and professionals, **compas** features
 * interfaces to common CAD software and ecosystems.
 
 
-Multi-disciplinary collaboration
-================================
+Multi-disciplinary research
+===========================
 
 .. .. figure:: /_images/compas_hilo.jpg
 ..     :figclass: figure
 ..     :class: figure-img img-fluid
-
+.. 
 ..     At the Block Research Group (BRG), **compas** has been the computational base
 ..     since 2012, not only for all PhD and postdoc-level research, but also for all BRG
 ..     projects, such as the Armadillo Vault and the NEST HiLo roof.

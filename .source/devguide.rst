@@ -4,9 +4,7 @@
 Developers Guide
 ********************************************************************************
 
-.. warning::
-
-    Under construction...
+*Under construction...*
 
 .. CODING GUIDE
 

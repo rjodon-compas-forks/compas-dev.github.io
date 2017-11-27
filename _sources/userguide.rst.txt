@@ -22,6 +22,10 @@ User Guide
 A simple script
 ===============
 
+.. code-block:: python
+
+    
+
 
 Use cases
 =========

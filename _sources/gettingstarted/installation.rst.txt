@@ -4,20 +4,17 @@
 Installation
 ********************************************************************************
 
-Steps
-=====
+General steps
+=============
 
-**1.** Install the above-listed requirements.
-
-
-**2.** Create a folder on your computer for your compas installation.
+**1.** Create a folder on your computer for your compas installation.
 
 .. code-block:: none
 
     compas-dev
 
 
-**3.** Clone the code repository from Github using GitHub Desktop
+**2.** Clone the code repository from Github using GitHub Desktop
 
 .. code-block:: none
 
@@ -54,16 +51,15 @@ The ``src`` folder should contain several Python packages::
     - compas_rhinomac
 
 
-**4.** Configure your system
+**3.** Configure your system
 
 * Verify that Python has been added to the system ``PATH``.
 * Add the compas framework to the ``PYTHONPATH``.
 
-Operating system specific instructions for Windows and Unix (OSX)
-can be found at the bottom of this page under `Environment-specific instructions`_.
+Operating system specific instructions for `Windows`_ and  `Unix`_ can be found below.
 
 
-**5.** Verify your installation.
+**4.** Verify your installation.
 
 After having set the system variables test your installation.
 Start an interactive Python session (in Terminal or Command Prompt)::
@@ -103,11 +99,10 @@ In Comand Prompt it will display as follows
     :class: figure-img img-fluid
 
 
-Environment-specific instructions
-=================================
+.. _Unix:
 
-Unix (Linux, OSX)
------------------
+On Unix (Linux, OSX)
+====================
 
 Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited::
 
@@ -153,8 +148,10 @@ Then restart your Terminal or type::
     $ source .bash_profile
 
 
-Windows
--------
+.. _Windows:
+
+On Windows
+==========
 
 On Windows, you will have to change your *Environment Variables*::
 

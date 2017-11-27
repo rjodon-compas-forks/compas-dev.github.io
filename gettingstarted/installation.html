@@ -46,13 +46,12 @@
 <div class="section">
 <span id="id1"></span><h1>Installation</h1>
 <div class="section">
-<h2>Steps</h2>
-<p><strong>1.</strong> Install the above-listed requirements.</p>
-<p><strong>2.</strong> Create a folder on your computer for your compas installation.</p>
+<h2>General steps</h2>
+<p><strong>1.</strong> Create a folder on your computer for your compas installation.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
 </code></pre></div>
 
-<p><strong>3.</strong> Clone the code repository from Github using GitHub Desktop</p>
+<p><strong>2.</strong> Clone the code repository from Github using GitHub Desktop</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>GitHub Desktop &gt; File &gt; Clone Repository
 </code></pre></div>
 
@@ -82,14 +81,13 @@
 <span class="o">-</span> <span class="n">compas_rhinomac</span>
 </code></pre></div>
 
-<p><strong>4.</strong> Configure your system</p>
+<p><strong>3.</strong> Configure your system</p>
 <ul class="simple">
 <li><p>Verify that Python has been added to the system <code class="docutils literal">PATH</code>.</p></li>
 <li><p>Add the compas framework to the <code class="docutils literal">PYTHONPATH</code>.</p></li>
 </ul>
-<p>Operating system specific instructions for Windows and Unix (OSX)
-can be found at the bottom of this page under <a class="reference internal" href="#environment-specific-instructions">Environment-specific instructions</a>.</p>
-<p><strong>5.</strong> Verify your installation.</p>
+<p>Operating system specific instructions for <a class="reference internal" href="#windows">Windows</a> and  <a class="reference internal" href="#unix">Unix</a> can be found below.</p>
+<p><strong>4.</strong> Verify your installation.</p>
 <p>After having set the system variables test your installation.
 Start an interactive Python session (in Terminal or Command Prompt):</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
@@ -117,9 +115,7 @@ Start an interactive Python session (in Terminal or Command Prompt):</p>
 </figure>
 </div>
 <div class="section">
-<h2>Environment-specific instructions</h2>
-<div class="section">
-<h3>Unix (Linux, OSX)</h3>
+<span id="unix"></span><h2>On Unix (Linux, OSX)</h2>
 <p>Open Terminal to edit your system variables. First, find out which <code class="docutils literal">profile</code> file needs to be edited:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd
 $ ls -a
@@ -157,7 +153,7 @@ Then restart your Terminal or type:</p>
 
 </div>
 <div class="section">
-<h3>Windows</h3>
+<span id="windows"></span><h2>On Windows</h2>
 <p>On Windows, you will have to change your <em>Environment Variables</em>:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span> <span class="o">&gt;</span> <span class="n">Environment</span> <span class="n">Variables</span>
 </code></pre></div>
@@ -194,7 +190,6 @@ Then restart your Terminal or type:</p>
 <figure class="figure">
 <img alt="../images/windows_pythonpath-entries.png" class="figure-img img-fluid" src="../images/windows_pythonpath-entries.png"/>
 </figure>
-</div>
 </div>
 <div class="section">
 <h2>Dependencies</h2>
@@ -273,12 +268,9 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
 <ul class="nav flex-column" id="compas-localnav">
 <li class="nav-item"><a class="nav-link reference internal" href="#">Installation</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#steps">Steps</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#environment-specific-instructions">Environment-specific instructions</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#unix-linux-osx">Unix (Linux, OSX)</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#windows">Windows</a></li>
-</ul>
-</li>
+<li class="nav-item"><a class="nav-link reference internal" href="#general-steps">General steps</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#on-unix-linux-osx">On Unix (Linux, OSX)</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#on-windows">On Windows</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
 </ul>
 </li>

@@ -39,7 +39,7 @@
     </head>
     <body data-spy="scroll" data-target="#compas-localnav">
 
-        <header class="navbar navbar-expand navbar-light bg-light compas-navbar">
+        <header class="navbar navbar-expand navbar-dark bg-dark compas-navbar">
             <a class="navbar-brand" href="/">compas</a>
 
                 <ul class="navbar-nav">
@@ -145,7 +145,7 @@
             </div>
         </div>
 
-        <!-- <footer class="compas-footer">
+        <footer class="compas-footer">
             {% if show_copyright %}
                 {% if hasdoc('copyright') %}
                     {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
@@ -161,7 +161,7 @@
             {% if show_sphinx %}
                 {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
             {% endif %}
-        </footer> -->
+        </footer>
 
         {% block footer %}
 

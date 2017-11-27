@@ -39,6 +39,7 @@ blockquote {
 	height: 4rem;
 	z-index: 1053;
 	background-color: #fff;
+	border-bottom: 1px solid #ccc;
 }
 
 .compas-navbar .nav-link {

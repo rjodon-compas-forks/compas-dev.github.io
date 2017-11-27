@@ -39,17 +39,87 @@
  -->
 <div class="section">
 <span id="userguide"></span><h1>User Guide</h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Under construction…</p>
-</div>
+<p><em>Under construction…</em></p>
 <div class="section">
 <h2>A simple script</h2>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>
 </code></pre></div>
+
+</div>
+<div class="section">
+<h2>Dependencies</h2>
+<p><strong>compas</strong> has very few dependencies, and most of them are optional.</p>
+<table class="docutils table table-responsive table-bordered">
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 16%"/>
+<col style="width: 70%"/>
+</colgroup>
+<thead>
+<tr class=""><th class="head"><p>package</p></th>
+<th class="head"><p>dependencies</p></th>
+<th class="head"><p>exceptions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class=""><td><p>compas.com</p></td>
+<td><p>None</p></td>
+<td><p><code class="xref py py-class docutils literal">MatlabEngine</code> (matlab), <code class="xref py py-class docutils literal">MatlabSession</code> (matlab), ssh.py (paramiko)</p></td>
+</tr>
+<tr class=""><td><p>compas.datastructures</p></td>
+<td><p>None</p></td>
+<td></td>
+</tr>
+<tr class=""><td><p>compas.files</p></td>
+<td><p>None</p></td>
+<td></td>
+</tr>
+<tr class=""><td><p>compas.geometry</p></td>
+<td><p>None</p></td>
+<td><p>xxx_numpy (NumPy, SciPy)</p></td>
+</tr>
+<tr class=""><td><p>compas.hpc</p></td>
+<td><p>Numba, PyCuda, PyOpenCL</p></td>
+<td></td>
+</tr>
+<tr class=""><td><p>compas.interop</p></td>
+<td><p>None</p></td>
+<td></td>
+</tr>
+<tr class=""><td><p>compas.numerical</p></td>
+<td><p>NumPy, SciPy</p></td>
+<td></td>
+</tr>
+<tr class=""><td><p>compas.plotters</p></td>
+<td><p>Matplotlib</p></td>
+<td></td>
+</tr>
+<tr class=""><td><p>compas.topology</p></td>
+<td><p>None</p></td>
+<td><p>xxx_numpy (NumPy, SciPy), <code class="xref py py-func docutils literal">network_is_planar()</code> (planarity), <code class="xref py py-func docutils literal">network_embed_in_plane()</code> (NetworkX)</p></td>
+</tr>
+<tr class=""><td><p>compas.utilities</p></td>
+<td><p>None</p></td>
+<td><p>animation.py (imageio)</p></td>
+</tr>
+<tr class=""><td><p>compas.viewers</p></td>
+<td><p>PyOpenGL, PySide</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Most dependencies are bundled with scientific Python distributions such as
+Anaconda or EPD. Refer to the <a class="reference external" href="https://compas-dev.github.io/gettingstarted.html">Getting started instructions</a>
+if you need help getting these installed.</p>
+</div>
+<div class="section">
+<h2>Importing stuff</h2>
+<p>All packages are structured such that functionality can be imported from the <em>second</em> level.</p>
 </div>
 <div class="section">
 <h2>Use cases</h2>
+<p>The functionality of <em>compas</em> is implemented independent of the functionality provided
+by CAD software. This</p>
 </div>
 <div class="section">
 <h2>Naming conventions</h2>
@@ -112,6 +182,8 @@
 <ul class="nav flex-column" id="compas-localnav">
 <li class="nav-item"><a class="nav-link reference internal" href="#">User Guide</a><ul class="nav">
 <li class="nav-item"><a class="nav-link reference internal" href="#a-simple-script">A simple script</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#importing-stuff">Importing stuff</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#use-cases">Use cases</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#naming-conventions">Naming conventions</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#reporting-issues">Reporting issues</a></li>

@@ -31,14 +31,13 @@ and professionals, **compas** features
 Multi-disciplinary collaboration
 ================================
 
-.. figure:: /_images/compas_hilo.jpg
-    :figclass: figure
-    :class: figure-img img-fluid
+.. .. figure:: /_images/compas_hilo.jpg
+..     :figclass: figure
+..     :class: figure-img img-fluid
 
-    At the Block Research Group (BRG), **compas** has been the computational base
-    since 2012, not only for all PhD and postdoc-level research, but also for all BRG
-    projects, such as the Armadillo Vault and the NEST HiLo roof.
-
+..     At the Block Research Group (BRG), **compas** has been the computational base
+..     since 2012, not only for all PhD and postdoc-level research, but also for all BRG
+..     projects, such as the Armadillo Vault and the NEST HiLo roof.
 
 Architecture is a highly multi-disciplinary field, combining research from computer
 science, robotics, mathematics, automation, and several other scientific areas.

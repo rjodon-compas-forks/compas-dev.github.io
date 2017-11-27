@@ -1,65 +1,43 @@
 
-
-
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <title>compas -- a computational framework for research in architecture and structures</title>
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    
-        <meta name="author" content="Tom Van Mele" />
-        <meta name="description" content="compas is a computational framework for research in architecture and structures." />
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="/css/github.css" />
-        <link rel="stylesheet" type="text/css" href="/css/compas.css" />
-        <link rel="stylesheet" type="text/css" href="/css/compas-reference.css" />
-
-        
-            <link rel="next" title="Getting started" href="gettingstarted.html" />
-        
-        
-        
-            <link rel="prev" title="The compas framework" href="index.html" />
-        
-
-        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-    </head>
-    <body data-spy="scroll" data-target="#compas-localnav">
-
-        <header class="navbar navbar-expand navbar-dark bg-dark compas-navbar">
-            <a class="navbar-brand" href="/">compas</a>
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/main/">Main library</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/packages/">Additional Packages</a>
-                    </li>
-                </ul>
-        </header>
-        
-        <div class="container-fluid compas-container">
-            <div class="row flex-xl-nowrap">
-
-                <main class="col-12 col-md-9 col-xl-8 compas-content" role="main">
-
-                    
-
-                        <!-- 
+<head>
+<title>compas -- a computational framework for research in architecture and structures</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="Tom Van Mele" name="author"/>
+<meta content="compas is a computational framework for research in architecture and structures." name="description"/>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" rel="stylesheet"/>
+<link href="/css/github.css" rel="stylesheet" type="text/css"/>
+<link href="/css/compas.css" rel="stylesheet" type="text/css"/>
+<link href="/css/compas-reference.css" rel="stylesheet" type="text/css"/>
+<link href="gettingstarted.html" rel="next" title="Getting started"/>
+<link href="index.html" rel="prev" title="The compas framework"/>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+</head>
+<body data-spy="scroll" data-target="#compas-localnav">
+<header class="navbar navbar-expand navbar-dark bg-dark compas-navbar">
+<a class="navbar-brand" href="/">compas</a>
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="/main/">Main library</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/packages/">Additional Packages</a>
+</li>
+</ul>
+</header>
+<div class="container-fluid compas-container">
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 compas-content" role="main">
+<!-- 
     <nav class="breadcrumb">
         <a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
         
     </nav>
  -->
-
-                        
-
-                        <div class="section" id="the-compas-framework">
+<div class="section">
 <span id="introduction"></span><h1>The compas framework</h1>
 <p>The <strong>compas</strong> framework is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and digital fabrication.
@@ -80,17 +58,17 @@ applications in architecture, engineering, and fabrication;</p></li>
 <li><p>interoperability with C/C++ code and libraries such as ShapeOp, libigl and Eigen;</p></li>
 <li><p>methods and solvers for numerical computation built around NumPy and SciPy;</p></li>
 <li><p>high peformance computing through GPU acceleration and JIT compilation;</p></li>
-<li><p>plotters and viewers for two-diemnsional and basic three-dimensional visualization; and</p></li>
-<li><p>interfaces to common CAD software and ecosystems.</p></li>
+<li><p>plotters and viewers for two-diemnsional and basic three-dimensional visualization;</p></li>
+<li><p>interfaces to common CAD software and ecosystems;</p></li>
 </ul>
-<div class="section" id="multi-disciplinary-collaboration">
+<div class="section">
 <h2>Multi-disciplinary collaboration</h2>
-<div class="figure" id="id1">
-<img alt="_images/compas_hilo.jpg" class="figure-img img-fluid" src="_images/compas_hilo.jpg" />
-<p class="caption"><span class="caption-text">At the Block Research Group (BRG), <strong>compas</strong> has been the computational base
+<figure class="figure">
+<img alt="images/compas_hilo.jpg" class="figure-img img-fluid" src="images/compas_hilo.jpg"/>
+<figcaption class="figure-caption">At the Block Research Group (BRG), <strong>compas</strong> has been the computational base
 since 2012, not only for all PhD and postdoc-level research, but also for all BRG
-projects, such as the Armadillo Vault and the NEST HiLo roof.</span></p>
-</div>
+projects, such as the Armadillo Vault and the NEST HiLo roof.</figcaption>
+</figure>
 <p>Architecture is a highly multi-disciplinary field, combining research from computer
 science, robotics, mathematics, automation, and several other scientific areas.
 The target audience of the <strong>compas</strong> framework is therefore very diverse.</p>
@@ -104,14 +82,14 @@ in the Python ecosystem itself. Furthermore, and perhaps more importantly, it en
 that research based on <strong>compas</strong> is not tied to a specific CAD-based ecosystem,
 as this can hinder effective collaboration between different users.</p>
 </div>
-<div class="section" id="public-private-shared">
+<div class="section">
 <h2>Public, Private, Shared</h2>
-<div class="figure" id="id2">
-<img alt="_images/compas_overview.png" class="figure-img img-fluid" src="_images/compas_overview.png" />
-<p class="caption"><span class="caption-text">The framework is divided into a main library and a pool of user-contributed research packages.
+<figure class="figure">
+<img alt="images/compas_overview.png" class="figure-img img-fluid" src="images/compas_overview.png"/>
+<figcaption class="figure-caption">The framework is divided into a main library and a pool of user-contributed research packages.
 The main library is entirely public, while accessibility to the additonal packages
-is entirely controlled by their authors.</span></p>
-</div>
+is entirely controlled by their authors.</figcaption>
+</figure>
 <p><strong>compas</strong> is divided into a main library and a pool of user-contributed research
 packages. The main library is entirely open source and subject to the MIT license.
 The user-contributed packages are released with access levels defined by the respective
@@ -128,10 +106,10 @@ to change this state at any given time, allows researchers to publish their work
 in a way that corresponds to the state of their research, to the sensitivities
 of collaborations, or to the requirements of their funding.</p>
 </div>
-<div class="section" id="main-library">
+<div class="section">
 <h2>Main library</h2>
-<p>The main library consists of a core package (<code class="xref py py-mod docutils literal"><span class="pre">compas</span></code>) and several additional
-packages for integration of the core functionality in CAD software (<code class="xref py py-mod docutils literal"><span class="pre">compas_rhino</span></code>, <code class="xref py py-mod docutils literal"><span class="pre">compas_blender</span></code>, <code class="xref py py-mod docutils literal"><span class="pre">compas_maya</span></code>).
+<p>The main library consists of a core package (<code class="xref py py-mod docutils literal">compas</code>) and several additional
+packages for integration of the core functionality in CAD software (<code class="xref py py-mod docutils literal">compas_rhino</code>, <code class="xref py py-mod docutils literal">compas_blender</code>, <code class="xref py py-mod docutils literal">compas_maya</code>).
 The core package defines all <em>real</em> functionality. The CAD packages simply provide
 a unified framework for processing, visualising, and interacting with datastructures
 and geometrical objects, and for building user interfaces in different CAD software.</p>
@@ -139,14 +117,14 @@ and geometrical objects, and for building user interfaces in different CAD softw
 many more resources for further exploration. <a class="reference external" href="https://compas-dev.github.io/main/reference.html">The API reference</a>
 contains detailed information about the functionality of the core package and the CAD packages.</p>
 </div>
-<div class="section" id="additional-packages">
+<div class="section">
 <h2>Additional packages</h2>
 <p>The additional packages supplement the main library with functionality related to
 specialised topics. These packages can be related to ongoing or completed research,
 or simply provide additional functionality, as a service to other users. For an overview
 of available packages, see <a class="reference external" href="https://compas-dev.github.io/packages/">https://compas-dev.github.io/packages/</a>.</p>
 </div>
-<div class="section" id="resources">
+<div class="section">
 <h2>Resources</h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://compas-dev.github.io">compas framework: portal site</a></p></li>
@@ -157,9 +135,7 @@ of available packages, see <a class="reference external" href="https://compas-de
 </ul>
 </div>
 </div>
-
-                        
-                        <!-- <nav class="compas-sideways">
+<!-- <nav class="compas-sideways">
                             
                                 <a href="index.html" class="btn btn-primary compas-prev" role="button">The compas framework</a>
                             
@@ -168,31 +144,20 @@ of available packages, see <a class="reference external" href="https://compas-de
                                 <a href="gettingstarted.html" class="btn btn-primary compas-next" role="button">Getting started</a>
                             
                         </nav> -->
-
-                    
-
-                </main>
-
-                <div class="col-12 col-md-3 col-xl-2 compas-sidebar" role="navigation"> 
-                    <div class="navbar-light">
-
-                        <form id="" class="d-flex compas-searchbox" action="search.html" method="get">
-                            <input class="form-control" type="text" name="q" placeholder="Search docs" />
-                            <input type="hidden" name="check_keywords" value="yes" />
-                            <input type="hidden" name="area" value="default" />
-
-                            <button class="navbar-toggler d-md-none compas-navigation-toggler" type="button" data-toggle="collapse" data-target="#compas-navigation" aria-controls="compas-navigation" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </form>
-
-                        
-                        
-
-                            <div class="navbar-expand-md">
-                                <div id="compas-navigation" class="collapse navbar-collapse compas-navigation">
-
-                                <ul class="nav flex-column active">
+</main>
+<div class="col-12 col-md-3 col-xl-2 compas-sidebar" role="navigation">
+<div class="navbar-light">
+<form action="search.html" class="d-flex compas-searchbox" id="" method="get">
+<input class="form-control" name="q" placeholder="Search docs" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<button aria-controls="compas-navigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler d-md-none compas-navigation-toggler" data-target="#compas-navigation" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+</form>
+<div class="navbar-expand-md">
+<div class="collapse navbar-collapse compas-navigation" id="compas-navigation">
+<ul class="nav flex-column active">
 <li class="nav-item active"><a class="nav-link active current reference internal" href="#">Introduction</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="gettingstarted.html">Getting started</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="userguide.html">User Guide</a></li>
@@ -200,21 +165,12 @@ of available packages, see <a class="reference external" href="https://compas-de
 <li class="nav-item"><a class="nav-link reference internal" href="attribution.html">Attribution</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="license.html">License</a></li>
 </ul>
-
-
-                                </div>
-                            </div>
-
-                        
-
-                    </div>
-                </div>
-                
-                <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
-
-                    
-
-                    <ul class="nav flex-column" id="compas-localnav">
+</div>
+</div>
+</div>
+</div>
+<div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
+<ul class="nav flex-column" id="compas-localnav">
 <li class="nav-item"><a class="nav-link reference internal" href="#">The compas framework</a><ul class="nav">
 <li class="nav-item"><a class="nav-link reference internal" href="#multi-disciplinary-collaboration">Multi-disciplinary collaboration</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#public-private-shared">Public, Private, Shared</a></li>
@@ -224,16 +180,13 @@ of available packages, see <a class="reference external" href="https://compas-de
 </ul>
 </li>
 </ul>
-
-
-                </div>
-            </div>
-        </div>
-
-        <footer class="compas-footer">
+</div>
+</div>
+</div>
+<footer class="compas-footer">
             
                 
-                    &#169; Copyright 2017, Block Research Group - ETH Zurich.
+                    © Copyright 2017, Block Research Group - ETH Zurich.
                 
             
 
@@ -245,10 +198,7 @@ of available packages, see <a class="reference external" href="https://compas-de
                 Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
             
         </footer>
-
-        
-
-            <script type="text/javascript">
+<script type="text/javascript">
 var DOCUMENTATION_OPTIONS = {
     URL_ROOT:    '',
     VERSION:     '0.1.0',
@@ -258,24 +208,17 @@ var DOCUMENTATION_OPTIONS = {
     SOURCELINK_SUFFIX: '.txt'
 };
             </script>
-
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-            
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.js"></script>
-
-            <script src="/static/underscore.js"></script>
-            <script src="/static/doctools.js"></script>
-            <script src="/static/searchtools.js"></script>
-
-            <script>
+<script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.js"></script>
+<script src="/static/underscore.js"></script>
+<script src="/static/doctools.js"></script>
+<script src="/static/searchtools.js"></script>
+<script>
                 hljs.initHighlightingOnLoad();
                 anchors.add();
             </script>
-
-        
-    </body>
+</body>
 </html>

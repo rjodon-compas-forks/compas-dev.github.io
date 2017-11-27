@@ -14,6 +14,18 @@ The main contributors are:
 `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_, 
 `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_, 
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
+To create a robust, flexible and easy-to-use code base for students, researchers
+and professionals, **compas** features
+
+
+* a pure Python base with datastructures, algorithms, and methods geared towards
+  applications in architecture, engineering, and fabrication;
+* geometry processing independent of CAD tools;
+* interoperability with C/C++ code and libraries such as ShapeOp, libigl and Eigen;
+* methods and solvers for numerical computation built around NumPy and SciPy;
+* high peformance computing through GPU acceleration and JIT compilation;
+* plotters and viewers for two-diemnsional and basic three-dimensional visualization; and
+* interfaces to common CAD software and ecosystems.
 
 
 Multi-disciplinary collaboration

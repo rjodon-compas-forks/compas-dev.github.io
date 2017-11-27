@@ -321,7 +321,7 @@ blockquote {
 
 .compas-content .figure {
 	margin-bottom: 2rem;
-	padding: 1rem 2rem;
+	padding: 0;
 }
 
 .compas-content .card {

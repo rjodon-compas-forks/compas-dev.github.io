@@ -116,8 +116,9 @@ table {
 .method > dt,
 .function > dt,
 .class > dt {
+  padding: 0.5rem 0;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 4px solid #eee; }
 
 .descclassname {
   border-radius: 0;

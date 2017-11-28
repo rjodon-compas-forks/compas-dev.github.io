@@ -118,7 +118,7 @@ table {
 .function > dt,
 .class > dt {
   padding: 0.5rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 4px solid #eee; }
 
 .descclassname {
@@ -142,7 +142,7 @@ table {
   right: 0; }
 
 .field-list {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 3rem; }
 
 .field-list dt {

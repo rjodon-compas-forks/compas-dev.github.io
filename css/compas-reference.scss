@@ -64,9 +64,9 @@
 
 .admonition.important {
 	@include alert-variant(
-		theme-color-level(warning, -10),
-		theme-color-level(warning, -9),
-		theme-color-level(warning, 6)
+		theme-color-level(danger, -10),
+		theme-color-level(danger, -9),
+		theme-color-level(danger, 6)
 	);
 }
 
@@ -80,9 +80,9 @@
 
 .admonition.seealso {
 	@include alert-variant(
-		theme-color-level(info, -10),
-		theme-color-level(info, -9),
-		theme-color-level(info, 6)
+		theme-color-level(secondary, -10),
+		theme-color-level(secondary, -9),
+		theme-color-level(secondary, 6)
 	);
 }
 
@@ -194,43 +194,75 @@ table {
 .method .field-list,
 .function .field-list,
 .class .field-list {
-	margin-top: 3rem;
+	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
-.staticmethod .field-list tr,
-.classmethod .field-list tr,
-.method .field-list tr,
-.function .field-list tr,
-.class .field-list tr {
-	// margin-bottom: 0.5rem
+// .staticmethod .field-list tr,
+// .classmethod .field-list tr,
+// .method .field-list tr,
+// .function .field-list tr,
+// .class .field-list tr {
+// 	// margin-bottom: 0.5rem
+// }
+
+// .staticmethod .field-name,
+// .classmethod .field-name,
+// .method .field-name,
+// .function .field-name,
+// .class .field-name {
+// 	background-color: #eee;
+// 	// padding: 0.5rem 1rem;
+// }
+
+// .staticmethod .field-body,
+// .classmethod .field-body,
+// .method .field-body,
+// .function .field-body,
+// .class .field-body {
+// 	// padding: 0.5rem;
+// 	// padding-left: 2rem;
+// }
+
+// .staticmethod .field-body ul,
+// .classmethod .field-body ul,
+// .method .field-body ul,
+// .function .field-body ul,
+// .class .field-body ul {
+// 	// margin-bottom: 1rem;
+// 	// padding-left: 1rem;
+// }
+
+.staticmethod .field-list dt,
+.classmethod .field-list dt,
+.method .field-list dt,
+.function .field-list dt,
+.class .field-list dt {
+
 }
 
-.staticmethod .field-name,
-.classmethod .field-name,
-.method .field-name,
-.function .field-name,
-.class .field-name {
-	background-color: #eee;
-	// padding: 0.5rem 1rem;
+.staticmethod .field-list dd,
+.classmethod .field-list dd,
+.method .field-list dd,
+.function .field-list dd,
+.class .field-list dd {
+
 }
 
-.staticmethod .field-body,
-.classmethod .field-body,
-.method .field-body,
-.function .field-body,
-.class .field-body {
-	// padding: 0.5rem;
-	// padding-left: 2rem;
+.staticmethod .field-list dd p,
+.classmethod .field-list dd p,
+.method .field-list dd p,
+.function .field-list dd p,
+.class .field-list dd p {
+	padding: 2rem;
 }
 
-.staticmethod .field-body ul,
-.classmethod .field-body ul,
-.method .field-body ul,
-.function .field-body ul,
-.class .field-body ul {
-	// margin-bottom: 1rem;
-	// padding-left: 1rem;
+.staticmethod .field-list dd ul,
+.classmethod .field-list dd ul,
+.method .field-list dd ul,
+.function .field-list dd ul,
+.class .field-list dd ul {
+
 }
 
 .class .attribute {}

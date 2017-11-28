@@ -70,13 +70,13 @@
     color: #2e3133; }
 
 .admonition.important {
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: #ffeeba; }
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb; }
   .admonition.important hr {
-    border-top-color: #ffe8a1; }
+    border-top-color: #f1b0b7; }
   .admonition.important .alert-link {
-    color: #533f03; }
+    color: #491217; }
 
 .admonition.warning {
   color: #721c24;
@@ -88,13 +88,13 @@
     color: #491217; }
 
 .admonition.seealso {
-  color: #0c5460;
-  background-color: #d1ecf1;
-  border-color: #bee5eb; }
+  color: #464a4e;
+  background-color: #e7e8ea;
+  border-color: #dddfe2; }
   .admonition.seealso hr {
-    border-top-color: #abdde5; }
+    border-top-color: #cfd2d6; }
   .admonition.seealso .alert-link {
-    color: #062c33; }
+    color: #2e3133; }
 
 /* ----------------------------------------------------------------- */
 table {
@@ -162,15 +162,15 @@ table {
 .method .field-list,
 .function .field-list,
 .class .field-list {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.staticmethod .field-name,
-.classmethod .field-name,
-.method .field-name,
-.function .field-name,
-.class .field-name {
-  background-color: #eee; }
+.staticmethod .field-list dd p,
+.classmethod .field-list dd p,
+.method .field-list dd p,
+.function .field-list dd p,
+.class .field-list dd p {
+  padding: 2rem; }
 
 /* ----------------------------------------------------------------- */
 

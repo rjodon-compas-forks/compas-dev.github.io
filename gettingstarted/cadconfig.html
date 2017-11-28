@@ -28,6 +28,9 @@
 <li class="nav-item">
 <a class="nav-link" href="/packages/">Additional Packages</a>
 </li>
+<li class="nav-item">
+<a class="nav-link" href="http://forum.compas-framework.org">Forum</a>
+</li>
 </ul>
 </header>
 <div class="container-fluid compas-container">
@@ -61,12 +64,14 @@ Therefore, you will have to tell Rhino where to find <code class="docutils liter
 To do so, open the Rhino Python Editor:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
 </code></pre></div>
+
 <figure class="figure">
 <img alt="../images/rhino_scripteditor.png" class="figure-img img-fluid" src="../images/rhino_scripteditor.png"/>
 </figure>
 <p>In the Rhino Python Editor, go:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
 </code></pre></div>
+
 <p>and add the path to <code class="docutils literal">compas</code>.</p>
 <figure class="figure">
 <img alt="../images/rhino_paths.png" class="figure-img img-fluid" src="../images/rhino_paths.png"/>
@@ -90,22 +95,27 @@ Rhino doesn’t like it…</p>
 <p>To check your IronPython version in Rhino, go to the PythonScript Editor:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
 </code></pre></div>
+
 <p>There, run the following snippet.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span>
 </code></pre></div>
+
 <p>This will display something like:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">(</span><span class="n">major</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">minor</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">micro</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span> <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
+
 <p>If the <code class="docutils literal">releaselevel</code> is not <code class="docutils literal">'final'</code>, install your own version of IronPython 2.7.5
 and let Rhino know where it is by adding it to the search paths as before:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
 </code></pre></div>
+
 <p>And add:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>
 <span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>\<span class="n">Lib</span>
 <span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>\<span class="n">DLLs</span>
 </code></pre></div>
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Restart Rhino!</p>

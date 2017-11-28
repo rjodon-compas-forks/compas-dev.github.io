@@ -14,7 +14,6 @@ The main contributors are:
 `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_, 
 `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_ and
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
-
 **compas** features
 
 * a pure Python base with datastructures, algorithms, and methods geared towards applications in architecture, engineering, and fabrication;

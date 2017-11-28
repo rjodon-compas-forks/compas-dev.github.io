@@ -18,10 +18,10 @@
 // }
 
 .rubric {
-	font-weight: 600;
+	font-weight: 700;
 	margin-top: 3rem;
 	margin-bottom: 2rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 0px solid #eee;
 	color: #222;
 }
 
@@ -249,12 +249,16 @@ table {
 
 }
 
-.staticmethod .field-list dd,
-.classmethod .field-list dd,
-.method .field-list dd,
-.function .field-list dd,
-.class .field-list dd {
+.field-list dt .brackets::before {
+	content: '[';
+}
 
+.field-list dt .brackets::after {
+	content: ']';
+}
+
+.field-list dd {
+	padding: 1rem 2rem;
 }
 
 .staticmethod .field-list dd > p,
@@ -262,7 +266,6 @@ table {
 .method .field-list dd > p,
 .function .field-list dd > p,
 .class .field-list dd > p {
-	padding: 1rem 2rem;
 }
 
 .staticmethod .field-list dd ul,
@@ -270,8 +273,6 @@ table {
 .method .field-list dd ul,
 .function .field-list dd ul,
 .class .field-list dd ul {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 }
 
 .class .attribute {}

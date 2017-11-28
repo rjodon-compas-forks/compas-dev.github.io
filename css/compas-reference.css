@@ -1,8 +1,8 @@
 .rubric {
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0px solid #eee;
   color: #222; }
 
 /* ----------------------------------------------------------------- */
@@ -156,20 +156,14 @@ table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.staticmethod .field-list dd > p,
-.classmethod .field-list dd > p,
-.method .field-list dd > p,
-.function .field-list dd > p,
-.class .field-list dd > p {
-  padding: 1rem 2rem; }
+.field-list dt .brackets::before {
+  content: '['; }
 
-.staticmethod .field-list dd ul,
-.classmethod .field-list dd ul,
-.method .field-list dd ul,
-.function .field-list dd ul,
-.class .field-list dd ul {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+.field-list dt .brackets::after {
+  content: ']'; }
+
+.field-list dd {
+  padding: 1rem 2rem; }
 
 /* ----------------------------------------------------------------- */
 

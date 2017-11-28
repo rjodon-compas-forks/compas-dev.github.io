@@ -173,8 +173,14 @@ table {
 .class > dd > p {
 }
 
+.compas-content .section {
+	position: relative;
+}
+
 dt > .reference.internal {
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .field-list {

@@ -125,7 +125,7 @@ blockquote {
 @media (min-width: 768px) {
 	.compas-sidebar {
 		border-bottom: none;
-		border-right: 1px solid #ccc;
+		border-right: 1px solid #eee;
 	}
 
 	@supports ((position: sticky)
@@ -211,7 +211,7 @@ blockquote {
 
 .compas-searchbox {
 	padding: 1rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #eee;
 	position: relative;
 }
 

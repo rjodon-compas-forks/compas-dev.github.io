@@ -12,5 +12,4 @@ The compas framework
     gettingstarted
     userguide
     devguide
-    attribution
     license

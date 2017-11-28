@@ -156,6 +156,9 @@ table {
   margin-top: 2rem;
   margin-bottom: 1rem; }
 
+.field-list dd {
+  padding: 0 2rem; }
+
 .citation dt {
   font-weight: normal;
   margin-top: 1rem;

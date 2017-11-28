@@ -112,13 +112,9 @@ table {
 	border: 1px solid #eee;
 }
 
-.longtable .row-odd {
-	// background-color: #f8f8f8;
-}
+.longtable .row-odd {}
 
-.longtable .row-even {
-	// background-color: #fefefe;
-}
+.longtable .row-even {}
 
 @media (min-width: 768px) {
 	.longtable tbody tr td:first-child {
@@ -195,6 +191,7 @@ table {
 }
 
 .field-list dd {
+	padding: 0 2rem;
 }
 
 .citation dt {

@@ -2,19 +2,27 @@
 @import "bootstrap-scss/variables";
 @import "bootstrap-scss/mixins";
 
+// .rubric {
+// 	padding: $alert-padding-y $alert-padding-x;
+// 	border: $alert-border-width solid transparent;
+// 	@include border-radius($alert-border-radius);
+// 	@include alert-variant(
+// 		theme-color-level(light, -10),
+// 		theme-color-level(light, -9),
+// 		theme-color-level(light, 6)
+// 	);
+// 	font-weight: 600;
+// 	margin-top: 3rem;
+// 	margin-bottom: 2rem;
+// 	width: 100%;
+// }
+
 .rubric {
-	padding: $alert-padding-y $alert-padding-x;
-	border: $alert-border-width solid transparent;
-	@include border-radius($alert-border-radius);
-	@include alert-variant(
-		theme-color-level(light, -10),
-		theme-color-level(light, -9),
-		theme-color-level(light, 6)
-	);
 	font-weight: 600;
 	margin-top: 3rem;
 	margin-bottom: 2rem;
-	width: 100%;
+	border-bottom: 1px solid #ccc;
+	color: #222;
 }
 
 /* ----------------------------------------------------------------- */

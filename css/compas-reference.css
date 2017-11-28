@@ -159,6 +159,9 @@ table {
 .field-list dd {
   padding: 0 2rem; }
 
+.field-list dd ul {
+  padding-left: 0; }
+
 .citation dt {
   font-weight: normal;
   margin-top: 1rem;

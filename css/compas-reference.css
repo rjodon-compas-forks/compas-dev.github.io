@@ -96,7 +96,8 @@ table {
   border: none;
   width: 100%;
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  vertical-align: middle; }
 
 .longtable td {
   padding: 0.5rem;
@@ -111,6 +112,9 @@ table {
 
 .longtable a {
   text-decoration: none; }
+
+.longtable p {
+  margin: 0; }
 
 .staticmethod > dt,
 .classmethod > dt,

@@ -177,7 +177,11 @@ table {
 	position: relative;
 }
 
-dt > .reference.internal {
+.staticmethod > dt > .reference.internal,
+.classmethod > dt > .reference.internal,
+.method > dt > .reference.internal,
+.function > dt > .reference.internal,
+.class > dt > .reference.internal {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -201,6 +205,7 @@ dt > .reference.internal {
 	padding-left: 0;
 }
 
+.footnote dt,
 .citation dt {
 	font-weight: normal;
 	margin-top: 1rem;

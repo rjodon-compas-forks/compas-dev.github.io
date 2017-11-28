@@ -309,7 +309,7 @@ blockquote {
 	padding: 0;
 }
 
-.compas-content .section h2::before {
+/*.compas-content .section h2::before {
 	padding-top: 6rem;
 	margin-top: -6rem;
 	visibility: hidden;
@@ -324,7 +324,7 @@ blockquote {
 	content: "";
 	z-index: -1;
 }
-
+*/
 .compas-content .section > ul {
 	margin-bottom: 2rem;
 }

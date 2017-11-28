@@ -42,10 +42,18 @@ blockquote {
 	border-bottom: 1px solid #ccc;
 }
 
-.compas-navbar .nav-brand,
+.compas-navbar .navbar-brand,
 .compas-navbar .nav-link {
-	color: #0092d2;
+	color: #666666;
 }
+
+.compas-navbar .navbar-brand:hover,
+.compas-navbar .nav-link:hover,
+.compas-navbar .navbar-brand.active,
+.compas-navbar .nav-link.active {
+	color: #222222;
+}
+
 
 .compas-container {
 	/*max-width: 1440px;*/

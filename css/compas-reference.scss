@@ -143,17 +143,18 @@ table {
 .method > dt,
 .function > dt,
 .class > dt {
-	// font-weight: 600;
-	// padding: 1rem 0.5rem;
-	// border: $alert-border-width solid transparent;
-	// @include border-radius($alert-border-radius);
-	// border-color: theme-color-level(dark, -9);
-	// color: theme-color-level(dark, 6);
-	// background-color: theme-color-level(dark, -10);
-	// margin-bottom: 2rem;
 	padding: 0.5rem 0;
 	margin-bottom: 1rem;
 	border-bottom: 4px solid #eee;
+}
+
+.staticmethod > dt em,
+.classmethod > dt em,
+.method > dt em,
+.function > dt em,
+.class > dt em {
+	font-weight: normal;
+	font-size: 0.8rem;
 }
 
 .class .property {}

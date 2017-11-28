@@ -56,7 +56,7 @@ blockquote {
 
 .compas-navbar .navbar-brand.active,
 .compas-navbar .nav-link.active {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .compas-container {
@@ -255,7 +255,7 @@ blockquote {
 
 .compas-navigation .nav .nav .nav .nav-link {
 	padding: 0.25rem 0.5rem 0.25rem 1.5rem;
-	color: #ccc;
+	color: #888;
 }
 
 .compas-navigation .nav .nav .nav .active .nav-link,

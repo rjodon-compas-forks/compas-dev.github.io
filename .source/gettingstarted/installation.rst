@@ -14,7 +14,17 @@ General steps
     compas-dev
 
 
-**2.** Clone the code repository from Github using GitHub Desktop
+**2.** Clone the code repository from Github
+
+*Using git*
+
+.. code-block:: none
+    
+    $ cd path/to/compas-dev
+    $ git clone https://github.com/compas-dev/compas.git
+
+
+*Using Github Desktop*
 
 .. code-block:: none
 
@@ -38,25 +48,26 @@ After pulling the repository, the folder structure will contain::
             - libs
             - samples
             - src
+            - temp
 
 
 The ``src`` folder should contain several Python packages::
 
     - compas
     - compas_blender
-    - compas_dynamo
-    - compas_grasshopper
     - compas_maya
     - compas_rhino
-    - compas_rhinomac
 
 
 **3.** Configure your system
 
-* Verify that Python has been added to the system ``PATH``.
+* Verify that Python is on the system ``PATH``.
 * Add the compas framework to the ``PYTHONPATH``.
 
-Operating system specific instructions for `Windows`_ and  `Unix`_ can be found below.
+Operating system-specific instructions can be found below:
+
+* `Unix`_ 
+* `Windows`_
 
 
 **4.** Verify your installation.

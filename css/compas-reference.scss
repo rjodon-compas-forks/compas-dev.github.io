@@ -142,41 +142,38 @@ table {
 .method > dt,
 .function > dt,
 .class > dt {
-	font-weight: 600;
-	padding: 1rem 0.5rem;
-	border: $alert-border-width solid transparent;
-	@include border-radius($alert-border-radius);
-	border-color: theme-color-level(dark, -9);
-	color: theme-color-level(dark, 6);
-	background-color: theme-color-level(dark, -10);
+	// font-weight: 600;
+	// padding: 1rem 0.5rem;
+	// border: $alert-border-width solid transparent;
+	// @include border-radius($alert-border-radius);
+	// border-color: theme-color-level(dark, -9);
+	// color: theme-color-level(dark, 6);
+	// background-color: theme-color-level(dark, -10);
+	// margin-bottom: 2rem;
 	margin-bottom: 2rem;
+	border-bottom: 1px solid #ccc;
 }
 
 .class .property {}
 
-.staticmethod .descclassname,
-.classmethod .descclassname,
-.method .descclassname,
-.function .descclassname,
-.class .descclassname {
+.descclassname {
 	border-radius: 0;
 	padding-right: 0;
 }
 
-.staticmethod .descname,
-.classmethod .descname,
-.method .descname,
-.function .descname,
-.class .descname {
+.descname {
 	padding-left: 0;
 	border-radius: 0;
 }
 
-.staticmethod > dt > .reference.internal,
-.classmethod > dt > .reference.internal,
-.method > dt > .reference.internal,
-.function > dt > .reference.internal,
-.class > dt > .reference.internal {
+.staticmethod > dd > p,
+.classmethod > dd > p,
+.method > dd > p,
+.function > dt,
+.class > dd > p {
+}
+
+dt > .reference.internal {
 	float: right;
 }
 
@@ -204,14 +201,15 @@ table {
 	margin-bottom: 0.5rem;
 }
 
-.citation dt .brackets::before {
+.brackets::before {
 	content: '[';
 }
 
-.citation dt .brackets::after {
+.brackets::after {
 	content: ']';
 }
 
+.footnote dd, 
 .citation dd {
 	padding: 0 2rem;
 }

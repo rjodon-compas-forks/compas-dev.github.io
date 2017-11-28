@@ -116,36 +116,18 @@ table {
 .method > dt,
 .function > dt,
 .class > dt {
-  font-weight: 600;
-  padding: 1rem 0.5rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  border-color: #c6c8ca;
-  color: #1b1e21;
-  background-color: #d6d8d9;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc; }
 
-.staticmethod .descclassname,
-.classmethod .descclassname,
-.method .descclassname,
-.function .descclassname,
-.class .descclassname {
+.descclassname {
   border-radius: 0;
   padding-right: 0; }
 
-.staticmethod .descname,
-.classmethod .descname,
-.method .descname,
-.function .descname,
-.class .descname {
+.descname {
   padding-left: 0;
   border-radius: 0; }
 
-.staticmethod > dt > .reference.internal,
-.classmethod > dt > .reference.internal,
-.method > dt > .reference.internal,
-.function > dt > .reference.internal,
-.class > dt > .reference.internal {
+dt > .reference.internal {
   float: right; }
 
 .field-list {
@@ -167,12 +149,13 @@ table {
   margin-top: 1rem;
   margin-bottom: 0.5rem; }
 
-.citation dt .brackets::before {
+.brackets::before {
   content: '['; }
 
-.citation dt .brackets::after {
+.brackets::after {
   content: ']'; }
 
+.footnote dd,
 .citation dd {
   padding: 0 2rem; }
 

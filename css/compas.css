@@ -318,6 +318,10 @@ blockquote {
 	z-index: -1;
 }
 
+.compas-content .section h2 {
+	z-index: -1;
+}
+
 .compas-content .section h3::before {
 	display: block;
 	padding-top: 6rem;

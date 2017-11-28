@@ -44,16 +44,20 @@ blockquote {
 
 .compas-navbar .navbar-brand,
 .compas-navbar .nav-link {
-	color: #666666;
+	color: #888;
 }
 
 .compas-navbar .navbar-brand:hover,
 .compas-navbar .nav-link:hover,
 .compas-navbar .navbar-brand.active,
 .compas-navbar .nav-link.active {
-	color: #222222;
+	color: #222;
 }
 
+.compas-navbar .navbar-brand.active,
+.compas-navbar .nav-link.active {
+	font-weight: bold;
+}
 
 .compas-container {
 	/*max-width: 1440px;*/

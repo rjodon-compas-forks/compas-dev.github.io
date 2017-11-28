@@ -207,11 +207,11 @@ dt > .reference.internal {
 	margin-bottom: 0.5rem;
 }
 
-.brackets::before {
+dt .brackets::before {
 	content: '[';
 }
 
-.brackets::after {
+dt .brackets::after {
 	content: ']';
 }
 

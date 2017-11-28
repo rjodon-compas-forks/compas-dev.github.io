@@ -154,10 +154,10 @@ dt > .reference.internal {
   margin-top: 1rem;
   margin-bottom: 0.5rem; }
 
-.brackets::before {
+dt .brackets::before {
   content: '['; }
 
-.brackets::after {
+dt .brackets::after {
   content: ']'; }
 
 .footnote dd,

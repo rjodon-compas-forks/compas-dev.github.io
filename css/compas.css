@@ -310,16 +310,10 @@ blockquote {
 }
 
 .compas-content .section h2::before {
-	display: block;
 	padding-top: 6rem;
 	margin-top: -6rem;
 	visibility: hidden;
 	content: "";
-	z-index: -1;
-}
-
-.compas-content .section h2 {
-	z-index: -1;
 }
 
 .compas-content .section h3::before {

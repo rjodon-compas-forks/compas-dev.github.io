@@ -156,14 +156,14 @@ table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.field-list dt .brackets::before {
-  content: '['; }
-
-.field-list dt .brackets::after {
-  content: ']'; }
-
 .field-list dd {
   padding: 1rem 2rem; }
+
+.citation dt .brackets::before {
+  content: '['; }
+
+.citation dt .brackets::after {
+  content: ']'; }
 
 /* ----------------------------------------------------------------- */
 

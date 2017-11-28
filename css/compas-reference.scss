@@ -249,14 +249,6 @@ table {
 
 }
 
-.field-list dt .brackets::before {
-	content: '[';
-}
-
-.field-list dt .brackets::after {
-	content: ']';
-}
-
 .field-list dd {
 	padding: 1rem 2rem;
 }
@@ -275,7 +267,14 @@ table {
 .class .field-list dd ul {
 }
 
-.class .attribute {}
+.citation dt .brackets::before {
+	content: '[';
+}
+
+.citation dt .brackets::after {
+	content: ']';
+}
+
 
 /* ----------------------------------------------------------------- */
 

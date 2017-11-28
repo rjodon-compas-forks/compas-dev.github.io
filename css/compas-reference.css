@@ -1,7 +1,7 @@
 .rubric {
   font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 0px solid #eee;
   color: #222; }
 
@@ -156,9 +156,14 @@ table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
+.field-list dt,
+.citation dt {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+
 .field-list dd,
 .citation dd {
-  padding: 1rem 2rem; }
+  padding: 0rem 2rem; }
 
 .staticmethod .field-list dd ul,
 .classmethod .field-list dd ul,
@@ -166,6 +171,9 @@ table {
 .function .field-list dd ul,
 .class .field-list dd ul {
   padding-left: 0; }
+
+.citation dt {
+  font-weight: normal; }
 
 .citation dt .brackets::before {
   content: '['; }

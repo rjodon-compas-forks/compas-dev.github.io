@@ -1,5 +1,6 @@
 .rubric {
-  font-weight: 700;
+  font-weight: normal;
+  font-size: 2rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
   border-bottom: 4px solid #eee;

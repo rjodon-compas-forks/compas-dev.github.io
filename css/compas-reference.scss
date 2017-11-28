@@ -249,11 +249,11 @@ table {
 
 }
 
-.staticmethod .field-list dd p,
-.classmethod .field-list dd p,
-.method .field-list dd p,
-.function .field-list dd p,
-.class .field-list dd p {
+.staticmethod .field-list dd > p,
+.classmethod .field-list dd > p,
+.method .field-list dd > p,
+.function .field-list dd > p,
+.class .field-list dd > p {
 	padding: 2rem;
 }
 
@@ -262,7 +262,8 @@ table {
 .method .field-list dd ul,
 .function .field-list dd ul,
 .class .field-list dd ul {
-
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .class .attribute {}

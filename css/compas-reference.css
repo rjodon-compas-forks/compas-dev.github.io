@@ -156,8 +156,16 @@ table {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.field-list dd {
+.field-list dd,
+.citation dd {
   padding: 1rem 2rem; }
+
+.staticmethod .field-list dd ul,
+.classmethod .field-list dd ul,
+.method .field-list dd ul,
+.function .field-list dd ul,
+.class .field-list dd ul {
+  padding-left: 0; }
 
 .citation dt .brackets::before {
   content: '['; }

@@ -315,6 +315,7 @@ blockquote {
 	margin-top: -6rem;
 	visibility: hidden;
 	content: "";
+	z-index: -1;
 }
 
 .compas-content .section h3::before {
@@ -323,6 +324,7 @@ blockquote {
 	margin-top: -6rem;
 	visibility: hidden;
 	content: "";
+	z-index: -1;
 }
 
 .compas-content .section > ul {

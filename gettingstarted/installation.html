@@ -13,7 +13,7 @@
 <link href="/css/compas.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas-reference.css" rel="stylesheet" type="text/css"/>
 <link href="cadconfig.html" rel="next" title="CAD configuration"/>
-<link href="../gettingstarted.html" rel="prev" title="Getting started"/>
+<link href="requirements.html" rel="prev" title="Requirements"/>
 <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 </head>
 <body data-spy="scroll" data-target="#compas-localnav">
@@ -53,17 +53,14 @@
 <p><strong>1.</strong> Create a folder on your computer for your compas installation.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>compas-dev
 </code></pre></div>
-
 <p><strong>2.</strong> Clone the code repository from Github</p>
 <p><em>Using git</em></p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd path/to/compas-dev
 $ git clone https://github.com/compas-dev/compas.git
 </code></pre></div>
-
 <p><em>Using Github Desktop</em></p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>GitHub Desktop &gt; File &gt; Clone Repository
 </code></pre></div>
-
 <ul class="simple">
 <li><p>Use the <em>Url</em> option.</p></li>
 <li><p>Repository Url: <a class="reference external" href="https://github.com/compas-dev/compas.git">https://github.com/compas-dev/compas.git</a></p></li>
@@ -72,7 +69,7 @@ $ git clone https://github.com/compas-dev/compas.git
 <figure class="figure">
 <img alt="../images/github_clonerepo.png" class="figure-img img-fluid" src="../images/github_clonerepo.png"/>
 </figure>
-<p>After pulling the repository, the folder structure will contain:</p>
+<p>After cloning the repository, the folder structure will contain:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">compas</span><span class="o">-</span><span class="n">dev</span>
     <span class="o">-</span> <span class="n">compas</span>
         <span class="o">-</span> <span class="n">libs</span>
@@ -80,14 +77,12 @@ $ git clone https://github.com/compas-dev/compas.git
         <span class="o">-</span> <span class="n">src</span>
         <span class="o">-</span> <span class="n">temp</span>
 </code></pre></div>
-
 <p>The <code class="docutils literal">src</code> folder should contain several Python packages:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="o">-</span> <span class="n">compas</span>
 <span class="o">-</span> <span class="n">compas_blender</span>
 <span class="o">-</span> <span class="n">compas_maya</span>
 <span class="o">-</span> <span class="n">compas_rhino</span>
 </code></pre></div>
-
 <p><strong>3.</strong> Configure your system</p>
 <ul class="simple">
 <li><p>Verify that Python is on the system <code class="docutils literal">PATH</code>.</p></li>
@@ -103,19 +98,16 @@ $ git clone https://github.com/compas-dev/compas.git
 Start an interactive Python session (in Terminal or Command Prompt):</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ python
 </code></pre></div>
-
 <p>Then try the following code.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">compas</span><span class="o">.</span><span class="n">verify</span><span class="p">()</span>
 </code></pre></div>
-
 <p>If all required packages are installed, try</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">compas</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="kn">import</span> <span class="n">Mesh</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh</span><span class="o">.</span><span class="n">from_obj</span><span class="p">(</span><span class="n">compas</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'faces.obj'</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
 </code></pre></div>
-
 <p>If on OSX your Terminal window will display as follows</p>
 <figure class="figure">
 <img alt="../images/validate_mac.png" class="figure-img img-fluid" src="../images/validate_mac.png"/>
@@ -131,14 +123,12 @@ Start an interactive Python session (in Terminal or Command Prompt):</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ cd
 $ ls -a
 </code></pre></div>
-
 <p>This will list all files in your home directory.
 Check if you have a <code class="docutils literal">.bash_profile</code> or <code class="docutils literal">.profile</code>.
 Choose the <code class="docutils literal">.bash_profile</code>  if it exists, otherwise choose the <code class="docutils literal">.profile</code></p>
 <p>To edit your <code class="docutils literal">.bash_profile</code>, type:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ nano .bash_profile
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You may be prompted for the administrator password.
@@ -148,7 +138,6 @@ Characters will not appear while you are typing.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">"/path/to/anaconda/bin:$PATH"</span>
 <span class="n">export</span> <span class="n">PYTHONPATH</span><span class="o">=</span><span class="s2">"/path/to/compas/src:$PYTHONPATH"</span>
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You will not be able to copy and paste into the window.
@@ -161,14 +150,12 @@ Make sure to type all paths correctly.</p>
 Then restart your Terminal or type:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span>$ source .bash_profile
 </code></pre></div>
-
 </div>
 <div class="section">
 <span id="windows"></span><h2>On Windows</h2>
 <p>On Windows, you will have to change your <em>Environment Variables</em>:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Control</span> <span class="n">Panel</span> <span class="o">&gt;</span> <span class="n">System</span> <span class="o">&gt;</span> <span class="n">Advanced</span> <span class="n">system</span> <span class="n">settings</span> <span class="o">&gt;</span> <span class="n">Environment</span> <span class="n">Variables</span>
 </code></pre></div>
-
 <figure class="figure">
 <img alt="../images/windows_controlpanel.png" class="figure-img img-fluid" src="../images/windows_controlpanel.png"/>
 </figure>
@@ -202,44 +189,10 @@ Then restart your Terminal or type:</p>
 <img alt="../images/windows_pythonpath-entries.png" class="figure-img img-fluid" src="../images/windows_pythonpath-entries.png"/>
 </figure>
 </div>
-<div class="section">
-<h2>Dependencies</h2>
-<p>The <code class="docutils literal">compas</code> framework has very few dependencies, and most of them are optional. If
-you are happy working in Rhino or Blender, and you are not interested in or don’t
-need any of the numerical stuff, then everything should work out of the box;
-provided you have Python installed, of course.</p>
-<p>The current version of <code class="docutils literal">compas</code> has the following <strong>optional</strong> dependencies:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="http://www.numpy.org/">Numpy</a>: For all numerical calculations and algorithms.</p></li>
-<li><p><a class="reference external" href="https://www.scipy.org/">Scipy</a>: For all numerical calculations and algorithms.</p></li>
-<li><p><a class="reference external" href="http://matplotlib.org/">Matplotlib</a>: For two-dimensional visualisations.</p></li>
-<li><p><a class="reference external" href="http://pyopengl.sourceforge.net/">PyOpenGL</a>: For three-dimensional visualisations.</p></li>
-<li><p><a class="reference external" href="https://wiki.qt.io/PySide">PySide</a>: For some of the standalone tools.</p></li>
-<li><p><a class="reference external" href="https://networkx.github.io/">NetworkX</a>: For spring layouts of networks.</p></li>
-<li><p><a class="reference external" href="https://github.com/hagberg/planarity">Planarity</a>: For planarity testing.</p></li>
-<li><p><a class="reference external" href="http://cython.org/">Cython</a>: For performance optimisation.</p></li>
-<li><p><a class="reference external" href="http://numba.pydata.org/">Numba</a>: For just-in-time compilation.</p></li>
-<li><p><a class="reference external" href="https://mathema.tician.de/software/pycuda/">PyCuda</a>: For parallel computation through Nvidia’s CUDA.</p></li>
-<li><p><a class="reference external" href="https://mathema.tician.de/software/pyopencl/">PyOpenCL</a>: For parallel computation though OpenCL.</p></li>
-<li><p><a class="reference external" href="http://www.cvxpy.org/">CVXPY</a>: For convex optimisation problems.</p></li>
-<li><p><a class="reference external" href="https://imageio.github.io/">Imageio</a>: For reading and writing of image data.</p></li>
-<li><p><a class="reference external" href="http://www.pythonware.com/products/pil">PIL</a>: For general image processing.</p></li>
-</ul>
-<p>Scientific Python distributions like <a class="reference external" href="https://www.continuum.io/">Anaconda</a> or
-<a class="reference external" href="https://www.enthought.com/products/epd/">Enthought EPD</a> provide most of the
-optional dependencies (and of course Python), or a package manager to
-install them with.</p>
-<p>On Windows, many installers for remaining and otherwise difficult-to-install packages
-can be found on Christof Gholke’s page
-<a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">Unofficial Windows Binaries for Python Extension Packages</a>.
-On mac, installing whatever doesn’t ship with a scientific distribution is
-relatively easy with a package manager like <a class="reference external" href="https://www.macports.org/">macports</a>
-or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
-</div>
 </div>
 <!-- <nav class="compas-sideways">
                             
-                                <a href="../gettingstarted.html" class="btn btn-primary compas-prev" role="button">Getting started</a>
+                                <a href="requirements.html" class="btn btn-primary compas-prev" role="button">Requirements</a>
                             
 
                             
@@ -262,9 +215,10 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="../introduction.html">Introduction</a></li>
 <li class="nav-item active"><a class="nav-link reference internal" href="../gettingstarted.html">Getting started</a><ul class="nav active">
+<li class="nav-item"><a class="nav-link reference internal" href="requirements.html">Requirements</a></li>
 <li class="nav-item active"><a class="nav-link active current reference internal" href="#">Installation</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="cadconfig.html">CAD configuration</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="toolconfig.html">Tool configuration</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="editorconfig.html">Editor configuration</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link reference internal" href="../userguide.html">User Guide</a></li>
@@ -281,7 +235,6 @@ or <a class="reference external" href="http://brew.sh/">homebrew</a>.</p>
 <li class="nav-item"><a class="nav-link reference internal" href="#general-steps">General steps</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#on-unix-linux-osx">On Unix (Linux, OSX)</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#on-windows">On Windows</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#dependencies">Dependencies</a></li>
 </ul>
 </li>
 </ul>

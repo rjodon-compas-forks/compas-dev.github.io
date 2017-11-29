@@ -8,6 +8,7 @@ Getting started
     :maxdepth: 2
     :titlesonly:
 
+    gettingstarted/requirements
     gettingstarted/installation
     gettingstarted/cadconfig
-    gettingstarted/toolconfig
+    gettingstarted/editorconfig

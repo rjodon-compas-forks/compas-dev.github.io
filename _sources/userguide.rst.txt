@@ -12,9 +12,45 @@ User Guide
 .. entry points / use cases
 .. naming conventions
 .. report issues/bugs
-.. working with sublime
+.. setting up sublime
 .. setting up a project
 .. known issues
 
-
 .. the principle of lease astonishment
+
+
+Use cases
+=========
+
+.. The functionality of *compas* is implemented independent of the functionality provided
+.. by CAD software. This 
+
+
+A simple script
+===============
+
+.. .. code-block:: python
+
+
+Imports
+=======
+
+.. All packages are structured such that functionality can be imported from the *second* level.
+
+
+Naming conventions
+==================
+
+
+Reporting issues
+================
+
+
+Resources
+=========
+
+* `compas framework: portal site <http://compas-dev.github.io>`_
+* `compas framework: main library docs <http://compas-dev.github.io/main/>`_
+* `compas framework: overview additional packages <http://compas-dev.github.io/packages/>`_
+* `compas framework: discussion forum <http://forum.compas-framework.org>`_
+* `compas framework: main library github repo <http://github.com/compas-dev/compas>`_

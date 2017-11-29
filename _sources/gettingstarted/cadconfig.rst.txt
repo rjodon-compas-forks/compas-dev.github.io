@@ -4,50 +4,18 @@
 CAD configuration
 ********************************************************************************
 
-Requirements
-============
-
-* `IronPython 2.7.5 <http://ironpython.codeplex.com/releases/view/169382>`_
-* `Rhino3D <https://www.rhino3d.com/download>`_
-
-
-Rhino configuration
-===================
+Rhino
+=====
 
 .. add note about virtual machines
 .. add notes about rhinomac
 .. configuration options for atom
 
-compas
-------
+Requirements
+------------
 
-Rhino has its own environment settings.
-Therefore, you will have to tell Rhino where to find ``compas`` as well.
-To do so, open the Rhino Python Editor::
-
-    Tools > PythonScript > Edit
-
-
-.. figure:: /_images/rhino_scripteditor.*
-     :figclass: figure
-     :class: figure-img img-fluid
-
-
-In the Rhino Python Editor, go::
-
-    Tools > Options
-
-
-and add the path to ``compas``.
-
-.. figure:: /_images/rhino_paths.*
-     :figclass: figure
-     :class: figure-img img-fluid
-
-
-.. note::
-
-    Restart Rhino!
+* `IronPython 2.7.5 <http://ironpython.codeplex.com/releases/view/169382>`_
+* `Rhino3D <https://www.rhino3d.com/download>`_
 
 
 IronPython
@@ -99,3 +67,69 @@ And add::
 
     Restart Rhino!
 
+
+compas
+------
+
+Rhino has its own environment settings.
+Therefore, you will have to tell Rhino where to find ``compas`` as well.
+To do so, open the Rhino Python Editor::
+
+    Tools > PythonScript > Edit
+
+
+.. figure:: /_images/rhino_scripteditor.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+
+In the Rhino Python Editor, go::
+
+    Tools > Options
+
+
+and add the path to ``compas``.
+
+.. figure:: /_images/rhino_paths.*
+     :figclass: figure
+     :class: figure-img img-fluid
+
+
+.. note::
+
+    Restart Rhino!
+
+
+example script
+--------------
+
+Run the following script in the PythonScript editor.
+
+.. code-block:: python
+
+    import compas
+    import compas_rhino
+
+    from compas.datastructures import Mesh
+    from compas.topology import mesh_subdivide
+    from compas_rhino.helpers import MeshArtist
+
+    mesh = Mesh.from_polyhedron(6)
+    subd = mesh_subdivide(mesh, scheme='catmullclark', k=3, fixed=[mesh.get_any_vertex()])
+
+    artist = MeshArtist(subd)
+
+    artist.draw_faces(join_faces=True)
+    artist.redraw()
+
+
+Blender
+=======
+
+*under construction*
+
+
+Maya
+====
+
+*under construction*

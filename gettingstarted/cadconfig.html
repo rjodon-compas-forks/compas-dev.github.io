@@ -12,7 +12,7 @@
 <link href="/css/github.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas.css" rel="stylesheet" type="text/css"/>
 <link href="/css/compas-reference.css" rel="stylesheet" type="text/css"/>
-<link href="toolconfig.html" rel="next" title="Tool configuration"/>
+<link href="editorconfig.html" rel="next" title="Editor configuration"/>
 <link href="installation.html" rel="prev" title="Installation"/>
 <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 </head>
@@ -49,37 +49,13 @@
 <div class="section">
 <span id="cadconfig"></span><h1>CAD configuration</h1>
 <div class="section">
-<h2>Requirements</h2>
+<h2>Rhino</h2>
+<div class="section">
+<h3>Requirements</h3>
 <ul class="simple">
 <li><p><a class="reference external" href="http://ironpython.codeplex.com/releases/view/169382">IronPython 2.7.5</a></p></li>
 <li><p><a class="reference external" href="https://www.rhino3d.com/download">Rhino3D</a></p></li>
 </ul>
-</div>
-<div class="section">
-<h2>Rhino configuration</h2>
-<div class="section">
-<h3>compas</h3>
-<p>Rhino has its own environment settings.
-Therefore, you will have to tell Rhino where to find <code class="docutils literal">compas</code> as well.
-To do so, open the Rhino Python Editor:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
-</code></pre></div>
-
-<figure class="figure">
-<img alt="../images/rhino_scripteditor.png" class="figure-img img-fluid" src="../images/rhino_scripteditor.png"/>
-</figure>
-<p>In the Rhino Python Editor, go:</p>
-<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
-</code></pre></div>
-
-<p>and add the path to <code class="docutils literal">compas</code>.</p>
-<figure class="figure">
-<img alt="../images/rhino_paths.png" class="figure-img img-fluid" src="../images/rhino_paths.png"/>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Restart Rhino!</p>
-</div>
 </div>
 <div class="section">
 <h3>IronPython</h3>
@@ -95,32 +71,76 @@ Rhino doesn’t like it…</p>
 <p>To check your IronPython version in Rhino, go to the PythonScript Editor:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
 </code></pre></div>
-
 <p>There, run the following snippet.</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span>
 </code></pre></div>
-
 <p>This will display something like:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">(</span><span class="n">major</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">minor</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">micro</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">releaselevel</span><span class="o">=</span><span class="s1">'final'</span><span class="p">,</span> <span class="n">serial</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
-
 <p>If the <code class="docutils literal">releaselevel</code> is not <code class="docutils literal">'final'</code>, install your own version of IronPython 2.7.5
 and let Rhino know where it is by adding it to the search paths as before:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
 </code></pre></div>
-
 <p>And add:</p>
 <div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>
 <span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>\<span class="n">Lib</span>
 <span class="n">C</span><span class="p">:</span>\<span class="n">path</span>\<span class="n">to</span>\<span class="n">IronPython275</span>\<span class="n">DLLs</span>
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Restart Rhino!</p>
 </div>
 </div>
+<div class="section">
+<h3>compas</h3>
+<p>Rhino has its own environment settings.
+Therefore, you will have to tell Rhino where to find <code class="docutils literal">compas</code> as well.
+To do so, open the Rhino Python Editor:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">PythonScript</span> <span class="o">&gt;</span> <span class="n">Edit</span>
+</code></pre></div>
+<figure class="figure">
+<img alt="../images/rhino_scripteditor.png" class="figure-img img-fluid" src="../images/rhino_scripteditor.png"/>
+</figure>
+<p>In the Rhino Python Editor, go:</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="n">Tools</span> <span class="o">&gt;</span> <span class="n">Options</span>
+</code></pre></div>
+<p>and add the path to <code class="docutils literal">compas</code>.</p>
+<figure class="figure">
+<img alt="../images/rhino_paths.png" class="figure-img img-fluid" src="../images/rhino_paths.png"/>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Restart Rhino!</p>
+</div>
+</div>
+<div class="section">
+<h3>example script</h3>
+<p>Run the following script in the PythonScript editor.</p>
+<div class="highlight"><pre><code class="language-python border rounded"><span></span><span class="kn">import</span> <span class="nn">compas</span>
+<span class="kn">import</span> <span class="nn">compas_rhino</span>
+
+<span class="kn">from</span> <span class="nn">compas.datastructures</span> <span class="kn">import</span> <span class="n">Mesh</span>
+<span class="kn">from</span> <span class="nn">compas.topology</span> <span class="kn">import</span> <span class="n">mesh_subdivide</span>
+<span class="kn">from</span> <span class="nn">compas_rhino.helpers</span> <span class="kn">import</span> <span class="n">MeshArtist</span>
+
+<span class="n">mesh</span> <span class="o">=</span> <span class="n">Mesh</span><span class="o">.</span><span class="n">from_polyhedron</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">subd</span> <span class="o">=</span> <span class="n">mesh_subdivide</span><span class="p">(</span><span class="n">mesh</span><span class="p">,</span> <span class="n">scheme</span><span class="o">=</span><span class="s1">'catmullclark'</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">fixed</span><span class="o">=</span><span class="p">[</span><span class="n">mesh</span><span class="o">.</span><span class="n">get_any_vertex</span><span class="p">()])</span>
+
+<span class="n">artist</span> <span class="o">=</span> <span class="n">MeshArtist</span><span class="p">(</span><span class="n">subd</span><span class="p">)</span>
+
+<span class="n">artist</span><span class="o">.</span><span class="n">draw_faces</span><span class="p">(</span><span class="n">join_faces</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">artist</span><span class="o">.</span><span class="n">redraw</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+<div class="section">
+<h2>Blender</h2>
+<p><em>under construction</em></p>
+</div>
+<div class="section">
+<h2>Maya</h2>
+<p><em>under construction</em></p>
 </div>
 </div>
 <!-- <nav class="compas-sideways">
@@ -129,7 +149,7 @@ and let Rhino know where it is by adding it to the search paths as before:</p>
                             
 
                             
-                                <a href="toolconfig.html" class="btn btn-primary compas-next" role="button">Tool configuration</a>
+                                <a href="editorconfig.html" class="btn btn-primary compas-next" role="button">Editor configuration</a>
                             
                         </nav> -->
 </main>
@@ -148,9 +168,10 @@ and let Rhino know where it is by adding it to the search paths as before:</p>
 <ul class="nav flex-column active">
 <li class="nav-item"><a class="nav-link reference internal" href="../introduction.html">Introduction</a></li>
 <li class="nav-item active"><a class="nav-link reference internal" href="../gettingstarted.html">Getting started</a><ul class="nav active">
+<li class="nav-item"><a class="nav-link reference internal" href="requirements.html">Requirements</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="installation.html">Installation</a></li>
 <li class="nav-item active"><a class="nav-link active current reference internal" href="#">CAD configuration</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="toolconfig.html">Tool configuration</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="editorconfig.html">Editor configuration</a></li>
 </ul>
 </li>
 <li class="nav-item"><a class="nav-link reference internal" href="../userguide.html">User Guide</a></li>
@@ -164,12 +185,15 @@ and let Rhino know where it is by adding it to the search paths as before:</p>
 <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
 <ul class="nav flex-column" id="compas-localnav">
 <li class="nav-item"><a class="nav-link reference internal" href="#">CAD configuration</a><ul class="nav">
+<li class="nav-item"><a class="nav-link reference internal" href="#rhino">Rhino</a><ul class="nav">
 <li class="nav-item"><a class="nav-link reference internal" href="#requirements">Requirements</a></li>
-<li class="nav-item"><a class="nav-link reference internal" href="#rhino-configuration">Rhino configuration</a><ul class="nav">
-<li class="nav-item"><a class="nav-link reference internal" href="#compas">compas</a></li>
 <li class="nav-item"><a class="nav-link reference internal" href="#ironpython">IronPython</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#compas">compas</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#example-script">example script</a></li>
 </ul>
 </li>
+<li class="nav-item"><a class="nav-link reference internal" href="#blender">Blender</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#maya">Maya</a></li>
 </ul>
 </li>
 </ul>

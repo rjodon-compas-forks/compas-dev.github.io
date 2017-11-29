@@ -4,6 +4,13 @@
 The compas framework
 ********************************************************************************
 
+.. figure:: /_images/compas_intro.jpg
+    :figclass: figure
+    :class: figure-img img-fluid
+
+    The compas framework.
+
+
 The **compas** framework is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and digital fabrication.
 It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH

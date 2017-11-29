@@ -8,7 +8,7 @@ Installation
 General steps
 =============
 
-**1.** Create a folder on your computer for your COMPAS installation.
+**1.** Create a folder on your computer for your **COMPAS** installation.
 
 .. code-block:: none
 

@@ -7,7 +7,7 @@ Requirements
 Dependencies
 ============
 
-The COMPAS framework has very few dependencies, and most of them are optional. If
+The **COMPAS** framework has very few dependencies, and most of them are optional. If
 you are happy working in Rhino or Blender, and you are not interested in or don't
 need any of the numerical stuff, then everything should work out of the box;
 provided you have Python installed, of course.

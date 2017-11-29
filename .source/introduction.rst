@@ -9,7 +9,7 @@ The COMPAS framework
     :class: figure-img img-fluid
 
 
-COMPAS is an open-source, Python-based computational framework
+**COMPAS** is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and digital fabrication.
 It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH
 Zurich (http://www.ethz.ch), with the support of the NCCR (National Centre
@@ -48,16 +48,16 @@ Multi-disciplinary research
 
 Architecture is a highly multi-disciplinary field, combining research from computer
 science, robotics, mathematics, automation, and several other scientific areas.
-The target audience of the COMPAS framework is therefore very diverse.
+The target audience of the **COMPAS** framework is therefore very diverse.
 
 To deal with the different academic backgrounds, programming skills, computational
 experience, and best/accepted practices of its users and their respective fields,
-COMPAS is implemented primarily in Python and designed to be entirely independent
+**COMPAS** is implemented primarily in Python and designed to be entirely independent
 of the functionality of CAD software. As a result, it can be used on different
 platforms and in combination with external software and libraries, and at the same
 time take advantage of the various scientific and non-scientific libraries available
 in the Python ecosystem itself. Furthermore, and perhaps more importantly, it ensures
-that research based on COMPAS is not tied to a specific CAD-based ecosystem,
+that research based on **COMPAS** is not tied to a specific CAD-based ecosystem,
 as this can hinder effective collaboration between different users.
 
 
@@ -73,12 +73,12 @@ Public, Private, Shared
 ..     is entirely controlled by their authors.
 
 
-COMPAS is divided into a main library and a pool of user-contributed research
+**COMPAS** is divided into a main library and a pool of user-contributed research
 packages. The main library is entirely open source and subject to the MIT license.
 The user-contributed packages are released with access levels defined by the respective
 authors. They can be private, public, or shared with a specific group of users.
 
-The reason for this setup is related to the objectives of COMPAS to facilitate
+The reason for this setup is related to the objectives of **COMPAS** to facilitate
 the transfer of knowledge generated through research in the fields of architecture,
 engineering, digital fabrication, and related fields, and to facilitate
 collaboration.
@@ -116,13 +116,13 @@ or simply provide additional functionality, as a service to other users. For an 
 of available packages, see https://compas-dev.github.io/packages/.
 
 
-Resources
-=========
+Links
+=====
 
-* `COMPAS home <http://compas-dev.github.io>`_
-* `COMPAS main library <http://compas-dev.github.io/main/>`_
-* `COMPAS additional packages <http://compas-dev.github.io/packages/>`_
-* `COMPAS forum <http://forum.compas-framework.org>`_
-* `COMPAS development group <http://github.com/compas-dev>`_
-* `COMPAS main library repo <http://github.com/compas-dev/compas>`_
+* `**COMPAS** home <http://compas-dev.github.io>`_
+* `**COMPAS** main library <http://compas-dev.github.io/main/>`_
+* `**COMPAS** additional packages <http://compas-dev.github.io/packages/>`_
+* `**COMPAS** forum <http://forum.compas-framework.org>`_
+* `**COMPAS** development group <http://github.com/compas-dev>`_
+* `**COMPAS** main library repo <http://github.com/compas-dev/compas>`_
 

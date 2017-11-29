@@ -49,8 +49,3 @@ Reporting issues
 Resources
 =========
 
-* `compas framework: portal site <http://compas-dev.github.io>`_
-* `compas framework: main library docs <http://compas-dev.github.io/main/>`_
-* `compas framework: overview additional packages <http://compas-dev.github.io/packages/>`_
-* `compas framework: discussion forum <http://forum.compas-framework.org>`_
-* `compas framework: main library github repo <http://github.com/compas-dev/compas>`_

@@ -119,10 +119,10 @@ of available packages, see https://compas-dev.github.io/packages/.
 Links
 =====
 
-* `**COMPAS** home <http://compas-dev.github.io>`_
-* `**COMPAS** main library <http://compas-dev.github.io/main/>`_
-* `**COMPAS** additional packages <http://compas-dev.github.io/packages/>`_
-* `**COMPAS** forum <http://forum.compas-framework.org>`_
-* `**COMPAS** development group <http://github.com/compas-dev>`_
-* `**COMPAS** main library repo <http://github.com/compas-dev/compas>`_
+* `COMPAS home <http://compas-dev.github.io>`_
+* `COMPAS main library <http://compas-dev.github.io/main/>`_
+* `COMPAS additional packages <http://compas-dev.github.io/packages/>`_
+* `COMPAS forum <http://forum.compas-framework.org>`_
+* `COMPAS development group <http://github.com/compas-dev>`_
+* `COMPAS main library repo <http://github.com/compas-dev/compas>`_
 

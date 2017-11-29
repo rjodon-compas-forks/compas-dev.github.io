@@ -4,8 +4,8 @@
 Editor configuration
 ********************************************************************************
 
-Installation and configuration instructions for Sublime Text
-============================================================
+Sublime Text
+============
 
 * install package control
 * install Anaconda

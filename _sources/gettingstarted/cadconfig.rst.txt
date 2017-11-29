@@ -103,7 +103,9 @@ and add the path to ``compas``.
 example script
 --------------
 
-Run the following script in the PythonScript editor.
+Run the following script in the PythonScript editor to see if everything works.
+There should obviously not be any errors, and the script should generate a mesh
+the shape of a droplet.
 
 .. code-block:: python
 
@@ -120,7 +122,6 @@ Run the following script in the PythonScript editor.
     artist = MeshArtist(subd)
 
     artist.draw_faces(join_faces=True)
-    artist.redraw()
 
 
 Blender

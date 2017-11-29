@@ -31,16 +31,16 @@ The following dependencies are **optional**.
 ====================== ======================== ================================
 package                dependencies             exceptions
 ====================== ======================== ================================
-compas.com             -                        matlab (``MatlabEngine``, ``MatlabSession``), paramiko (``ssh.py``)
-compas.datastructures  -
-compas.files           -
-compas.geometry        -                        NumPy, SciPy (functions with the ``_numpy`` suffix)
+compas.com             --                       matlab (``MatlabEngine``, ``MatlabSession``), paramiko (``ssh.py``)
+compas.datastructures  --
+compas.files           --
+compas.geometry        --                       NumPy, SciPy (functions with the ``_numpy`` suffix)
 compas.hpc             Numba, PyCuda, PyOpenCL
-compas.interop         -
+compas.interop         --
 compas.numerical       NumPy, SciPy
 compas.plotters        Matplotlib
-compas.topology        -                        NumPy, SciPy (functions with the ``_numpy`` suffix), planarity (``network_is_planar``), NetworkX (``network_embed_in_plane``)
-compas.utilities       -                        imageio (``gif_from_images``)
+compas.topology        --                       NumPy, SciPy (functions with the ``_numpy`` suffix), planarity (``network_is_planar``), NetworkX (``network_embed_in_plane``)
+compas.utilities       --                       imageio (``gif_from_images``)
 compas.viewers         PyOpenGL, PySide
 ====================== ======================== ================================
 

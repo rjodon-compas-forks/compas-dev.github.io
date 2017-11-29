@@ -8,10 +8,8 @@ The compas framework
     :figclass: figure
     :class: figure-img img-fluid
 
-    The compas framework.
 
-
-The **compas** framework is an open-source, Python-based computational framework
+**compas** is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and digital fabrication.
 It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH
 Zurich (http://www.ethz.ch), with the support of the NCCR (National Centre
@@ -21,9 +19,12 @@ The main contributors are:
 `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_, 
 `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_ and
 `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
-**compas** features
 
-* a pure Python base with datastructures, algorithms, and methods geared towards applications in architecture, engineering, and fabrication;
+
+Features
+========
+
+* a pure Python base with flexible datastructures, algorithms, and methods geared towards applications in architecture, engineering, and fabrication;
 * geometry processing independent of CAD tools;
 * interoperability with C/C++ code and libraries such as ShapeOp, libigl and Eigen;
 * methods and solvers for numerical computation built around NumPy and SciPy;
@@ -32,16 +33,14 @@ The main contributors are:
 * interfaces to common CAD software and ecosystems.
 
 
+.. Objectives
+.. ==========
+
+.. ?
+
+
 Multi-disciplinary research
 ===========================
-
-.. .. figure:: /_images/compas_hilo.jpg
-..     :figclass: figure
-..     :class: figure-img img-fluid
-.. 
-..     At the Block Research Group (BRG), **compas** has been the computational base
-..     since 2012, not only for all PhD and postdoc-level research, but also for all BRG
-..     projects, such as the Armadillo Vault and the NEST HiLo roof.
 
 Architecture is a highly multi-disciplinary field, combining research from computer
 science, robotics, mathematics, automation, and several other scientific areas.

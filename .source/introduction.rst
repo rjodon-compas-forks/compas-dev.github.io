@@ -12,8 +12,8 @@ The COMPAS framework
 **COMPAS** is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and digital fabrication.
 It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH
-Zurich (http://www.ethz.ch), with the support of the NCCR (National Centre
-for Competence in Research) on "Digital Fabrication" (http://www.dfab.ch).
+Zurich (http://www.ethz.ch), with the support of the National Centre
+for Competence in Research on "Digital Fabrication" (http://www.dfab.ch).
 
 The main contributors are:
 

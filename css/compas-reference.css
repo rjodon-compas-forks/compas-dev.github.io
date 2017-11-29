@@ -114,6 +114,7 @@ table {
 .longtable a {
   text-decoration: none; }
 
+.docutils p,
 .longtable p {
   margin: 0; }
 

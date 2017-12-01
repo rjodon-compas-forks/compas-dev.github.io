@@ -11,16 +11,16 @@ Requirements
 Dependencies
 ============
 
-.. note::
+To get the most out of **COMPAS**, we recommend installing a scientific Python
+distribution such as `Anaconda`_ or `EPD`_. This will take care of most of the
+(optional) dependencies listed below. However, if you prefer, most of these packages
+can also be added individually to a basic Python installation using *pip*.
 
-    To get the most out of **COMPAS** we recommend installing a scientific Python
-    distribution such as
-
-    * `Anaconda`_
-    * `EPD`_
-
-
-The **COMPAS** framework has very few dependencies, and most of them are optional.
+If you are working on Windows, many installers for packages that are not *pip installable*
+can be found on Christof Gholke's page
+`Unofficial Windows Binaries for Python Extension Packages <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.
+On mac, you can use a package manager like `macports <https://www.macports.org/>`_
+or `homebrew <http://brew.sh/>`_.
 
 * `Numpy <http://www.numpy.org/>`_: For all numerical calculations and algorithms.
 * `Scipy <https://www.scipy.org/>`_: For all numerical calculations and algorithms.
@@ -49,16 +49,6 @@ compas.topology        --                       NumPy, SciPy (functions with the
 compas.utilities       --                       imageio (``gif_from_images``)
 compas.viewers         PyOpenGL, PySide
 ====================== ======================== ================================
-
-Most of these are *pip installable* or ship with scientific Python distributions,
-such as `Anaconda`_ or `EPD`_.
-
-On Windows, many installers for remaining and otherwise difficult-to-install packages
-can be found on Christof Gholke's page `Unofficial Windows Binaries for Python Extension Packages <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.
-
-On mac, installing whatever doesn't ship with a scientific distribution is
-relatively easy with a package manager like `macports <https://www.macports.org/>`_
-or `homebrew <http://brew.sh/>`_.
 
 
 Tools

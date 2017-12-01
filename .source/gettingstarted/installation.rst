@@ -36,32 +36,32 @@ General instructions
 
    There are two options for downloading the main library onto your system.
 
-   a. *Clone the GitHub repository*
+   a\. *Clone the GitHub repository*
 
-      From the terminal 
+   From the terminal 
 
-      .. code-block:: none
+   .. code-block:: none
 
-           git clone https://github.com/compas-dev/compas.git
+        git clone https://github.com/compas-dev/compas.git
 
-      Using GitHub Desktop
+   Using GitHub Desktop
 
-      .. code-block:: none
+   .. code-block:: none
 
-           GitHub Desktop > File > Clone Repository
+        GitHub Desktop > File > Clone Repository
 
-      * Use the *Url* option.
-      * Repository Url: https://github.com/compas-dev/compas.git
-      * Local Path: `path/to/compas-dev/compas`
+   * Use the *Url* option.
+   * Repository Url: https://github.com/compas-dev/compas.git
+   * Local Path: `path/to/compas-dev/compas`
 
-      .. figure:: /_images/github_clonerepo.*
-           :figclass: figure
-           :class: figure-img img-fluid
+   .. figure:: /_images/github_clonerepo.*
+        :figclass: figure
+        :class: figure-img img-fluid
 
-   b. *Download a release*
+   b\. *Download a release*
 
-      Download an archive from https://github.com/compas-dev/compas/releases
-      and unpack it into the installation folder.
+   Download an archive from https://github.com/compas-dev/compas/releases
+   and unpack it into the installation folder.
 
 
 3. **Verify the clone or download**

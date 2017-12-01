@@ -215,19 +215,19 @@ On Windows, you will have to change your *Environment Variables*::
     Control Panel > System > Advanced system settings > Environment Variables
 
 
-.. figure:: /_images/windows_controlpanel.*
-     :figclass: figure
-     :class: figure-img img-fluid
+.. .. figure:: /_images/windows_controlpanel.*
+..      :figclass: figure
+..      :class: figure-img img-fluid
 
 
-.. figure:: /_images/windows_advancedsystemsettings.*
-     :figclass: figure
-     :class: figure-img img-fluid
+.. .. figure:: /_images/windows_advancedsystemsettings.*
+..      :figclass: figure
+..      :class: figure-img img-fluid
 
 
-.. figure:: /_images/windows_environment.*
-     :figclass: figure
-     :class: figure-img img-fluid
+.. .. figure:: /_images/windows_environment.*
+..      :figclass: figure
+..      :class: figure-img img-fluid
 
 
 In the section *User variables*, edit ``PATH``.

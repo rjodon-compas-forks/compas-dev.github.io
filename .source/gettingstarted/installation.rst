@@ -85,11 +85,6 @@ General instructions
 
 4. **Configure your system**
 
-   .. note::
-
-        Although many operating systems come with a version of Python pre-installed,
-        we recommend using a separate Python installation for all your code explorations.
-
    * Verify that Python is on the system ``PATH``.
    * Add the compas framework to the ``PYTHONPATH``.
 
@@ -142,20 +137,6 @@ General instructions
         >>> print(mesh)
 
 
-   If on OSX your Terminal window will display as follows
-
-   .. figure:: /_images/validate_mac.*
-        :figclass: figure
-        :class: figure-img img-fluid
-
-
-   In Comand Prompt it will display as follows
-
-   .. figure:: /_images/validate_windows_small.*
-        :figclass: figure
-        :class: figure-img img-fluid
-
-
 .. _Unix:
 
 On Unix (Linux, OSX)
@@ -175,7 +156,7 @@ Open Terminal to edit your system variables in ``.bash_profile``::
 Add the following::
 
     export PATH="/path/to/anaconda/bin:$PATH"
-    export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
+    export PYTHONPATH="/path/to/compas-dev/compas/src:$PYTHONPATH"
 
 
 .. figure:: /_images/mac_bashprofile.*

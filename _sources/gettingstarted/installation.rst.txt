@@ -23,7 +23,7 @@ General instructions
 
    Create a folder on your system where you will group all **COMPAS** related things.
    For example, you could create a folder on your home drive named *compas-dev*,
-   which is the name of the GitHub *company* that hosts all **COMPAS** related stuff.
+   which is the name of the GitHub *company* that hosts the **COMPAS** framework.
 
    .. code-block:: none
 
@@ -31,20 +31,18 @@ General instructions
         $ mkdir compas-dev
         $ cd compas-dev
 
+
 2. **Download the main library**
 
-   There are two options for downloading the main library onto your system:
+   There are two options for downloading the main library onto your system.
 
-   * clone the GitHub repository, or
-   * download a release archive.
-
-   *Clone the repository*
+   *Clone the GitHub repository*
 
    .. code-block:: none
 
         git clone https://github.com/compas-dev/compas.git
 
-    or, using GitHub Desktop
+   or, using GitHub Desktop
 
    .. code-block:: none
 
@@ -63,6 +61,7 @@ General instructions
 
    Download an archive from https://github.com/compas-dev/compas/releases
    and unpack it into the installation folder.
+
 
 3. **Verify the clone or download**
 

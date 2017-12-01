@@ -18,28 +18,23 @@ User Guide
 
 .. the principle of lease astonishment
 
+Using the main library
+======================
 
-Use cases
-=========
+* A simple script
+* Imports
+* Naming conventions
+
+
+Using the additional packages
+=============================
+
+
+Working environments
+====================
 
 .. The functionality of *compas* is implemented independent of the functionality provided
 .. by CAD software. This 
-
-
-A simple script
-===============
-
-.. .. code-block:: python
-
-
-Imports
-=======
-
-.. All packages are structured such that functionality can be imported from the *second* level.
-
-
-Naming conventions
-==================
 
 
 Reporting issues

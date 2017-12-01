@@ -4,16 +4,23 @@
 Requirements
 ********************************************************************************
 
+.. _Anaconda: https://www.continuum.io/
+.. _EPD: https://www.enthought.com/products/epd/
+
+
 Dependencies
 ============
 
-The **COMPAS** framework has very few dependencies, and most of them are optional. If
-you are happy working in Rhino or Blender, and you are not interested in or don't
-need any of the numerical stuff, then everything should work out of the box;
-provided you have Python installed, of course.
+.. note::
 
-The following dependencies are **optional**.
+    To get the most out of **COMPAS** we recommend installing a scientific Python
+    distribution such as
 
+    * `Anaconda`_
+    * `EPD`_
+
+
+The **COMPAS** framework has very few dependencies, and most of them are optional.
 
 * `Numpy <http://www.numpy.org/>`_: For all numerical calculations and algorithms.
 * `Scipy <https://www.scipy.org/>`_: For all numerical calculations and algorithms.
@@ -26,7 +33,6 @@ The following dependencies are **optional**.
 * `PyCuda <https://mathema.tician.de/software/pycuda/>`_: For parallel computation through Nvidia's CUDA.
 * `PyOpenCL <https://mathema.tician.de/software/pyopencl/>`_: For parallel computation though OpenCL.
 * `Imageio <https://imageio.github.io/>`_: For reading and writing of image data.
-
 
 ====================== ======================== ================================
 package                dependencies             exceptions
@@ -44,9 +50,8 @@ compas.utilities       --                       imageio (``gif_from_images``)
 compas.viewers         PyOpenGL, PySide
 ====================== ======================== ================================
 
-
 Most of these are *pip installable* or ship with scientific Python distributions,
-such as `Anaconda <https://www.continuum.io/>`_ or `Enthought EPD <https://www.enthought.com/products/epd/>`_.
+such as `Anaconda`_ or `EPD`_.
 
 On Windows, many installers for remaining and otherwise difficult-to-install packages
 can be found on Christof Gholke's page `Unofficial Windows Binaries for Python Extension Packages <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_.

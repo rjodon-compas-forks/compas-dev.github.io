@@ -4,111 +4,156 @@
 Installation
 ********************************************************************************
 
+The **COMPAS** framework consists of a main library and a pool of add-on packages.
+Both the main library and the additional packages currently still require a bit of
+manual installation since they are not yet *pip installable* and do not ship with
+a setup script. The following instructions will guide you through the installation
+procedure for the main library.
 
-General steps
-=============
-
-**1.** Create a folder on your computer for your **COMPAS** installation.
-
-.. code-block:: none
-
-    compas-dev
-
-
-**2.** Clone the repository of the main library from Github
-
-*Using git*
-
-.. code-block:: none
+.. note::
     
-    $ cd path/to/compas-dev
-    $ git clone https://github.com/compas-dev/compas.git
+    The instructions are just guidelines. If you know what you are doing,
+    feel free to do things differently.
 
 
-*Using Github Desktop*
+General instructions
+====================
 
-.. code-block:: none
+1. **Create a base folder**
 
-    GitHub Desktop > File > Clone Repository
+   Create a folder on your system where you will group all **COMPAS** related things.
+   For example, you could create a folder on your home drive named *compas-dev*,
+   which is the name of the GitHub *company* that hosts all **COMPAS** related stuff.
 
+   .. code-block:: none
 
-* Use the *Url* option.
-* Repository Url: https://github.com/compas-dev/compas.git
-* Local Path: ``path/to/compas-dev/compas``
+        $ cd ~
+        $ mkdir compas-dev
+        $ cd compas-dev
 
+2. **Download the main library**
 
-.. figure:: /_images/github_clonerepo.*
-     :figclass: figure
-     :class: figure-img img-fluid
+   There are two options for downloading the main library onto your system:
 
+   * clone the GitHub repository, or
+   * download a release archive.
 
-After cloning the repository, the folder structure will contain::
+   *Clone the repository*
 
-    compas-dev
-        - compas
-            - libs
-            - samples
-            - src
-            - temp
+   .. code-block:: none
 
+        git clone https://github.com/compas-dev/compas.git
 
-The ``src`` folder should contain several Python packages::
+    or, using GitHub Desktop
 
-    - compas
-    - compas_blender
-    - compas_maya
-    - compas_rhino
+   .. code-block:: none
 
-
-**3.** Configure your system
-
-* Verify that Python is on the system ``PATH``.
-* Add the compas framework to the ``PYTHONPATH``.
-
-Operating system-specific instructions can be found below:
-
-* `Unix`_ 
-* `Windows`_
+        GitHub Desktop > File > Clone Repository
 
 
-**4.** Verify your installation.
+   * Use the *Url* option.
+   * Repository Url: https://github.com/compas-dev/compas.git
+   * Local Path: ``path/to/compas-dev/compas``
 
-After having set the system variables test your installation.
-Start an interactive Python session (in Terminal or Command Prompt)::
+   .. figure:: /_images/github_clonerepo.*
+        :figclass: figure
+        :class: figure-img img-fluid
 
-    $ python
+   *Download a release*
 
+   Download an archive from https://github.com/compas-dev/compas/releases
+   and unpack it into the installation folder.
 
-Then try the following code.
+3. **Verify the clone or download**
 
-.. code-block:: python
+   After cloning or downloading, the folder structure should contain::
 
-    >>> import compas
-    >>> compas.verify()
-
-
-If all required packages are installed, try
-
-.. code-block:: python
-
-    >>> import compas
-    >>> from compas.datastructures import Mesh
-    >>> mesh = Mesh.from_obj(compas.get('faces.obj'))
-    >>> print(mesh)
-
-
-If on OSX your Terminal window will display as follows
-
-.. figure:: /_images/validate_mac.*
-    :figclass: figure
-    :class: figure-img img-fluid
+        compas-dev
+            - compas
+                - libs
+                    ...
+                - samples
+                    ...
+                - src
+                    - compas
+                    - compas_blender
+                    - compas_maya
+                    - compas_rhino
+                - temp
+                    ...
 
 
-In Comand Prompt it will display as follows
+4. **Configure your system**
 
-.. figure:: /_images/validate_windows_small.*
-    :figclass: figure
-    :class: figure-img img-fluid
+   .. note::
+
+        Although many operating systems come with a version of Python pre-installed,
+        we recommend using a separate Python installation for all your code explorations.
+
+   * Verify that Python is on the system ``PATH``.
+   * Add the compas framework to the ``PYTHONPATH``.
+
+   Operating system-specific instructions for this step can be found below:
+
+   * `Unix`_ 
+   * `Windows`_
+
+
+5. **Verify your installation**
+
+   After having set the system variables test your installation.
+   Start an interactive Python session (in Terminal or Command Prompt)::
+
+        $ python
+
+
+   Then try the following code.
+
+   .. code-block:: python
+
+        >>> import compas
+        >>> compas.verify()
+
+   This will produce something like this:
+
+   .. code-block:: none
+
+        ================================================================================
+        Checking required packages...
+
+        All required packages are installed.
+
+        Checking optional packages...
+
+        The following optional packages are not installed:
+        - xxx
+        - yyy
+        - zzz
+        ================================================================================
+
+
+   If all required packages are installed, try
+
+   .. code-block:: python
+
+        >>> import compas
+        >>> from compas.datastructures import Mesh
+        >>> mesh = Mesh.from_obj(compas.get('faces.obj'))
+        >>> print(mesh)
+
+
+   If on OSX your Terminal window will display as follows
+
+   .. figure:: /_images/validate_mac.*
+        :figclass: figure
+        :class: figure-img img-fluid
+
+
+   In Comand Prompt it will display as follows
+
+   .. figure:: /_images/validate_windows_small.*
+        :figclass: figure
+        :class: figure-img img-fluid
 
 
 .. _Unix:

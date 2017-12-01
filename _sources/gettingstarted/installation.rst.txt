@@ -36,13 +36,13 @@ General instructions
 
    There are two options for downloading the main library onto your system.
 
-   *Clone the GitHub repository*
+   a. *Clone the GitHub repository*
 
    .. code-block:: none
 
         git clone https://github.com/compas-dev/compas.git
 
-   or, using GitHub Desktop
+   Using GitHub Desktop
 
    .. code-block:: none
 
@@ -57,7 +57,7 @@ General instructions
         :figclass: figure
         :class: figure-img img-fluid
 
-   *Download a release*
+   b. *Download a release*
 
    Download an archive from https://github.com/compas-dev/compas/releases
    and unpack it into the installation folder.

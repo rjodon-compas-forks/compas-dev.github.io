@@ -161,20 +161,10 @@ General instructions
 On Unix (Linux, OSX)
 ====================
 
-Open Terminal to edit your system variables. First, find out which ``profile`` file needs to be edited::
-
-    $ cd
-    $ ls -a
-
-
-This will list all files in your home directory.
-Check if you have a ``.bash_profile`` or ``.profile``.
-Choose the ``.bash_profile``  if it exists, otherwise choose the ``.profile``
-
-To edit your ``.bash_profile``, type::
-
+Open Terminal to edit your system variables in ``.bash_profile``::
+    
+    $ cd ~
     $ nano .bash_profile
-
 
 .. note::
     
@@ -186,12 +176,6 @@ Add the following::
 
     export PATH="/path/to/anaconda/bin:$PATH"
     export PYTHONPATH="/path/to/compas/src:$PYTHONPATH"
-
-
-.. note::
-
-    You will not be able to copy and paste into the window.
-    Make sure to type all paths correctly.
 
 
 .. figure:: /_images/mac_bashprofile.*

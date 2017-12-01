@@ -38,29 +38,30 @@ General instructions
 
    a. *Clone the GitHub repository*
 
-   .. code-block:: none
+      From the terminal 
 
-        git clone https://github.com/compas-dev/compas.git
+      .. code-block:: none
 
-   Using GitHub Desktop
+           git clone https://github.com/compas-dev/compas.git
 
-   .. code-block:: none
+      Using GitHub Desktop
 
-        GitHub Desktop > File > Clone Repository
+      .. code-block:: none
 
+           GitHub Desktop > File > Clone Repository
 
-   * Use the *Url* option.
-   * Repository Url: https://github.com/compas-dev/compas.git
-   * Local Path: ``path/to/compas-dev/compas``
+      * Use the *Url* option.
+      * Repository Url: https://github.com/compas-dev/compas.git
+      * Local Path: `path/to/compas-dev/compas`
 
-   .. figure:: /_images/github_clonerepo.*
-        :figclass: figure
-        :class: figure-img img-fluid
+      .. figure:: /_images/github_clonerepo.*
+           :figclass: figure
+           :class: figure-img img-fluid
 
    b. *Download a release*
 
-   Download an archive from https://github.com/compas-dev/compas/releases
-   and unpack it into the installation folder.
+      Download an archive from https://github.com/compas-dev/compas/releases
+      and unpack it into the installation folder.
 
 
 3. **Verify the clone or download**

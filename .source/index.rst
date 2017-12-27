@@ -30,7 +30,7 @@ Features
 * geometry processing independent of CAD tools;
 * interoperability with C/C++ code and libraries such as ShapeOp, libigl and Eigen;
 * methods and solvers for numerical computation built around NumPy and SciPy;
-* high peformance computing through GPU acceleration and JIT compilation;
+* high performance computing through GPU acceleration and JIT compilation;
 * plotters and viewers for two-dimensional and basic three-dimensional visualization; and
 * interfaces to common CAD software and ecosystems.
 
@@ -42,13 +42,18 @@ Features
 .. learning resource
 .. development environment
 .. transparency
-.. 
+
+.. black box => white box
+.. opening the black box
+.. whitening the box
+.. properly differentiate between COMPAS and compas
+
 
 
 Multi-disciplinary research
 ===========================
 
-Architecture is a highly multi-disciplinary field, combining research from computer
+Architecture is a highly multidisciplinary field, combining research from computer
 science, robotics, mathematics, automation, and several other scientific areas.
 The target audience of the **COMPAS** framework is therefore very diverse.
 
@@ -87,7 +92,7 @@ collaboration.
 
 By building specialised research packages on the main library, these packages are
 compatible with each other, allowing expertise and know-how to be shared with,
-and reviewed and extended by a large community of researchers and practicioners.
+and reviewed and extended by a large community of researchers and practitioners.
 
 The possibility of defining packages as private, public, or shared, and the possibility
 to change this state at any given time, allows researchers to publish their work

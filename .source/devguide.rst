@@ -37,6 +37,8 @@ Documentation Guide
 * ``make.py`` and ``postprocess.py``
 * bootstrap theme
 
+.. http://docutils.sourceforge.net/docs/ref/doctree.html
+
 
 Development Tools
 =================
@@ -45,3 +47,7 @@ Development Tools
 * compas-dev package
 * Github desktop
 * SourceTree
+
+.. https://jeffkreeftmeijer.com/git-flow/
+.. http://nvie.com/posts/a-successful-git-branching-model/
+.. https://github.com/nvie/gitflow

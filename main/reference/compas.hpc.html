@@ -1,0 +1,503 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>compas -- additonal packages</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+        <meta name="author" content="Tom Van Mele" />
+        <meta name="description" content="compas is a computational framework for research in architecture and structures." />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="/_static/css/github.css" />
+        <link rel="stylesheet" type="text/css" href="/_static/css/compas.css" />
+        <link rel="stylesheet" type="text/css" href="/_static/css/compas-reference.css" />
+
+        
+            <link rel="next" title="drx_numba" href="generated/compas.hpc.drx_numba.html" />
+        
+        
+        
+            <link rel="prev" title="KDTree.nearest_neighbours" href="generated/generated/compas.geometry.KDTree.nearest_neighbours.html" />
+        
+
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    </head>
+    <body data-spy="scroll" data-target="#compas-localnav">
+
+        <header class="navbar navbar-expand compas-navbar">
+            <a class="navbar-brand" href="/">
+                <img src="/_static/images/compas_icon.png" width="36px" height="36px" alt="compas" />
+            </a>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="/main/">Main library</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="/packages/">Additional Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://forum.compas-framework.org">Forum</a>
+                    </li>
+                </ul>
+        </header>
+        
+        <div class="container-fluid compas-container">
+            <div class="row flex-xl-nowrap">
+
+                <main class="col-12 col-md-9 col-xl-8 compas-content" role="main">
+
+                    
+
+                        <!-- 
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
+        <a class="breadcrumb-item" href="https://compas-dev.github.io/packages">additional packages</a>
+        
+            
+                <a class="breadcrumb-item" href="../reference.html" >api reference</a>
+            
+                <a class="breadcrumb-item" href="compas.html" accesskey="U">compas</a>
+            
+        
+    </nav>
+ -->
+
+                        
+
+                        <div class="section" id="module-compas.hpc">
+<span id="hpc"></span><h1>hpc</h1>
+<p>This package provides GPU-accelerated or JIT-compiled versions of many geometry,
+numerical and topological functions and algorithms. The package id built around
+<a class="reference external" href="https://numba.pydata.org/">Numba</a>, <a class="reference external" href="https://mathema.tician.de/software/pycuda/">PyCuda</a> and <a class="reference external" href="https://mathema.tician.de/software/pyopencl/">PyOpenCL</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The functionality of this package is experimental and subject to frequent change.
+For now, don’t use it for anything important :)</p>
+</div>
+<div class="section" id="algorithms">
+<h2>algorithms</h2>
+<table class="longtable docutils">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.drx_numba.html#compas.hpc.drx_numba" title="compas.hpc.drx_numba"><code class="xref py py-obj docutils literal"><span class="pre">drx_numba</span></code></a></p></td>
+<td><p>Run Numba accelerated dynamic relaxation analysis.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="core">
+<h2>core</h2>
+<div class="section" id="cuda">
+<h3>cuda</h3>
+<table class="longtable docutils">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.device_cuda.html#compas.hpc.device_cuda" title="compas.hpc.device_cuda"><code class="xref py py-obj docutils literal"><span class="pre">device_cuda</span></code></a></p></td>
+<td><p>Displays the CUDA GPU device details.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="euler">
+<h3>euler</h3>
+<table class="longtable docutils">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.connect_to_euler.html#compas.hpc.connect_to_euler" title="compas.hpc.connect_to_euler"><code class="xref py py-obj docutils literal"><span class="pre">connect_to_euler</span></code></a></p></td>
+<td><p>Connect to the ETHZ Euler cluster.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.load_euler_module.html#compas.hpc.load_euler_module" title="compas.hpc.load_euler_module"><code class="xref py py-obj docutils literal"><span class="pre">load_euler_module</span></code></a></p></td>
+<td><p>Load a specific Euler module.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.recieve_file_from_euler.html#compas.hpc.recieve_file_from_euler" title="compas.hpc.recieve_file_from_euler"><code class="xref py py-obj docutils literal"><span class="pre">recieve_file_from_euler</span></code></a></p></td>
+<td><p>Recieve a remote file from the ETHZ Euler cluster (home folder).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.send_file_to_euler.html#compas.hpc.send_file_to_euler" title="compas.hpc.send_file_to_euler"><code class="xref py py-obj docutils literal"><span class="pre">send_file_to_euler</span></code></a></p></td>
+<td><p>Send a local file to the ETHZ Euler cluster (home folder).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.send_folder_to_euler.html#compas.hpc.send_folder_to_euler" title="compas.hpc.send_folder_to_euler"><code class="xref py py-obj docutils literal"><span class="pre">send_folder_to_euler</span></code></a></p></td>
+<td><p>Send a local folder to the ETHZ Euler cluster (home folder).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.show_euler_jobs.html#compas.hpc.show_euler_jobs" title="compas.hpc.show_euler_jobs"><code class="xref py py-obj docutils literal"><span class="pre">show_euler_jobs</span></code></a></p></td>
+<td><p>Show the jobs in queue on Euler.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.show_euler_quotas.html#compas.hpc.show_euler_quotas" title="compas.hpc.show_euler_quotas"><code class="xref py py-obj docutils literal"><span class="pre">show_euler_quotas</span></code></a></p></td>
+<td><p>Show the storage quotas for Euler user.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.show_euler_modules.html#compas.hpc.show_euler_modules" title="compas.hpc.show_euler_modules"><code class="xref py py-obj docutils literal"><span class="pre">show_euler_modules</span></code></a></p></td>
+<td><p>Show the available Euler modules.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.show_euler_module_info.html#compas.hpc.show_euler_module_info" title="compas.hpc.show_euler_module_info"><code class="xref py py-obj docutils literal"><span class="pre">show_euler_module_info</span></code></a></p></td>
+<td><p>Show the information on a specific Euler module.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.show_euler_resources.html#compas.hpc.show_euler_resources" title="compas.hpc.show_euler_resources"><code class="xref py py-obj docutils literal"><span class="pre">show_euler_resources</span></code></a></p></td>
+<td><p>Show the available Euler resources for user.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.submit_job.html#compas.hpc.submit_job" title="compas.hpc.submit_job"><code class="xref py py-obj docutils literal"><span class="pre">submit_job</span></code></a></p></td>
+<td><p>Submit a job to Euler.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.kill_job.html#compas.hpc.kill_job" title="compas.hpc.kill_job"><code class="xref py py-obj docutils literal"><span class="pre">kill_job</span></code></a></p></td>
+<td><p>Kill a specific submitted job on Euler.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.sync_folder_to_euler.html#compas.hpc.sync_folder_to_euler" title="compas.hpc.sync_folder_to_euler"><code class="xref py py-obj docutils literal"><span class="pre">sync_folder_to_euler</span></code></a></p></td>
+<td><p>Sync (rsync) a local folder to the ETHZ Euler cluster (home folder).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="geometry">
+<h2>geometry</h2>
+<div class="section" id="basic">
+<h3>basic</h3>
+<table class="longtable docutils">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.sum_vectors_numba.html#compas.hpc.sum_vectors_numba" title="compas.hpc.sum_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">sum_vectors_numba</span></code></a></p></td>
+<td><p>Calculate the sum of an array of vectors along the specified axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.norm_vector_numba.html#compas.hpc.norm_vector_numba" title="compas.hpc.norm_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">norm_vector_numba</span></code></a></p></td>
+<td><p>Calculate the L2 norm or length of a vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.norm_vectors_numba.html#compas.hpc.norm_vectors_numba" title="compas.hpc.norm_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">norm_vectors_numba</span></code></a></p></td>
+<td><p>Calculate the L2 norm or length of vectors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.length_vector_numba.html#compas.hpc.length_vector_numba" title="compas.hpc.length_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">length_vector_numba</span></code></a></p></td>
+<td><p>Calculate the length of a vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.length_vector_xy_numba.html#compas.hpc.length_vector_xy_numba" title="compas.hpc.length_vector_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">length_vector_xy_numba</span></code></a></p></td>
+<td><p>Calculate the length of the vector, assuming it lies in the XY plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.length_vector_sqrd_numba.html#compas.hpc.length_vector_sqrd_numba" title="compas.hpc.length_vector_sqrd_numba"><code class="xref py py-obj docutils literal"><span class="pre">length_vector_sqrd_numba</span></code></a></p></td>
+<td><p>Calculate the squared length of the vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.length_vector_sqrd_xy_numba.html#compas.hpc.length_vector_sqrd_xy_numba" title="compas.hpc.length_vector_sqrd_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">length_vector_sqrd_xy_numba</span></code></a></p></td>
+<td><p>Calculate the squared length of the vector, assuming it lies in the XY plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.scale_vector_numba.html#compas.hpc.scale_vector_numba" title="compas.hpc.scale_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">scale_vector_numba</span></code></a></p></td>
+<td><p>Scale a vector by a given factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.scale_vector_xy_numba.html#compas.hpc.scale_vector_xy_numba" title="compas.hpc.scale_vector_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">scale_vector_xy_numba</span></code></a></p></td>
+<td><p>Scale a vector by a given factor, assuming it lies in the XY plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.scale_vectors_numba.html#compas.hpc.scale_vectors_numba" title="compas.hpc.scale_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">scale_vectors_numba</span></code></a></p></td>
+<td><p>Scale multiple vectors by a given factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.scale_vectors_xy_numba.html#compas.hpc.scale_vectors_xy_numba" title="compas.hpc.scale_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">scale_vectors_xy_numba</span></code></a></p></td>
+<td><p>Scale multiple vectors by a given factor, assuming they lie in the XY plane</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.normalize_vector_numba.html#compas.hpc.normalize_vector_numba" title="compas.hpc.normalize_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">normalize_vector_numba</span></code></a></p></td>
+<td><p>Normalize a given vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.normalize_vector_xy_numba.html#compas.hpc.normalize_vector_xy_numba" title="compas.hpc.normalize_vector_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">normalize_vector_xy_numba</span></code></a></p></td>
+<td><p>Normalize a given vector, assuming it lies in the XY-plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.normalize_vectors_numba.html#compas.hpc.normalize_vectors_numba" title="compas.hpc.normalize_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">normalize_vectors_numba</span></code></a></p></td>
+<td><p>Normalise multiple vectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.normalize_vectors_xy_numba.html#compas.hpc.normalize_vectors_xy_numba" title="compas.hpc.normalize_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">normalize_vectors_xy_numba</span></code></a></p></td>
+<td><p>Normalise multiple vectors, assuming they lie in the XY plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.power_vector_numba.html#compas.hpc.power_vector_numba" title="compas.hpc.power_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">power_vector_numba</span></code></a></p></td>
+<td><p>Raise a vector to the given power.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.power_vectors_numba.html#compas.hpc.power_vectors_numba" title="compas.hpc.power_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">power_vectors_numba</span></code></a></p></td>
+<td><p>Raise multiple vectors to the given power.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.square_vector_numba.html#compas.hpc.square_vector_numba" title="compas.hpc.square_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">square_vector_numba</span></code></a></p></td>
+<td><p>Raise a single vector to the power 2.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.square_vectors_numba.html#compas.hpc.square_vectors_numba" title="compas.hpc.square_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">square_vectors_numba</span></code></a></p></td>
+<td><p>Raise multiple vectors to the power 2.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.add_vectors_numba.html#compas.hpc.add_vectors_numba" title="compas.hpc.add_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">add_vectors_numba</span></code></a></p></td>
+<td><p>Add two vectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.add_vectors_xy_numba.html#compas.hpc.add_vectors_xy_numba" title="compas.hpc.add_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">add_vectors_xy_numba</span></code></a></p></td>
+<td><p>Add two vectors, assuming they lie in the XY-plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.subtract_vectors_numba.html#compas.hpc.subtract_vectors_numba" title="compas.hpc.subtract_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">subtract_vectors_numba</span></code></a></p></td>
+<td><p>Subtract one vector from another.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.subtract_vectors_xy_numba.html#compas.hpc.subtract_vectors_xy_numba" title="compas.hpc.subtract_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">subtract_vectors_xy_numba</span></code></a></p></td>
+<td><p>Subtract one vector from another, assuming they lie in the XY plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.multiply_vectors_numba.html#compas.hpc.multiply_vectors_numba" title="compas.hpc.multiply_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">multiply_vectors_numba</span></code></a></p></td>
+<td><p>Element-wise multiplication of two vectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.multiply_vectors_xy_numba.html#compas.hpc.multiply_vectors_xy_numba" title="compas.hpc.multiply_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">multiply_vectors_xy_numba</span></code></a></p></td>
+<td><p>Element-wise multiplication of two vectors assumed to lie in the XY plane..</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.divide_vectors_numba.html#compas.hpc.divide_vectors_numba" title="compas.hpc.divide_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">divide_vectors_numba</span></code></a></p></td>
+<td><p>Element-wise division of two vectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.divide_vectors_xy_numba.html#compas.hpc.divide_vectors_xy_numba" title="compas.hpc.divide_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">divide_vectors_xy_numba</span></code></a></p></td>
+<td><p>Element-wise division of two vectors assumed to lie in the XY plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.cross_vectors_numba.html#compas.hpc.cross_vectors_numba" title="compas.hpc.cross_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">cross_vectors_numba</span></code></a></p></td>
+<td><p>Compute the cross product of two vectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.cross_vectors_xy_numba.html#compas.hpc.cross_vectors_xy_numba" title="compas.hpc.cross_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">cross_vectors_xy_numba</span></code></a></p></td>
+<td><p>Compute the cross product of two vectors, assuming they lie in the XY-plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.dot_vectors_numba.html#compas.hpc.dot_vectors_numba" title="compas.hpc.dot_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">dot_vectors_numba</span></code></a></p></td>
+<td><p>Compute the dot product of two vectors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.dot_vectors_xy_numba.html#compas.hpc.dot_vectors_xy_numba" title="compas.hpc.dot_vectors_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">dot_vectors_xy_numba</span></code></a></p></td>
+<td><p>Compute the dot product of two vectors, assuming they lie in the XY-plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.vector_component_numba.html#compas.hpc.vector_component_numba" title="compas.hpc.vector_component_numba"><code class="xref py py-obj docutils literal"><span class="pre">vector_component_numba</span></code></a></p></td>
+<td><p>Compute the component of u in the direction of v.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.vector_component_xy_numba.html#compas.hpc.vector_component_xy_numba" title="compas.hpc.vector_component_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">vector_component_xy_numba</span></code></a></p></td>
+<td><p>Compute the component of u in the direction of v, assuming they lie in the XY-plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.multiply_matrices_numba.html#compas.hpc.multiply_matrices_numba" title="compas.hpc.multiply_matrices_numba"><code class="xref py py-obj docutils literal"><span class="pre">multiply_matrices_numba</span></code></a></p></td>
+<td><p>The multiplication of matrices.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.multiply_matrix_vector_numba.html#compas.hpc.multiply_matrix_vector_numba" title="compas.hpc.multiply_matrix_vector_numba"><code class="xref py py-obj docutils literal"><span class="pre">multiply_matrix_vector_numba</span></code></a></p></td>
+<td><p>The multiplication of a matrix with a vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.transpose_matrix_numba.html#compas.hpc.transpose_matrix_numba" title="compas.hpc.transpose_matrix_numba"><code class="xref py py-obj docutils literal"><span class="pre">transpose_matrix_numba</span></code></a></p></td>
+<td><p>Transpose an array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.orthonormalise_vectors_numba.html#compas.hpc.orthonormalise_vectors_numba" title="compas.hpc.orthonormalise_vectors_numba"><code class="xref py py-obj docutils literal"><span class="pre">orthonormalise_vectors_numba</span></code></a></p></td>
+<td><p>Orthonomalise a set of vectors using the Gram-Schmidt process.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.plane_from_points_numba.html#compas.hpc.plane_from_points_numba" title="compas.hpc.plane_from_points_numba"><code class="xref py py-obj docutils literal"><span class="pre">plane_from_points_numba</span></code></a></p></td>
+<td><p>Construct a plane from three points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.circle_from_points_numba.html#compas.hpc.circle_from_points_numba" title="compas.hpc.circle_from_points_numba"><code class="xref py py-obj docutils literal"><span class="pre">circle_from_points_numba</span></code></a></p></td>
+<td><p>Construct a circle from three points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.circle_from_points_xy_numba.html#compas.hpc.circle_from_points_xy_numba" title="compas.hpc.circle_from_points_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">circle_from_points_xy_numba</span></code></a></p></td>
+<td><p>Construct a circle from three points assumed to be in the XY plane.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="average">
+<h3>average</h3>
+<table class="longtable docutils">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.centroid_points_numba.html#compas.hpc.centroid_points_numba" title="compas.hpc.centroid_points_numba"><code class="xref py py-obj docutils literal"><span class="pre">centroid_points_numba</span></code></a></p></td>
+<td><p>Compute the centroid of a set of points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.centroid_points_xy_numba.html#compas.hpc.centroid_points_xy_numba" title="compas.hpc.centroid_points_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">centroid_points_xy_numba</span></code></a></p></td>
+<td><p>Compute the centroid of a set of points lying in the XY plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.midpoint_point_point_numba.html#compas.hpc.midpoint_point_point_numba" title="compas.hpc.midpoint_point_point_numba"><code class="xref py py-obj docutils literal"><span class="pre">midpoint_point_point_numba</span></code></a></p></td>
+<td><p>Compute the midpoint of two points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.midpoint_point_point_xy_numba.html#compas.hpc.midpoint_point_point_xy_numba" title="compas.hpc.midpoint_point_point_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">midpoint_point_point_xy_numba</span></code></a></p></td>
+<td><p>Compute the midpoint of two points lying in the XY-plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/compas.hpc.center_of_mass_polyline_numba.html#compas.hpc.center_of_mass_polyline_numba" title="compas.hpc.center_of_mass_polyline_numba"><code class="xref py py-obj docutils literal"><span class="pre">center_of_mass_polyline_numba</span></code></a></p></td>
+<td><p>Compute the center of mass of polyline edges defined as an array of points.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/compas.hpc.center_of_mass_polyline_xy_numba.html#compas.hpc.center_of_mass_polyline_xy_numba" title="compas.hpc.center_of_mass_polyline_xy_numba"><code class="xref py py-obj docutils literal"><span class="pre">center_of_mass_polyline_xy_numba</span></code></a></p></td>
+<td><p>Compute the center of mass of polyline edges in the XY plane, defined as an array of points.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+                        
+                        <!-- <nav class="compas-sideways">
+                            
+                                <a href="generated/generated/compas.geometry.KDTree.nearest_neighbours.html" class="btn btn-primary compas-prev" role="button">KDTree.nearest_neighbours</a>
+                            
+
+                            
+                                <a href="generated/compas.hpc.drx_numba.html" class="btn btn-primary compas-next" role="button">drx_numba</a>
+                            
+                        </nav> -->
+
+                    
+
+                </main>
+
+                <div class="col-12 col-md-3 col-xl-2 compas-sidebar" role="navigation"> 
+                    <div class="navbar-light">
+
+                        <form id="" class="d-flex compas-searchbox" action="../search.html" method="get">
+                            <input class="form-control" type="text" name="q" placeholder="Search docs" />
+                            <input type="hidden" name="check_keywords" value="yes" />
+                            <input type="hidden" name="area" value="default" />
+
+                            <button class="navbar-toggler d-md-none compas-navigation-toggler" type="button" data-toggle="collapse" data-target="#compas-navigation" aria-controls="compas-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </form>
+
+                        
+                        
+
+                            <div class="navbar-expand-md">
+                                <div id="compas-navigation" class="collapse navbar-collapse compas-navigation">
+
+                                <ul class="nav flex-column active">
+<li class="nav-item"><a class="nav-link reference internal" href="../overview.html">Overview</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../examples.html">Examples</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../python.html">Python basics</a></li>
+<li class="nav-item active"><a class="nav-link reference internal" href="../reference.html">API Reference</a><ul class="nav active">
+<li class="nav-item active"><a class="nav-link reference internal" href="compas.html">compas</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_rhino.html">compas_rhino</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_blender.html">compas_blender</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="compas_maya.html">compas_maya</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link reference internal" href="../citing.html">Citing</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="../releases.html">Versions</a></li>
+</ul>
+
+
+                                </div>
+                            </div>
+
+                        
+
+                    </div>
+                </div>
+                
+                <div class="d-none d-xl-block col-xl-2 compas-toc" role="toc">
+
+                    
+
+                    <ul class="nav flex-column" id="compas-localnav">
+<li class="nav-item"><a class="nav-link reference internal" href="#">hpc</a><ul class="nav">
+<li class="nav-item"><a class="nav-link reference internal" href="#algorithms">algorithms</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#core">core</a><ul class="nav">
+<li class="nav-item"><a class="nav-link reference internal" href="#cuda">cuda</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#euler">euler</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link reference internal" href="#geometry">geometry</a><ul class="nav">
+<li class="nav-item"><a class="nav-link reference internal" href="#basic">basic</a></li>
+<li class="nav-item"><a class="nav-link reference internal" href="#average">average</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="compas-footer">
+            
+                
+                    &#169; Copyright 2017, Block Research Group - ETH Zurich.
+                
+            
+
+            
+                Last updated on Jan 18, 2018.
+            
+
+            
+                Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.6.
+            
+        </footer>
+
+        
+
+            <script type="text/javascript">
+var DOCUMENTATION_OPTIONS = {
+    URL_ROOT          : '',
+    VERSION           : '',
+    COLLAPSE_INDEX    : false,
+    FILE_SUFFIX       : '.html',
+    HAS_SOURCE        : false,
+    SOURCELINK_SUFFIX : '.txt'
+};
+            </script>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+            
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+            <script src="/_static/underscore.js"></script>
+            <script src="/_static/doctools.js"></script>
+            <script src="/_static/js/searchtools_.js"></script>
+
+            <script>
+hljs.initHighlightingOnLoad();
+anchors.add();
+
+var pre = document.getElementsByTagName('pre');
+
+for (var i = 0; i < pre.length; i++) {
+
+    var is_code = pre[i].children[0].className.indexOf('language-python');
+
+    if (is_code === 0) {
+
+        var button = document.createElement('button');
+
+        button.className = 'btn btn-secondary copy-code mt-4';
+        button.textContent = 'Copy code';
+        button.type = 'button';
+
+        pre[i].appendChild(button);
+    }
+}
+
+var copy_code = new Clipboard('.copy-code', {
+    target: function(trigger) {
+        return trigger.previousElementSibling;
+    }
+});
+
+copy_code.on('success', function(event) {
+    event.clearSelection();
+    event.trigger.textContent = 'Copied!';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy code';
+    }, 2000);
+});
+
+copy_code.on('error', function(event) { 
+    event.trigger.textContent = 'Press "Ctrl + C" to copy...';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy code';
+    }, 2000);
+});
+            </script>
+
+        
+    </body>
+</html>

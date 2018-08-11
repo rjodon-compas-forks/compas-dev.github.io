@@ -13,13 +13,6 @@ It is developed by the Block Research Group (https://block.arch.ethz.ch) of ETH
 Zurich (http://www.ethz.ch), with the support of the National Centre
 for Competence in Research on "Digital Fabrication" (http://www.dfab.ch).
 
-The main contributors are:
-
-* `Tom Van Mele <http://block.arch.ethz.ch/brg/people/tom-van-mele>`_, 
-* `Andrew Liew <http://block.arch.ethz.ch/brg/people/andrew-liew>`_, 
-* `Tomas Méndez Echenagucia <http://block.arch.ethz.ch/brg/people/tomas-mendez-echenagucia>`_ and
-* `Matthias Rippmann <http://block.arch.ethz.ch/brg/people/matthias-rippmann>`_.
-
 
 Features
 ========
@@ -66,8 +59,31 @@ that research based on **COMPAS** is not tied to a specific CAD-based ecosystem,
 as this can hinder effective collaboration between different users.
 
 
-Public, Private, Shared
-=======================
+Main library
+============
+
+The main library consists of a core package (`compas`) and several additional
+packages for integration of the core functionality in CAD software (`compas_rhino`, `compas_blender`, `compas_maya`).
+The core package defines all *real* functionality. The CAD packages simply provide
+a unified framework for processing, visualising, and interacting with datastructures
+and geometrical objects, and for building user interfaces in different CAD software.
+
+`The documentation of the main library <https://compas-dev.github.io>`_ provides
+many more resources for further exploration. `The API reference <https://compas-dev.github.io/main/reference.html>`_
+contains detailed information about the functionality of the core package and the CAD packages.
+
+
+Additional packages
+===================
+
+The additional packages supplement the main library with functionality related to
+specialised topics. These packages can be related to ongoing or completed research,
+or simply provide additional functionality, as a service to other users. For an overview
+of available packages, see https://compas-dev.github.io/packages/.
+
+
+Licensing
+=========
 
 .. .. figure:: /_images/compas_overview.png
 ..     :figclass: figure
@@ -96,29 +112,6 @@ The possibility of defining packages as private, public, or shared, and the poss
 to change this state at any given time, allows researchers to publish their work
 in a way that corresponds to the state of their research, to the sensitivities
 of collaborations, or to the requirements of their funding.
-
-
-Main library
-============
-
-The main library consists of a core package (`compas`) and several additional
-packages for integration of the core functionality in CAD software (`compas_rhino`, `compas_blender`, `compas_maya`).
-The core package defines all *real* functionality. The CAD packages simply provide
-a unified framework for processing, visualising, and interacting with datastructures
-and geometrical objects, and for building user interfaces in different CAD software.
-
-`The documentation of the main library <https://compas-dev.github.io>`_ provides
-many more resources for further exploration. `The API reference <https://compas-dev.github.io/main/reference.html>`_
-contains detailed information about the functionality of the core package and the CAD packages.
-
-
-Additional packages
-===================
-
-The additional packages supplement the main library with functionality related to
-specialised topics. These packages can be related to ongoing or completed research,
-or simply provide additional functionality, as a service to other users. For an overview
-of available packages, see https://compas-dev.github.io/packages/.
 
 
 Links

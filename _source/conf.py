@@ -9,7 +9,7 @@
 
 templates_path   = ['_templates', ]
 source_suffix    = ['.rst', ]
-master_doc       = 'home'
+master_doc       = 'index'
 project          = 'COMPAS'
 copyright        = '2017, Block Research Group - ETH Zurich'
 author           = 'Tom Van Mele'

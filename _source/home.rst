@@ -7,8 +7,3 @@ The COMPAS framework
     :titlesonly:
 
     Introduction <index>
-    gettingstarted
-    userguide
-    devguide
-    python
-    license

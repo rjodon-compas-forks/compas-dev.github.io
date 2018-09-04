@@ -1,5 +1,5 @@
 ********************************************************************************
-The COMPAS framework
+COMPAS
 ********************************************************************************
 
 .. figure:: /_images/compas_intro.jpg
@@ -94,30 +94,29 @@ Licensing
 ..     is entirely controlled by their authors.
 
 
-**COMPAS** is divided into a main library and a pool of user-contributed research
-packages. The main library is entirely open source and subject to the MIT license.
-The user-contributed packages are released with access levels defined by the respective
-authors. They can be private, public, or shared with a specific group of users.
+..  **COMPAS** is divided into a main library and a pool of user-contributed research
+    packages. The main library is entirely open source and subject to the MIT license.
+    The user-contributed packages are released with access levels defined by the respective
+    authors. They can be private, public, or shared with a specific group of users.
 
-The reason for this setup is related to the objectives of **COMPAS** to facilitate
-the transfer of knowledge generated through research in the fields of architecture,
-engineering, digital fabrication, and related fields, and to facilitate
-collaboration.
+..  The reason for this setup is related to the objectives of **COMPAS** to facilitate
+    the transfer of knowledge generated through research in the fields of architecture,
+    engineering, digital fabrication, and related fields, and to facilitate
+    collaboration.
 
-By building specialised research packages on the main library, these packages are
-compatible with each other, allowing expertise and know-how to be shared with,
-and reviewed and extended by a large community of researchers and practitioners.
+..  By building specialised research packages on the main library, these packages are
+    compatible with each other, allowing expertise and know-how to be shared with,
+    and reviewed and extended by a large community of researchers and practitioners.
 
-The possibility of defining packages as private, public, or shared, and the possibility
-to change this state at any given time, allows researchers to publish their work
-in a way that corresponds to the state of their research, to the sensitivities
-of collaborations, or to the requirements of their funding.
+..  The possibility of defining packages as private, public, or shared, and the possibility
+    to change this state at any given time, allows researchers to publish their work
+    in a way that corresponds to the state of their research, to the sensitivities
+    of collaborations, or to the requirements of their funding.
 
 
 Links
 =====
 
-* `COMPAS home <http://compas-dev.github.io>`_
 * `COMPAS main library <http://compas-dev.github.io/main/>`_
 * `COMPAS additional packages <http://compas-dev.github.io/packages/>`_
 * `COMPAS forum <http://forum.compas-framework.org>`_

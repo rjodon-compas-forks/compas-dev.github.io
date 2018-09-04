@@ -1,10 +1,8 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>compas -- additonal packages</title>
+        <title>COMPAS</title>
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,9 +12,10 @@
 
         <link rel="shortcut icon" href="/_static/images/compas.ico" type="image/x-icon">
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="/_static/css/github.css" />
-        <link rel="stylesheet" type="text/css" href="/_static/css/compas.css" />
+        <link rel="stylesheet" type="text/css" href="/_static/css/compas.css?20180904" />
         <link rel="stylesheet" type="text/css" href="/_static/css/compas-reference.css" />
 
         
@@ -55,18 +54,8 @@
 
                     
 
-                        <!-- 
-    <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="https://compas-dev.github.io/">compas</a>
-        <a class="breadcrumb-item" href="https://compas-dev.github.io/packages">additional packages</a>
-        
-    </nav>
- -->
-
-                        
-
-                        <div class="section" id="the-compas-framework">
-<h1>The COMPAS framework</h1>
+                        <div class="section" id="compas">
+<h1>COMPAS</h1>
 <div class="figure">
 <img alt="_images/compas_intro.jpg" class="figure-img img-fluid" src="_images/compas_intro.jpg" />
 </div>
@@ -122,26 +111,10 @@ of available packages, see <a class="reference external" href="https://compas-de
 </div>
 <div class="section" id="licensing">
 <h2>Licensing</h2>
-<p><strong>COMPAS</strong> is divided into a main library and a pool of user-contributed research
-packages. The main library is entirely open source and subject to the MIT license.
-The user-contributed packages are released with access levels defined by the respective
-authors. They can be private, public, or shared with a specific group of users.</p>
-<p>The reason for this setup is related to the objectives of <strong>COMPAS</strong> to facilitate
-the transfer of knowledge generated through research in the fields of architecture,
-engineering, digital fabrication, and related fields, and to facilitate
-collaboration.</p>
-<p>By building specialised research packages on the main library, these packages are
-compatible with each other, allowing expertise and know-how to be shared with,
-and reviewed and extended by a large community of researchers and practitioners.</p>
-<p>The possibility of defining packages as private, public, or shared, and the possibility
-to change this state at any given time, allows researchers to publish their work
-in a way that corresponds to the state of their research, to the sensitivities
-of collaborations, or to the requirements of their funding.</p>
 </div>
 <div class="section" id="links">
 <h2>Links</h2>
 <ul class="simple">
-<li><p><a class="reference external" href="http://compas-dev.github.io">COMPAS home</a></p></li>
 <li><p><a class="reference external" href="http://compas-dev.github.io/main/">COMPAS main library</a></p></li>
 <li><p><a class="reference external" href="http://compas-dev.github.io/packages/">COMPAS additional packages</a></p></li>
 <li><p><a class="reference external" href="http://forum.compas-framework.org">COMPAS forum</a></p></li>
@@ -152,12 +125,6 @@ of collaborations, or to the requirements of their funding.</p>
 </div>
 
                         
-                        <!-- <nav class="compas-sideways">
-                            
-
-                            
-                        </nav> -->
-
                     
 
                 </main>
@@ -181,11 +148,11 @@ of collaborations, or to the requirements of their funding.</p>
             
 
             
-                Last updated on Aug 12, 2018.
+                Last updated on Sep 04, 2018.
             
 
             
-                Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.6.
+                Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.7.
             
         </footer>
 
@@ -197,7 +164,7 @@ var DOCUMENTATION_OPTIONS = {
     VERSION           : '0.1.0',
     COLLAPSE_INDEX    : false,
     FILE_SUFFIX       : '.html',
-    HAS_SOURCE        : false,
+    HAS_SOURCE        : 'false',
     SOURCELINK_SUFFIX : '.txt'
 };
             </script>
@@ -207,7 +174,7 @@ var DOCUMENTATION_OPTIONS = {
 
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
             
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 
@@ -216,47 +183,65 @@ var DOCUMENTATION_OPTIONS = {
             <script src="/_static/js/searchtools_.js"></script>
 
             <script>
-hljs.initHighlightingOnLoad();
-anchors.add();
 
-var pre = document.getElementsByTagName('pre');
+$(document).ready(function() {
+    $("div.highlight pre").each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
 
-for (var i = 0; i < pre.length; i++) {
+    $("div.highlight-python div.highlight pre").before('<button class="btn copy-code"><i class="far fa-copy"></i></button>');
 
-    var is_code = pre[i].children[0].className.indexOf('language-python');
+    var copy_code = new Clipboard('.copy-code', {
+        target: function(trigger) {
+            return trigger.nextElementSibling;
+        }
+    });
 
-    if (is_code === 0) {
+    copy_code.on('success', function(event) {
+        event.clearSelection();
+    });
 
-        var button = document.createElement('button');
-
-        button.className = 'btn btn-secondary copy-code mt-4';
-        button.textContent = 'Copy code';
-        button.type = 'button';
-
-        pre[i].appendChild(button);
-    }
-}
-
-var copy_code = new Clipboard('.copy-code', {
-    target: function(trigger) {
-        return trigger.previousElementSibling;
-    }
+    anchors.add();
 });
 
-copy_code.on('success', function(event) {
-    event.clearSelection();
-    event.trigger.textContent = 'Copied!';
-    window.setTimeout(function() {
-        event.trigger.textContent = 'Copy code';
-    }, 2000);
-});
+// var pre = document.getElementsByTagName('pre');
 
-copy_code.on('error', function(event) { 
-    event.trigger.textContent = 'Press "Ctrl + C" to copy...';
-    window.setTimeout(function() {
-        event.trigger.textContent = 'Copy code';
-    }, 2000);
-});
+// for (var i = 0; i < pre.length; i++) {
+
+//     var is_code = pre[i].children[0].className.indexOf('language-python');
+
+//     if (is_code === 0) {
+
+//         var button = document.createElement('button');
+
+//         button.className = 'btn btn-secondary copy-code mt-4';
+//         button.textContent = 'Copy code';
+//         button.type = 'button';
+
+//         pre[i].appendChild(button);
+//     }
+// }
+
+// var copy_code = new Clipboard('.copy-code', {
+//     target: function(trigger) {
+//         return trigger.previousElementSibling;
+//     }
+// });
+
+// copy_code.on('success', function(event) {
+//     event.clearSelection();
+//     event.trigger.textContent = 'Copied!';
+//     window.setTimeout(function() {
+//         event.trigger.textContent = 'Copy code';
+//     }, 2000);
+// });
+
+// copy_code.on('error', function(event) { 
+//     event.trigger.textContent = 'Press "Ctrl + C" to copy...';
+//     window.setTimeout(function() {
+//         event.trigger.textContent = 'Copy code';
+//     }, 2000);
+// });
             </script>
 
         

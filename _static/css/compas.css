@@ -49,8 +49,8 @@ ol ol, ol ul, ul ol, ul ul {
 .compas-navbar {
 	height: 4rem;
 	z-index: 1053;
-	background-color: #eee;
-	border-bottom: 1px solid #ccc;
+	background-color: #0092d2;
+	border-bottom: 0px solid #ccc;
 }
 
 .compas-navbar .navbar-brand,

@@ -55,14 +55,14 @@ ol ol, ol ul, ul ol, ul ul {
 
 .compas-navbar .navbar-brand,
 .compas-navbar .nav-link {
-	color: #888;
+	color: #eee;
 }
 
 .compas-navbar .navbar-brand:hover,
 .compas-navbar .nav-link:hover,
 .compas-navbar .navbar-brand.active,
 .compas-navbar .nav-link.active {
-	color: #222;
+	color: #fff;
 }
 
 .compas-navbar .navbar-brand.active,

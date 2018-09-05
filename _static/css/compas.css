@@ -367,6 +367,8 @@ ol ol, ol ul, ul ol, ul ul {
 	margin-bottom: 2rem;
 
 	position: relative;
+
+	font-size: 0.8rem;
 }
 
 .copy-code {
@@ -394,12 +396,7 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .hljs {
-	padding: 2rem;
-	font-size: 0.8rem;
-	/*font-family: monospace;*/
-}
 
-.hljs.shell {
 }
 
 .compas-content .anchorjs-link {

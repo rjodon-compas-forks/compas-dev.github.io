@@ -374,15 +374,15 @@ ol ol, ol ul, ul ol, ul ul {
 	top: 4px;
 	right: 4px;
 	padding: 2px 4px 4px 4px;
-	line-height: 12px;
+	line-height: 1rem;
 
 	background: transparent;
 	border: none;
 }
 
 .fa-copy {
-	font-size: 16px;
-	color: #666666;
+	font-size: 1rem;
+	color: #cccccc;
 }
 
 .copy-code:hover {
@@ -390,7 +390,7 @@ ol ol, ol ul, ul ol, ul ul {
 }
 
 .copy-code:hover .fa-copy {
-	color: #222222;
+	color: #eeeeee;
 }
 
 .hljs {

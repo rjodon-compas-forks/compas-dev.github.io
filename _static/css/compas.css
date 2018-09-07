@@ -26,6 +26,7 @@ h3 {
 
 a {
 	text-decoration: none;
+	color: #0092d2;
 }
 
 a:hover {
@@ -374,29 +375,9 @@ ol ol, ol ul, ul ol, ul ul {
 	padding: 2rem;
 }
 
-/*.copy-code {
-	position: absolute;
-	top: 4px;
-	right: 4px;
-	padding: 2px 4px 4px 4px;
-	line-height: 1rem;
-
-	background: transparent;
-	border: none;
+.nohighlight pre {
+	background-color: #eee;
 }
-
-.fa-copy {
-	font-size: 1rem;
-	color: #cccccc;
-}
-
-.copy-code:hover {
-	cursor: pointer;
-}
-
-.copy-code:hover .fa-copy {
-	color: #eeeeee;
-}*/
 
 .compas-content .anchorjs-link {
 	text-decoration: none;

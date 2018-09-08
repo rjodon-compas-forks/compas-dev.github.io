@@ -87,7 +87,7 @@ intersphinx_mapping = {'python': ('https://docs.python.org/', None)}
 html_theme = 'compas'
 html_theme_path = ['../../sphinx_compas_theme']
 html_theme_options = {
-    'navbar_active' : 'main',
+    'navbar_active' : 'home',
 }
 html_context = {}
 html_static_path = ['_static']

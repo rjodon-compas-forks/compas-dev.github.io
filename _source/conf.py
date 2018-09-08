@@ -89,6 +89,7 @@ html_theme_path = ['../../sphinx_compas_theme']
 html_theme_options = {}
 html_context = {}
 html_static_path = ['_static']
+html_extra_path = ['.nojekyll']
 html_last_updated_fmt = ''
 html_copy_source = False
 html_show_sourcelink = False

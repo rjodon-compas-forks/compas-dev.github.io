@@ -53,8 +53,8 @@ The core package defines all *real* functionality. The CAD packages simply provi
 a unified framework for processing, visualising, and interacting with datastructures
 and geometrical objects, and for building user interfaces in different CAD software.
 
-`The documentation of the main library <https://compas-dev.github.io>`_ provides
-many more resources for further exploration. `The API reference <https://compas-dev.github.io/main/reference.html>`_
+`The documentation of the main library <https://compas-dev.github.io/main/>`_ provides
+many more resources for further exploration. `The API reference <https://compas-dev.github.io/main/api.html>`_
 contains detailed information about the functionality of the core package and the CAD packages.
 
 

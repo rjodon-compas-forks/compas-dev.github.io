@@ -5,6 +5,9 @@
 # needs_sphinx = '1.0'
 
 
+import sphinx_compas_theme
+
+
 # -- General configuration ------------------------------------------------
 
 templates_path   = ['_templates', ]
@@ -85,7 +88,7 @@ intersphinx_mapping = {'python': ('https://docs.python.org/', None)}
 # -- Options for HTML output ----------------------------------------------
 
 html_theme = 'compas'
-html_theme_path = ['../../sphinx_compas_theme']
+html_theme_path = sphinx_compas_theme.get_html_theme_path()
 html_theme_options = {
     'navbar_active' : 'home',
 }
